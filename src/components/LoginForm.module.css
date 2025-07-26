@@ -1,0 +1,133 @@
+/* src/components/LoginForm.module.css */
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.75rem;
+    /* 28px */
+    font-weight: 700;
+    color: #1E293B;
+    text-align:center;
+    margin-bottom: 0.5rem;
+    
+}
+
+.subtitle {
+    color: #64748B;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+    /* Jarak lebih besar antar input */
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    /* Sedikit lebih tipis */
+    margin-bottom: 0.5rem;
+    color: #334155;
+}
+
+/* Wrapper untuk input password dan ikon */
+.passwordWrapper {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    /* Sedikit lebih tinggi */
+    padding-right: 3rem;
+    /* Beri ruang untuk ikon */
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #64748B;
+    font-weight: 700;
+}
+
+.input::placeholder {
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0A2647;
+    box-shadow: 0 0 0 2px rgba(10, 38, 71, 0.2);
+}
+
+/* Tombol untuk toggle password */
+.togglePasswordButton {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #94A3B8;
+}
+
+.error {
+    color: #EF4444;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #0A2647;
+    color: white;
+    padding: 0.875rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background-color: #1C3A5F;
+}
+
+.signupLink {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #64748B;
+}
+
+.signupLink a {
+    font-weight: 700;
+    color: #0A2647;
+    text-decoration: none;
+}
+
+.signupLink a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+    .title {
+            text-align: left;
+            /* PERBAIKAN: Properti dipindahkan ke sini agar hanya aktif di desktop */
+            white-space: nowrap;
+        }
+    
+        .subtitle {
+            text-align: left;
+        }
+}

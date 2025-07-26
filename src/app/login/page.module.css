@@ -1,0 +1,80 @@
+/* src/app/login/page.module.css */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8FAFC;
+    /* Latar belakang putih keabuan */
+    padding: 1rem;
+}
+
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    /* Atas-bawah di mobile */
+    width: 100%;
+    max-width: 960px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: #64748B;
+}
+
+.illustrationSection {
+    display: none;
+    /* Sembunyikan di mobile secara default */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.formSection {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aturan untuk layar yang lebih besar (desktop) */
+@media (min-width: 1024px) {
+    .loginCard {
+        flex-direction: row;
+        /* Kiri-kanan di desktop */
+    }
+
+    .illustrationSection {
+        display: flex;
+        flex: 1;
+        color: #1E293B;
+        padding: 48px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F8FAFC;
+        /* Warna latar yang sama dengan body */
+    }
+
+    .formSection {
+        flex: 1;
+        padding: 48px;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .tagline {
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .illustrationImage {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+}

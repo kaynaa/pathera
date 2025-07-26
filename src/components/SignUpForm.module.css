@@ -1,0 +1,188 @@
+/* src/components/SignUpForm.module.css */
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.845rem;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+.subtitle {
+    color: #64748B;
+    margin-bottom: 2rem;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+/* PERBAIKAN UTAMA: Dibuat atas-bawah di mobile */
+.passwordGroup {
+    display: flex;
+    flex-direction: column;
+    /* <-- Atas-bawah (untuk mobile) */
+    gap: 1rem;
+    /* Jarak antar input password tetap sama */
+    margin-bottom: 1rem;
+}
+
+/* Di mobile, setiap div mengambil lebar penuh */
+.passwordGroup>div {
+    width: 100%;
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #334155;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #64748B;
+    font-weight: 700;
+}
+
+.input::placeholder {
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+.selectPlaceholder {
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: #0A2647;
+    box-shadow: 0 0 0 2px rgba(10, 38, 71, 0.2);
+}
+
+.select option {
+    color: #1E293B;
+    font-weight: 400;
+}
+
+.skillSubtitle {
+    font-size: 0.875rem;
+    color: #64748B;
+    margin-bottom: 0.75rem;
+}
+
+.skillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skillButton {
+    padding: 0.25rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    background-color: #F9FAFB;
+    color: #64748B;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 700;
+}
+
+.skillButtonActive {
+    composes: skillButton;
+    background-color: #64748B;
+    color: white;
+    border-color: #64748B;
+    font-weight: 700;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.checkboxContainer input {
+    margin-right: 0.5rem;
+}
+
+.checkboxContainer span {
+    font-size: 0.875rem;
+    color: #475569;
+}
+
+.checkboxContainer a {
+    font-weight: 600;
+    color: #0A2647;
+    text-decoration: none;
+}
+
+.checkboxContainer a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #EF4444;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #0A2647;
+    color: white;
+    padding: 0.875rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #1C3A5F;
+}
+
+.loginLink {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #64748B;
+}
+
+.loginLink a {
+    font-weight: 700;
+    color: #0A2647;
+    text-decoration: none;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
+
+/* PERBAIKAN UTAMA: Mengembalikan layout password di desktop */
+@media (min-width: 768px) {
+    .passwordGroup {
+        flex-direction: row;
+        /* <-- Kembali sejajar di desktop */
+    }
+
+    .passwordGroup>div {
+        width: 50%;
+        /* Masing-masing setengah lebar */
+    }
+}

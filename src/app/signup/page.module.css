@@ -1,0 +1,52 @@
+/* src/app/signup/page.module.css */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0F172A;
+    padding: 2rem;
+    /* Font dari layout.tsx akan diterapkan di sini */
+}
+
+.signupCard {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Menggunakan style border baru Anda */
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #64748B;
+    /* Fallback jika var --Semi-abu tidak ada */
+    border-color: var(--Semi-abu, #64748B);
+}
+
+.formSection {
+    flex: 1;
+    padding: 48px;
+    background-color: #FFFFFF;
+}
+
+.illustrationSection {
+    display: none;
+    /* Sembunyikan di layar kecil */
+    flex: 1;
+    color: white;
+    padding: 48px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Menggunakan style shadow baru Anda */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+    .illustrationSection {
+        display: flex;
+    }
+}

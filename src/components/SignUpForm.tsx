@@ -1,0 +1,196 @@
+// src/components/SignUpForm.tsx
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import styles from "./SignUpForm.module.css";
+
+type SignUpFormProps = { onSuccess: () => void };
+
+export default function SignUpForm({ onSuccess }: SignUpFormProps) {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    major: "",
+    termsAccepted: false,
+  });
+  const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
+  const [error, setError] = useState("");
+  const skillOptions = [
+    "Design",
+    "Coding",
+    "Management",
+    "Marketing",
+    "Accounting",
+    "Data Analyst",
+    "Relation",
+  ];
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value, type } = e.target;
+    const isCheckbox = type === "checkbox";
+    const checkedValue = isCheckbox
+      ? (e.target as HTMLInputElement).checked
+      : undefined;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: isCheckbox ? checkedValue : value,
+    }));
+  };
+
+  const handleSkillToggle = (skill: string) => {
+    setSelectedSkills((prev) =>
+      prev.includes(skill) ? prev.filter((s) => s !== skill) : [...prev, skill]
+    );
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    if (
+      !formData.fullName ||
+      !formData.email ||
+      !formData.password ||
+      !formData.major
+    ) {
+      setError("Semua kolom wajib diisi.");
+      return;
+    }
+    if (formData.password !== formData.confirmPassword) {
+      setError("Password dan konfirmasi password tidak cocok.");
+      return;
+    }
+    if (selectedSkills.length === 0) {
+      setError("Pilih minimal satu skill.");
+      return;
+    }
+    if (!formData.termsAccepted) {
+      setError("Anda harus menyetujui Syarat & Ketentuan.");
+      return;
+    }
+    console.log("Data yang akan dikirim:", {
+      ...formData,
+      skills: selectedSkills,
+    });
+    onSuccess();
+  };
+
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>DAFTAR AKUN PATHERA</h1>
+      <p className={styles.subtitle}>Mohon lengkapi formulir di bawah ini.</p>
+      <form onSubmit={handleSubmit}>
+        {/* ... input nama dan email ... */}
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Nama Lengkap</label>
+          <input
+            type="text"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
+            placeholder="Masukkan Nama Anda"
+            className={styles.input}
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Masukkan E-mail Anda"
+            className={styles.input}
+          />
+        </div>
+        <div className={styles.passwordGroup}>
+          <div>
+            <label className={styles.label}>Password</label>
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              placeholder="Masukkan Password"
+              className={styles.input}
+            />
+          </div>
+          <div>
+            <label className={styles.label}>Ulangi Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              placeholder="Konfirmasi Password"
+              className={styles.input}
+            />
+          </div>
+        </div>
+
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Jurusan</label>
+          {/* PERBAIKAN UTAMA DI SINI */}
+          <select
+            name="major"
+            value={formData.major}
+            onChange={handleChange}
+            className={`${styles.select} ${
+              !formData.major ? styles.selectPlaceholder : ""
+            }`}
+          >
+            <option value="" disabled>
+              Pilih Jurusan Anda
+            </option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+            <option value="Akuntansi">Akuntansi</option>
+            <option value="Psikologi">Psikologi</option>
+          </select>
+        </div>
+
+        {/* ... sisa form ... */}
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Skill</label>
+          <div className={styles.skillContainer}>
+            {skillOptions.map((skill) => (
+              <button
+                type="button"
+                key={skill}
+                onClick={() => handleSkillToggle(skill)}
+                className={`${styles.skillButton} ${
+                  selectedSkills.includes(skill) ? styles.skillButtonActive : ""
+                }`}
+              >
+                {skill}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className={styles.checkboxContainer}>
+          <input
+            type="checkbox"
+            name="termsAccepted"
+            checked={formData.termsAccepted}
+            onChange={handleChange}
+          />
+          <span>
+            Dengan mendaftar, Anda menyetujui <a href="#">Syarat & Ketentuan</a>{" "}
+            serta <a href="#">Kebijakan Privasi</a> kami.
+          </span>
+        </div>
+        {error && <p className={styles.error}>{error}</p>}
+        <button type="submit" className={styles.submitButton}>
+          DAFTAR
+        </button>
+      </form>
+      <p className={styles.loginLink}>
+        Sudah Punya Akun? <Link href="/login">Masuk</Link>
+      </p>
+    </div>
+  );
+}
