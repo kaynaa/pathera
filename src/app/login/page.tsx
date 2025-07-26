@@ -34,16 +34,6 @@ export default function LoginPage() {
         <div className={styles.loginCard}>
           {/* Kolom Kiri: Ilustrasi */}
           <div className={styles.illustrationSection}>
-            {/* <Image
-              src="/pathera-logo.png" // Ganti dengan path logo Anda
-              alt="Pathera Logo"
-              width={80}
-              height={80}
-              className={styles.logo}
-            />
-            <h2 className={styles.tagline}>
-              Temukan Jalur Karier Impianmu Bersama Kami!
-            </h2> */}
             <Image
               src="/signup-illustration.png" // Gambar ilustrasi yang sama dengan sign up
               alt="Login Illustration"

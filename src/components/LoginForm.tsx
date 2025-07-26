@@ -38,7 +38,7 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
         <div className={styles.formGroup}>
           <label className={styles.label}>E-mail</label>
           <input
-            type="email"ch
+            type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Masukkan E-mail Anda"

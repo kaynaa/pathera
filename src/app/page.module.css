@@ -1,0 +1,19 @@
+/* src/app/page.module.css */
+
+.pageContainer {
+    background-color: #ffffff;
+}
+
+.devToggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0A2647;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+}

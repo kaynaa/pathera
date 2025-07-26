@@ -122,12 +122,11 @@
 @media (min-width: 768px) {
 
     .title {
-            text-align: left;
-            /* PERBAIKAN: Properti dipindahkan ke sini agar hanya aktif di desktop */
-            white-space: nowrap;
-        }
-    
-        .subtitle {
-            text-align: left;
-        }
+        text-align: left;
+        /* PERBAIKAN: Properti dipindahkan ke sini agar hanya aktif di desktop */
+        white-space: nowrap;
+    }
+    .subtitle {
+        text-align: left;
+    }
 }

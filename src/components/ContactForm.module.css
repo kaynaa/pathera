@@ -1,0 +1,73 @@
+/* src/components/ContactForm.module.css */
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A2647;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #21272A;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #64748B;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.button {
+    width: 100%;
+    background-color: #0A2647;
+    color: white;
+    padding: 0.875rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
