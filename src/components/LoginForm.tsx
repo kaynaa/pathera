@@ -3,8 +3,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { signInWithEmailAndPassword } from "firebase/auth"; // Impor fungsi login
+import { auth } from "../firebase"; // Impor dari file konfigurasi kita
 import styles from "./LoginForm.module.css";
-import { Eye, EyeOff } from "lucide-react"; // Menggunakan ikon dari library
+import { Eye, EyeOff } from "lucide-react";
 
 type LoginFormProps = {
   onSuccess: () => void;
@@ -15,18 +17,41 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false); // State untuk loading
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setIsLoading(true);
 
+    // Validasi frontend
     if (!email || !password) {
       setError("Email dan Password wajib diisi.");
+      setIsLoading(false);
       return;
     }
 
-    console.log("Login attempt with:", { email, password });
-    onSuccess();
+    try {
+      // PERBAIKAN: Memanggil fungsi login dari Firebase
+      await signInWithEmailAndPassword(auth, email, password);
+
+      // Jika tidak ada error, berarti login berhasil
+      onSuccess();
+    } catch (error: any) {
+      // Tangani error dari Firebase
+      if (
+        error.code === "auth/user-not-found" ||
+        error.code === "auth/wrong-password" ||
+        error.code === "auth/invalid-credential"
+      ) {
+        setError("Email atau password yang Anda masukkan salah.");
+      } else {
+        setError("Terjadi kesalahan. Coba lagi nanti.");
+      }
+      console.error("Error signing in:", error);
+    } finally {
+      setIsLoading(false); // Hentikan loading
+    }
   };
 
   return (
@@ -68,8 +93,13 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
 
         {error && <p className={styles.error}>{error}</p>}
 
-        <button type="submit" className={styles.submitButton}>
-          LOGIN
+        {/* PERBAIKAN: Tombol sekarang memiliki state loading */}
+        <button
+          type="submit"
+          className={styles.submitButton}
+          disabled={isLoading}
+        >
+          {isLoading ? "Memproses..." : "LOGIN"}
         </button>
       </form>
 
