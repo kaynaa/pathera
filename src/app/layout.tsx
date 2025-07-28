@@ -1,10 +1,9 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-// 1. Impor font Montserrat dari Google
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from "@/context/AuthContext"; // <-- Impor AuthProvider
 
-// 2. Konfigurasi font dengan ketebalan yang dibutuhkan
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -22,8 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* 3. Terapkan class font ke body */}
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        {/* PERBAIKAN: Membungkus children dengan AuthProvider */}
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }
