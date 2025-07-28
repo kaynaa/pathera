@@ -7,6 +7,7 @@ import HeroGuest from "@/components/HeroGuest";
 import HeroUser from "@/components/HeroUser";
 import Features from "@/components/Features";
 import ContactForm from "@/components/ContactForm";
+import Header from "@/components/Header";
 // import Footer from "@/components/Footer"; // <-- Dimatikan sementara, tunggu buatan Kayna
 import styles from "./page.module.css";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
   // Ganti nilai ini menjadi `true` untuk melihat tampilan setelah login
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const userName = "Amel Putri"; // Contoh nama pengguna
+  const pageName = "home"; // Nama halaman untuk menentukan link aktif
 
   return (
     <div className={styles.pageContainer}>
@@ -25,7 +27,7 @@ export default function HomePage() {
         Toggle Login State
       </button>
 
-      {/* <Header isLoggedIn={isLoggedIn} userName={userName} /> */}
+      <Header isLoggedIn={isLoggedIn} pageName={pageName} userName={userName} />
 
       <main>
         {isLoggedIn ? <HeroUser userName={userName} /> : <HeroGuest />}
