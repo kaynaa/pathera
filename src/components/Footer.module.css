@@ -1,0 +1,18 @@
+.footer {
+    width: 1440;
+    height: 332;
+    opacity: 1;
+    background: #023047;
+    display: flex;
+    flex-direction: column; 
+}
+
+.copyright{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: justify;
+}
