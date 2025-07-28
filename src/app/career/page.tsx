@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/app/career/page.tsx
 "use client";
 
@@ -81,3 +82,10 @@ export default function CareerPage() {
     </>
   );
 }
+=======
+export default function CareerPage() {
+    <div>
+        <span>Career Page</span>
+    </div>
+}
+>>>>>>> 82a60650941a6a27d9c8c8e5c6f4bc24855af687

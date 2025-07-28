@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext"; // <-- Impor hook useAuth
 import { db } from "@/firebase"; // <-- Impor database Firestore
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
 import HeroGuest from "@/components/HeroGuest";
 import HeroUser from "@/components/HeroUser";
 import Features from "@/components/Features";
 import ContactForm from "@/components/ContactForm";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
 // Tipe data untuk data pengguna dari Firestore
@@ -22,6 +22,9 @@ export default function HomePage() {
   // PERBAIKAN: Menggunakan state dari AuthContext, bukan useState lokal
   const { user, isLoading } = useAuth();
   const [userData, setUserData] = useState<UserData | null>(null);
+
+  // State untuk toggle login status (hanya untuk development)
+  const [devIsLoggedIn, setDevIsLoggedIn] = useState(false);
 
   // Efek untuk mengambil data dari Firestore saat pengguna login
   useEffect(() => {
@@ -50,9 +53,17 @@ export default function HomePage() {
 
   return (
     <div className={styles.pageContainer}>
-      {/* <Header isLoggedIn={!!user} userName={userData?.fullName || ""} /> */}
-
+      {/* <Header isLoggedIn={!!user} pageName="home" userName={userData?.fullName || ""} /> */}
+      {/* Menggunakan toggle login untuk development */}
+      <Header isLoggedIn={devIsLoggedIn} pageName="home" userName="Amel" />
       <main>
+        {/* Toggle sign-in state for development purposes: */}
+        <button
+          onClick={() => setDevIsLoggedIn(!devIsLoggedIn)}
+          className={styles.devToggleButton}
+        >
+          Toggle Login State
+        </button>
         {/* PERBAIKAN: Menampilkan komponen berdasarkan 'user' dari useAuth */}
         {user && userData ? (
           <HeroUser userName={userData.fullName} />
@@ -63,8 +74,8 @@ export default function HomePage() {
         <Features />
         <ContactForm />
       </main>
-
       {/* <Footer /> */}
+      
     </div>
   );
 }
