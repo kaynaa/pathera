@@ -1,0 +1,139 @@
+/* src/components/CareerForm.module.css */
+.formContainer {
+    background-color: white;
+    padding: 3rem;
+    /* Padding diperbesar */
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A2647;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #64748B;
+    text-align: center;
+    margin-top: 0.75rem;
+    /* Jarak diperkecil */
+    margin-bottom: 3rem;
+    /* Jarak diperbesar */
+}
+
+.formGroup {
+    margin-bottom: 2.5rem;
+    /* Jarak antar grup form diperbesar */
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    /* Jarak dari label ke input diperkecil */
+}
+
+.labelNote {
+    font-weight: 400;
+    color: #64748B;
+}
+
+.labelSubtext {
+    font-weight: 400;
+    color: #21272A;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #64748B;
+    font-weight: 400;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2em;
+}
+
+/* Style untuk teks yang ditampilkan saat jurusan sudah dipilih */
+.select.selected {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #334155;
+    /* Warna diubah menjadi lebih gelap agar underline terlihat jelas */
+}
+
+/* PERBAIKAN: Menyederhanakan style untuk option di dalam daftar dropdown */
+.select option {
+    background: white;
+    /* Mengatur latar belakang option menjadi putih */
+    color: #334155;
+    font-weight: 600;
+    /* Catatan: Highlight abu-abu/biru saat hover/selected adalah perilaku bawaan browser */
+    /* dan seringkali tidak bisa diubah dengan CSS standar untuk elemen <option> */
+}
+
+
+.errorText {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.interestGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .interestGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.interestButton {
+    padding: 0.75rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    color: #334155;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.interestButton.active {
+    background-color: #0A2647;
+    color: white;
+    border-color: #0A2647;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #0A2647;
+    color: white;
+    padding: 0.875rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+}

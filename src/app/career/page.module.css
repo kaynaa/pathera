@@ -1,0 +1,12 @@
+/* src/app/career/page.module.css */
+.main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8FAFC;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}

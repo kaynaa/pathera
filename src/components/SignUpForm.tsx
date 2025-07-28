@@ -105,12 +105,11 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
 
       // 3. Jika berhasil, panggil onSuccess
       onSuccess();
-
     } catch (error: any) {
       // Tangani error dari Firebase
-      if (error.code === 'auth/email-already-in-use') {
+      if (error.code === "auth/email-already-in-use") {
         setError("Email ini sudah terdaftar.");
-      } else if (error.code === 'auth/weak-password') {
+      } else if (error.code === "auth/weak-password") {
         setError("Password terlalu lemah. Minimal 6 karakter.");
       } else {
         setError("Terjadi kesalahan. Coba lagi nanti.");
@@ -229,7 +228,8 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
         <button
           type="submit"
           className={styles.submitButton}
-          disabled={isLoading}>
+          disabled={isLoading}
+        >
           {isLoading ? "Mendaftarkan..." : "DAFTAR"}
           {/* DAFTAR */}
         </button>
