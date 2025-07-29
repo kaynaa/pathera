@@ -52,26 +52,12 @@ export default function ProfilePage() {
   return (
     <main>
       <Header isLoggedIn={true} pageName="profile" userName={userData?.fullName} />
+
+      {/* Profile Card */}
       <div className={styles.main}>
-        <div className={styles.MyProfile}>Profil Saya</div>
+        <div className={styles.MyProfile}>Edit Profil</div>
         <div className="mb-6">Kelola informasi pribadi dan preferensi anda</div>
         <div className={styles.profileCard}>
-            <button 
-                className={styles.editButton}
-                onClick={() => {
-                    const btn = document.getElementById("myButton");
-                    btn?.classList.add("clicked");
-                    setTimeout(() => router.push("/profile/edit"), 200);
-                }}
-            >   
-            <div className="flex flex-row align-center justify-center gap-3">
-                <div>
-                    <img src="/profile-icons/pen.png" className="h-[25px] w-[25px]" />
-                </div>
-                <div className="font-bold text-[14px]">Edit Profil</div>
-            </div>
-            </button>
-
             <div className={styles.profileContent}>
                 <img src="/profile-icons/user-circle.png" className={styles.profileIcons} />
                 <div>
@@ -121,6 +107,9 @@ export default function ProfilePage() {
       </div>
 
       <Footer />
+
+      
+    
     </main>
   );
 }
