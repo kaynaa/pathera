@@ -75,7 +75,6 @@ export default function HomePage() {
         <ContactForm />
       </main>
       <Footer />
-      
     </div>
   );
 }
