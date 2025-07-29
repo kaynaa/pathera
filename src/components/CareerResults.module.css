@@ -39,7 +39,7 @@
 .jobTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1E293B;
+    color: #1E2B3B;
 }
 
 .jobDescription {
@@ -59,18 +59,11 @@
     margin-bottom: 1rem;
 }
 
-.skillTags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.skillTag {
-    background-color: #F1F5F9;
-    color: #475569;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
+/* PERBAIKAN: Style untuk teks skill yang baru */
+.skillText {
+    font-style: italic;
+    color: #64748B;
+    line-height: 1.6;
 }
 
 .courseGrid {

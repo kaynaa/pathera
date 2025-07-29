@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // src/app/career/page.tsx
 "use client";
 
@@ -33,6 +32,8 @@ export default function CareerPage() {
   // State untuk menyimpan hasil prediksi yang dipilih
   const [predictionResult, setPredictionResult] =
     useState<PredictionResult | null>(null);
+  // State untuk menyimpan minat yang dipilih untuk ditampilkan di hasil
+  const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
 
   // Mengambil data dari JSON saat halaman dimuat
   useEffect(() => {
@@ -43,20 +44,24 @@ export default function CareerPage() {
 
   // Fungsi untuk mencari prediksi berdasarkan input form
   const handleSearch = (major: string, interests: string[]) => {
-    // Logika pencarian sederhana: cari yang cocok dengan jurusan dan minat pertama
-    const result = allPredictions.find(
-      (p) => p.query_major === major && interests.includes(p.query_dream_job)
-    );
+    // Simpan minat yang dipilih
+    setSelectedInterests(interests);
 
-    if (result) {
-      setPredictionResult(result);
-    } else {
-      // Fallback jika tidak ada yang cocok persis
-      const fallbackResult = allPredictions.find(
-        (p) => p.query_major === major
+    // Logika pencarian yang lebih baik
+    let result = null;
+    if (interests.length > 0) {
+      // Cari yang cocok dengan jurusan dan salah satu minat
+      result = allPredictions.find(
+        (p) => p.query_major === major && interests.includes(p.query_dream_job)
       );
-      setPredictionResult(fallbackResult || null);
     }
+
+    // Jika tidak ada hasil atau tidak ada minat yang dipilih, cari fallback
+    if (!result) {
+      result = allPredictions.find((p) => p.query_major === major) || null;
+    }
+
+    setPredictionResult(result);
   };
 
   // Fungsi untuk kembali ke form dari halaman hasil
@@ -66,12 +71,13 @@ export default function CareerPage() {
 
   return (
     <>
-      {/* Di sini nanti bisa ditambahkan <Header /> dan <Footer /> */}
+      {/* Header telah dihapus dari sini */}
       <main className={styles.main}>
         <div className={styles.container}>
           {predictionResult ? (
             <CareerResults
               result={predictionResult}
+              selectedInterests={selectedInterests}
               onBack={handleBackToForm}
             />
           ) : (
@@ -79,13 +85,7 @@ export default function CareerPage() {
           )}
         </div>
       </main>
+      {/* <Footer /> */}
     </>
   );
 }
-=======
-export default function CareerPage() {
-    <div>
-        <span>Career Page</span>
-    </div>
-}
->>>>>>> 82a60650941a6a27d9c8c8e5c6f4bc24855af687

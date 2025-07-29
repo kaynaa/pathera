@@ -65,10 +65,18 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
             <option value="" disabled>
               Pilih Jurusan Anda
             </option>
+            {/* PERBAIKAN: Daftar jurusan diperbarui sesuai JSON */}
             <option value="Teknik Informatika">Teknik Informatika</option>
-            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Komputer">Teknik Komputer</option>
+            <option value="Ilmu Komputer">Ilmu Komputer</option>
+            <option value="Manajemen">Manajemen</option>
             <option value="Akuntansi">Akuntansi</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Matematika">Matematika</option>
             <option value="Psikologi">Psikologi</option>
+            <option value="Komunikasi">Komunikasi</option>
+            <option value="Desain Grafis">Desain Grafis</option>
           </select>
           {error && <p className={styles.errorText}>{error}</p>}
         </div>
@@ -78,7 +86,6 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
             Minat Karier Anda{" "}
             <span className={styles.labelNote}>(Bisa pilih lebih dari 1)</span>
           </label>
-          {/* PERBAIKAN: Menambahkan kalimat baru */}
           <p className={styles.labelSubtext}>
             Pilih area karier yang menarik bagi Anda untuk prediksi yang lebih
             akurat
