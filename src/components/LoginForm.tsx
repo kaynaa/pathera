@@ -3,8 +3,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { signInWithEmailAndPassword } from "firebase/auth"; // Impor fungsi login
-import { auth } from "../firebase"; // Impor dari file konfigurasi kita
+// PERBAIKAN: Impor fungsi-fungsi baru dari Firebase
+import {
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+  getAdditionalUserInfo,
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "../firebase";
 import styles from "./LoginForm.module.css";
 import { Eye, EyeOff } from "lucide-react";
 
@@ -17,14 +24,13 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // State untuk loading
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setIsLoading(true);
 
-    // Validasi frontend
     if (!email || !password) {
       setError("Email dan Password wajib diisi.");
       setIsLoading(false);
@@ -32,13 +38,9 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
     }
 
     try {
-      // PERBAIKAN: Memanggil fungsi login dari Firebase
       await signInWithEmailAndPassword(auth, email, password);
-
-      // Jika tidak ada error, berarti login berhasil
       onSuccess();
     } catch (error: any) {
-      // Tangani error dari Firebase
       if (
         error.code === "auth/user-not-found" ||
         error.code === "auth/wrong-password" ||
@@ -50,16 +52,62 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       }
       console.error("Error signing in:", error);
     } finally {
-      setIsLoading(false); // Hentikan loading
+      setIsLoading(false);
+    }
+  };
+
+  // PERBAIKAN: Fungsi baru untuk menangani login dengan Google
+  const handleGoogleLogin = async () => {
+    const provider = new GoogleAuthProvider();
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      // Cek apakah ini pengguna baru
+      const additionalInfo = getAdditionalUserInfo(result);
+      if (additionalInfo?.isNewUser) {
+        // Jika pengguna baru, simpan datanya ke Firestore
+        await setDoc(doc(db, "users", user.uid), {
+          fullName: user.displayName, // Ambil nama dari akun Google
+          email: user.email,
+          major: "", // Jurusan bisa diisi nanti di halaman profil
+          skills: [],
+        });
+      }
+
+      onSuccess(); // Panggil onSuccess untuk redirect
+    } catch (error: any) {
+      setError("Gagal login dengan Google. Coba lagi.");
+      console.error("Google sign in error:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>SELAMAT DATANG KEMBALI</h1>
-      <p className={styles.subtitle}>Masukkan email dan password anda</p>
+      <p className={styles.subtitle}>Masukkan email dan password anda.</p>
+
+      {/* PERBAIKAN: Tombol Login dengan Google ditambahkan */}
+      <button
+        onClick={handleGoogleLogin}
+        className={styles.googleButton}
+        disabled={isLoading}
+      >
+        <img src="/google-icon.svg" alt="Google icon" width={20} height={20} />
+        <span>Masuk dengan Google</span>
+      </button>
+
+      <div className={styles.divider}>
+        <span>ATAU</span>
+      </div>
 
       <form onSubmit={handleSubmit}>
+        {/* ... form email dan password tetap sama ... */}
         <div className={styles.formGroup}>
           <label className={styles.label}>E-mail</label>
           <input
@@ -93,7 +141,6 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
 
         {error && <p className={styles.error}>{error}</p>}
 
-        {/* PERBAIKAN: Tombol sekarang memiliki state loading */}
         <button
           type="submit"
           className={styles.submitButton}
@@ -104,7 +151,7 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       </form>
 
       <p className={styles.signupLink}>
-        Tidak Punya Akun? <Link href="/signup">Daftar Disini</Link>
+        Belum Punya Akun? <Link href="/signup">Daftar</Link>
       </p>
     </div>
   );

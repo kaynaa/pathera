@@ -3,10 +3,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./SignUpForm.module.css";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+// PERBAIKAN: Impor fungsi sendEmailVerification
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../firebase"; // Impor dari file konfigurasi kita
+import styles from "./SignUpForm.module.css";
 
 type SignUpFormProps = { onSuccess: () => void };
 
@@ -21,7 +25,7 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
   });
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // State untuk loading
+  const [isLoading, setIsLoading] = useState(false);
   const skillOptions = [
     "Design",
     "Coding",
@@ -56,6 +60,7 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
     e.preventDefault();
     setError("");
     setIsLoading(true);
+
     // Validasi frontend
     if (
       !formData.fullName ||
@@ -69,21 +74,19 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
     }
     if (formData.password !== formData.confirmPassword) {
       setError("Password dan konfirmasi password tidak cocok.");
+      setIsLoading(false);
       return;
     }
     if (selectedSkills.length === 0) {
       setError("Pilih minimal satu skill.");
+      setIsLoading(false);
       return;
     }
     if (!formData.termsAccepted) {
       setError("Anda harus menyetujui Syarat & Ketentuan.");
+      setIsLoading(false);
       return;
     }
-    console.log("Data yang akan dikirim:", {
-      ...formData,
-      skills: selectedSkills,
-    });
-    onSuccess();
 
     try {
       // 1. Buat pengguna baru di Firebase Authentication
@@ -94,8 +97,10 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
       );
       const user = userCredential.user;
 
+      // PERBAIKAN: Kirim email verifikasi ke pengguna yang baru dibuat
+      await sendEmailVerification(user);
+
       // 2. Simpan data tambahan ke Firestore
-      // Kita menggunakan UID (ID unik pengguna) sebagai nama dokumen
       await setDoc(doc(db, "users", user.uid), {
         fullName: formData.fullName,
         email: formData.email,
@@ -103,7 +108,8 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
         skills: selectedSkills,
       });
 
-      // 3. Jika berhasil, panggil onSuccess
+      // 3. Jika berhasil, panggil onSuccess untuk menampilkan pesan sukses
+      // Anda bisa mengubah pesan di komponen SuccessAlert menjadi "Pendaftaran berhasil, silakan cek email Anda untuk verifikasi."
       onSuccess();
     } catch (error: any) {
       // Tangani error dari Firebase
@@ -125,7 +131,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
       <h1 className={styles.title}>DAFTAR AKUN PATHERA</h1>
       <p className={styles.subtitle}>Mohon lengkapi formulir di bawah ini.</p>
       <form onSubmit={handleSubmit}>
-        {/* ... input nama dan email ... */}
         <div className={styles.formGroup}>
           <label className={styles.label}>Nama Lengkap</label>
           <input
@@ -175,7 +180,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
 
         <div className={styles.formGroup}>
           <label className={styles.label}>Jurusan</label>
-          {/* PERBAIKAN UTAMA DI SINI */}
           <select
             name="major"
             value={formData.major}
@@ -187,14 +191,21 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
             <option value="" disabled>
               Pilih Jurusan Anda
             </option>
+            {/* Daftar jurusan yang sudah disamakan */}
             <option value="Teknik Informatika">Teknik Informatika</option>
-            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Komputer">Teknik Komputer</option>
+            <option value="Ilmu Komputer">Ilmu Komputer</option>
+            <option value="Manajemen">Manajemen</option>
             <option value="Akuntansi">Akuntansi</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Matematika">Matematika</option>
             <option value="Psikologi">Psikologi</option>
+            <option value="Komunikasi">Komunikasi</option>
+            <option value="Desain Grafis">Desain Grafis</option>
           </select>
         </div>
 
-        {/* ... sisa form ... */}
         <div className={styles.formGroup}>
           <label className={styles.label}>Skill</label>
           <div className={styles.skillContainer}>
@@ -231,7 +242,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
           disabled={isLoading}
         >
           {isLoading ? "Mendaftarkan..." : "DAFTAR"}
-          {/* DAFTAR */}
         </button>
       </form>
       <p className={styles.loginLink}>

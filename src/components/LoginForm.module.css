@@ -8,36 +8,80 @@
 }
 
 .title {
-    font-size: 1.75rem;
-    /* 28px */
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1E293B;
-    text-align:center;
+    text-align: center;
     margin-bottom: 0.5rem;
-    
 }
 
 .subtitle {
     color: #64748B;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    /* Jarak dikurangi */
     text-align: center;
     font-size: 1rem;
 }
 
+/* PERBAIKAN: Style untuk tombol Google */
+.googleButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 600;
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.googleButton:hover {
+    background-color: #F8FAFC;
+}
+
+/* PERBAIKAN: Style untuk garis pemisah "ATAU" */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #94A3B8;
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .5em;
+}
+
+
 .formGroup {
     margin-bottom: 1.5rem;
-    /* Jarak lebih besar antar input */
 }
 
 .label {
     display: block;
     font-weight: 700;
-    /* Sedikit lebih tipis */
     margin-bottom: 0.5rem;
     color: #334155;
 }
 
-/* Wrapper untuk input password dan ikon */
 .passwordWrapper {
     position: relative;
 }
@@ -45,9 +89,7 @@
 .input {
     width: 100%;
     padding: 0.75rem 1rem;
-    /* Sedikit lebih tinggi */
     padding-right: 3rem;
-    /* Beri ruang untuk ikon */
     border: 1px solid #CBD5E1;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -67,7 +109,6 @@
     box-shadow: 0 0 0 2px rgba(10, 38, 71, 0.2);
 }
 
-/* Tombol untuk toggle password */
 .togglePasswordButton {
     position: absolute;
     top: 50%;
@@ -95,7 +136,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 1rem;
+    border-radius: 8px;
 }
 
 .submitButton:hover {
@@ -121,11 +162,7 @@
 
 @media (min-width: 768px) {
 
-    .title {
-        text-align: left;
-        /* PERBAIKAN: Properti dipindahkan ke sini agar hanya aktif di desktop */
-        white-space: nowrap;
-    }
+    .title,
     .subtitle {
         text-align: left;
     }
