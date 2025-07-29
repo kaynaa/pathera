@@ -1,10 +1,74 @@
 .footer {
-    width: 1440;
-    height: 332;
-    opacity: 1;
+    width: 100%;
+    height: 300;
     background: #023047;
     display: flex;
     flex-direction: column; 
+    justify-items: start;
+    color: #ffffff;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+    opacity: 1;
+}
+
+.footerTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    text-align: start;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1.8fr 1.25fr repeat(2, 1fr);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+    width: 90%;
+    align-items: center;
+}
+
+.footerTextContainer {
+    display: grid;
+    grid-template-columns: 1.8fr 1.25fr repeat(2, 1fr);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+    width: 90%;
+    align-items: start;
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+
+.footerText {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.line {
+  border-top: 1px solid #ffffff;
+  width: 90%; 
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .copyright{
@@ -15,4 +79,22 @@
     line-height: 140%;
     letter-spacing: 0%;
     text-align: justify;
+    padding-top: 20px;
 }
+
+/* .title_1 {
+    position: relative;
+    width: 166;
+    height: 40;
+    opacity: 1;
+    top: 0px;
+    left: 200px;
+}
+
+.title_2 {
+    width: 259;
+    height: 20;
+    opacity: 1;
+    top: 71px;
+    left: 554px;
+} */
