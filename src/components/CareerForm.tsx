@@ -47,13 +47,9 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
   };
 
   return (
+    // PERBAIKAN: Div ini sekarang menjadi kotak pembungkus form
     <div className={styles.formContainer}>
-      <h1 className={styles.title}>Career Prediction</h1>
-      <p className={styles.subtitle}>
-        Temukan beberapa jalur karier potensial yang sesuai dengan jurusan dan
-        minatmu.
-      </p>
-
+      {/* Judul dan subjudul telah dipindahkan ke page.tsx */}
       <form onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
           <label className={styles.label}>Jurusan Anda</label>
@@ -66,9 +62,16 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
               Pilih Jurusan Anda
             </option>
             <option value="Teknik Informatika">Teknik Informatika</option>
-            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Komputer">Teknik Komputer</option>
+            <option value="Ilmu Komputer">Ilmu Komputer</option>
+            <option value="Manajemen">Manajemen</option>
             <option value="Akuntansi">Akuntansi</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Matematika">Matematika</option>
             <option value="Psikologi">Psikologi</option>
+            <option value="Komunikasi">Komunikasi</option>
+            <option value="Desain Grafis">Desain Grafis</option>
           </select>
           {error && <p className={styles.errorText}>{error}</p>}
         </div>
@@ -78,7 +81,6 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
             Minat Karier Anda{" "}
             <span className={styles.labelNote}>(Bisa pilih lebih dari 1)</span>
           </label>
-          {/* PERBAIKAN: Menambahkan kalimat baru */}
           <p className={styles.labelSubtext}>
             Pilih area karier yang menarik bagi Anda untuk prediksi yang lebih
             akurat
