@@ -47,13 +47,9 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
   };
 
   return (
+    // PERBAIKAN: Div ini sekarang menjadi kotak pembungkus form
     <div className={styles.formContainer}>
-      <h1 className={styles.title}>Career Prediction</h1>
-      <p className={styles.subtitle}>
-        Temukan beberapa jalur karier potensial yang sesuai dengan jurusan dan
-        minatmu.
-      </p>
-
+      {/* Judul dan subjudul telah dipindahkan ke page.tsx */}
       <form onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
           <label className={styles.label}>Jurusan Anda</label>

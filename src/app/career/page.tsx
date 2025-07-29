@@ -81,7 +81,15 @@ export default function CareerPage() {
               onBack={handleBackToForm}
             />
           ) : (
-            <CareerForm onSearch={handleSearch} />
+            // PERBAIKAN: Judul dan subjudul sekarang ada di sini, di luar form
+            <>
+              <h1 className={styles.pageTitle}>Career Prediction</h1>
+              <p className={styles.pageSubtitle}>
+                Temukan beberapa jalur karier potensial yang sesuai dengan
+                jurusan dan minatmu.
+              </p>
+              <CareerForm onSearch={handleSearch} />
+            </>
           )}
         </div>
       </main>
