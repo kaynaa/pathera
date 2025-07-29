@@ -4,10 +4,12 @@ import React from "react";
 import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SuccessUpdateAlert from "@/components/SuccessUpdateAlert";
 import { getFirestore, doc, getDoc, updateDoc } from "firebase/firestore";
-import { useAuth } from "@/context/AuthContext"; 
-import { db } from "@/firebase"; 
+import { useAuth } from "@/context/AuthContext";
+import { db } from "@/firebase";
 import { useState, useEffect } from "react";
+import Link from 'next/link';
 
 type UserData = {
   fullName: string;
@@ -17,10 +19,44 @@ type UserData = {
 };
 
 export default function ProfilePage() {
-  const { user, isLoading } = useAuth();
+  const db = getFirestore();
+  const { user } = useAuth();
   const [userData, setUserData] = useState<UserData | null>(null);
+  const [selectedCareer, setSelectedCareer] = useState<string[]>([]);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false); // State untuk loading
+  const [showSuccess, setShowSuccess] = useState(false) //state untuk alert
+  const majorOptions = [
+    "Teknik Informatika",
+    "Ilmu Komunikasi",
+    "Akuntansi",
+    "Psikologi",
+  ];
+  const skillOptions = [
+    "Design",
+    "Coding",
+    "Management",
+    "Marketing",
+    "Accounting",
+    "Data Analyst",
+    "Relation",
+  ];
+  const careerOptions = [
+    "Data Analyst",
+    "QA Tester",
+    "Backend Developer",
+    "Copywriter",
+    "Auditor",
+    "Social Media Strategist",
+    "Public Relations",
+    "Tax Consulting Relations",
+    "Financial Analyst",
+    "HR Generalist",
+    "Career Counselor",
+    "User Researcher",
+  ];
 
-  // Efek untuk mengambil data dari Firestore saat pengguna login
+  // Efek untuk mengambil data dari Firestore
   useEffect(() => {
     const fetchUserData = async () => {
       if (user) {
@@ -41,68 +77,143 @@ export default function ProfilePage() {
     fetchUserData();
   }, [user]); // Jalankan efek ini setiap kali 'user' berubah
 
-  // Menampilkan pesan loading saat AuthContext sedang memeriksa status login
   if (isLoading) {
     return <div className={styles.loading}>Loading...</div>;
   }
 
+  const handleCareerToggle = (career: string) => {
+    setSelectedCareer((prev) =>
+      prev.includes(career)
+        ? prev.filter((c) => c !== career)
+        : [...prev, career]
+    );
+  };
+
+  async function updateProfile(formData: FormData) {
+    if (!user) return;
+
+    const fullName = formData.get("fullName") as string;
+    const email = formData.get("email") as string;
+    const major = formData.get("major") as string;
+
+    const userRef = doc(db, "users", user.uid);
+
+    await updateDoc(userRef, {
+      fullName,
+      email,
+      major,
+      selectedCareer,
+    });
+
+    // alert("Profile updated!");
+    setShowSuccess(true);
+  }
+
   return (
     <main>
-      <Header isLoggedIn={true} pageName="profile" userName={userData?.fullName} />
+      {showSuccess && <SuccessUpdateAlert />}
+      <Header
+        isLoggedIn={true}
+        pageName="profile"
+        userName={userData?.fullName}
+      />
       <div className={styles.main}>
         <div className={styles.MyProfile}>Edit Profil</div>
         <div className="mb-6">Kelola informasi pribadi dan preferensi anda</div>
         <div className={styles.profileCard}>
-            <div className={styles.profileContent}>
-                <img src="/profile-icons/user-circle.png" className={styles.profileIcons} />
-                <div>
-                    <div className={styles.profileSection}>Informasi Pribadi</div>
-                    <div>Update informasi dasar profil anda</div>
-                </div>
+          <div className={styles.profileContent}>
+            <img
+              src="/profile-icons/user-circle.png"
+              className={styles.profileIcons}
+            />
+            <div>
+              <div className={styles.profileSection}>Informasi Pribadi</div>
+              <div>Update informasi dasar profil anda</div>
             </div>
+          </div>
 
+          {/* Form edit profil */}
+          <form action={updateProfile}>
             <div className={styles.profileContainer}>
+              <div className={styles.editContainer}>
+                <div className={styles.profileSection}>Nama Lengkap</div>
+                <input
+                  type="text"
+                  name="fullName"
+                  className={styles.inputField}
+                  placeholder="Masukkan nama lengkap"
+                  defaultValue={userData?.fullName || ""}
+                />
+              </div>
+              <div className={styles.profileContent}>
                 <div className={styles.editContainer}>
-                    <div className={styles.profileSection}>Nama Lengkap</div>
-                    <input
-                        type="text"
-                        className={styles.inputField}
-                        placeholder="Masukkan nama lengkap"
-                        defaultValue={userData?.fullName || ""}
-                    />
-                </div>                
-                <div className={styles.profileContent}>
-                    <div className={styles.editContainer}>
-                        <div className={styles.profileSection}>Email</div>
-                        <input
-                            type="text"
-                            className={styles.inputField}
-                            placeholder="Masukkan email"
-                            defaultValue={userData?.email || ""}
-                        />
-                    </div>
+                  <div className={styles.profileSection}>Email</div>
+                  <input
+                    type="text"
+                    name="email"
+                    className={styles.inputField}
+                    placeholder="Masukkan email"
+                    defaultValue={userData?.email || ""}
+                  />
                 </div>
+              </div>
             </div>
 
             <div className={styles.editContainer}>
-                <div className={styles.profileSection}>Jurusan</div>
-                <input
-                    type="text"
-                    className={styles.inputField}
-                    placeholder="Masukkan jurusan"
-                    defaultValue={userData?.major || ""}
-                />
+              <div className={styles.profileSection}>Jurusan</div>
+              <select
+                name="major"
+                defaultValue={userData?.major || ""}
+                className={styles.inputField}
+              >
+                <option value="">Pilih Jurusan</option>
+                {majorOptions.map((m) => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+              </select>
             </div>
-            
+            <div className="pb-6"></div>
+
             <div className={styles.editContainer}>
-                <div className={styles.profileSection}>Minat Karir</div>
-                <input
-                    type="text"
-                    className={styles.inputField}
-                    placeholder="Masukkan jurusan"
-                    defaultValue={userData?.major || ""}
-                />
+              <div className={styles.profileSection}>Minat Karir</div>
+              <div className="pb-4"></div>
+              <div className={styles.careerContainer}>
+                {careerOptions.map((career) => (
+                  <button
+                    type="button"
+                    key={career}
+                    onClick={() => handleCareerToggle(career)}
+                    className={`${styles.careerButton} ${
+                      selectedCareer.includes(career)
+                        ? styles.careerButtonActive
+                        : ""
+                    }`}
+                  >
+                    {career}
+                  </button>
+                ))}
+              </div>
             </div>
+            <div className={styles.profileContainer}>
+              <button type="submit" className={styles.submitButton}>
+                <img
+                  src="/profile-icons/save-change.png"
+                  className={styles.otherIcons}
+                />
+                Simpan Perubahan
+              </button>
+
+              <Link href="/profile" className={styles.batal}>
+                <img
+                  src="/profile-icons/cross.png"
+                  className={styles.otherIcons}
+                />
+                Batal
+              </Link>
+            </div>
+          </form>
         </div>
       </div>
 
