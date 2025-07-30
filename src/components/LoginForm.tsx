@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-// PERBAIKAN: Impor fungsi-fungsi baru dari Firebase
 import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
@@ -56,7 +55,6 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
     }
   };
 
-  // PERBAIKAN: Fungsi baru untuk menangani login dengan Google
   const handleGoogleLogin = async () => {
     const provider = new GoogleAuthProvider();
     setIsLoading(true);
@@ -66,10 +64,8 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
 
-      // Cek apakah ini pengguna baru
       const additionalInfo = getAdditionalUserInfo(result);
       if (additionalInfo?.isNewUser) {
-        // Jika pengguna baru, simpan datanya ke Firestore
         await setDoc(doc(db, "users", user.uid), {
           fullName: user.displayName, // Ambil nama dari akun Google
           email: user.email,
@@ -78,7 +74,7 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
         });
       }
 
-      onSuccess(); // Panggil onSuccess untuk redirect
+      onSuccess(); 
     } catch (error: any) {
       setError("Gagal login dengan Google. Coba lagi.");
       console.error("Google sign in error:", error);
@@ -92,7 +88,6 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       <h1 className={styles.title}>SELAMAT DATANG KEMBALI</h1>
       <p className={styles.subtitle}>Masukkan email dan password anda.</p>
 
-      {/* PERBAIKAN: Tombol Login dengan Google ditambahkan */}
       <button
         onClick={handleGoogleLogin}
         className={styles.googleButton}
@@ -136,6 +131,9 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
             >
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
+          </div>
+          <div className={styles.forgotPasswordLink}>
+            <Link href="/forgot-password">Lupa Password?</Link>
           </div>
         </div>
 

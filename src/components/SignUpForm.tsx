@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-// PERBAIKAN: Impor fungsi sendEmailVerification
 import {
   createUserWithEmailAndPassword,
   sendEmailVerification,
@@ -97,22 +96,23 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
       );
       const user = userCredential.user;
 
-      // PERBAIKAN: Kirim email verifikasi ke pengguna yang baru dibuat
       await sendEmailVerification(user);
 
-      // 2. Simpan data tambahan ke Firestore
       await setDoc(doc(db, "users", user.uid), {
         fullName: formData.fullName,
         email: formData.email,
         major: formData.major,
         skills: selectedSkills,
+        notificationPreferences: {
+          email: true,
+          loker: true,
+          training: true,
+          community: true,
+        },
       });
 
-      // 3. Jika berhasil, panggil onSuccess untuk menampilkan pesan sukses
-      // Anda bisa mengubah pesan di komponen SuccessAlert menjadi "Pendaftaran berhasil, silakan cek email Anda untuk verifikasi."
       onSuccess();
     } catch (error: any) {
-      // Tangani error dari Firebase
       if (error.code === "auth/email-already-in-use") {
         setError("Email ini sudah terdaftar.");
       } else if (error.code === "auth/weak-password") {
@@ -122,7 +122,7 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
       }
       console.error("Error signing up:", error);
     } finally {
-      setIsLoading(false); // Hentikan loading
+      setIsLoading(false);
     }
   };
 

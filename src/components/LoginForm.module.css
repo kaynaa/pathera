@@ -160,6 +160,16 @@
     text-decoration: underline;
 }
 
+.forgotPasswordLink {
+    padding:1px;
+    text-align: left;
+    color:#0b7dff;
+}
+
+.forgotPasswordLink:hover{
+    color:#334155;
+}
+
 @media (min-width: 768px) {
 
     .title,
