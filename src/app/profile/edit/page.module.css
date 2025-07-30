@@ -1,0 +1,151 @@
+.main {
+    padding: 3% 5%;
+}
+
+.MyProfile {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: start;
+    color: var(--headline, #21272A);
+    margin-bottom: 20px;
+}
+
+.profileCard{
+    width: 800px;
+    gap: 19px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 20px;
+    border: 1px solid #00000080;
+    box-shadow: 0px 10px 10px 0px #00000033;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+.profileSection {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profileIcons {
+    width: 40px;
+    height: 40px;
+}
+
+.otherIcons {
+    width: 20px;
+    height: 20px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.editContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.inputField {
+    height: 40px;
+    width: 320px;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    background: #D9D9D9;
+    border: 1px solid #697077;
+    margin-top: 10px;
+}
+
+.careerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.careerButton {
+    padding: 0.25rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    background-color: #F9FAFB;
+    color: #64748B;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 700;
+}
+
+.careerButtonActive {
+    /* composes: careerButton; */
+    background-color: #64748B;
+    color: white;
+    border-color: #64748B;
+    font-weight: 700;
+}
+
+.submitButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    height: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 20px;
+    background: var(--Dongker, #023047);
+    border: 1px solid #00000080;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.batal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #00000080;
+    cursor: pointer;
+}

@@ -24,7 +24,7 @@ export default function HomePage() {
   const [userData, setUserData] = useState<UserData | null>(null);
 
   // State untuk toggle login status (hanya untuk development)
-  const [devIsLoggedIn, setDevIsLoggedIn] = useState(false);
+  // const [devIsLoggedIn, setDevIsLoggedIn] = useState(false);
 
   // Efek untuk mengambil data dari Firestore saat pengguna login
   useEffect(() => {
@@ -53,17 +53,19 @@ export default function HomePage() {
 
   return (
     <div className={styles.pageContainer}>
-      {/* <Header isLoggedIn={!!user} pageName="home" userName={userData?.fullName || ""} /> */}
-      {/* Menggunakan toggle login untuk development */}
-      <Header isLoggedIn={devIsLoggedIn} pageName="home" userName="Amel" />
+      <Header isLoggedIn={!!user} pageName="home" userName={userData?.fullName || ""} />
+
+      {/* BErikut ini adalah toggle login untuk development */}
+      {/* <Header isLoggedIn={devIsLoggedIn} pageName="home" userName="Amel" /> */}
       <main>
         {/* Toggle sign-in state for development purposes: */}
-        <button
+        {/* <button
           onClick={() => setDevIsLoggedIn(!devIsLoggedIn)}
           className={styles.devToggleButton}
         >
           Toggle Login State
-        </button>
+        </button> */}
+
         {/* PERBAIKAN: Menampilkan komponen berdasarkan 'user' dari useAuth */}
         {user && userData ? (
           <HeroUser userName={userData.fullName} />
@@ -75,7 +77,6 @@ export default function HomePage() {
         <ContactForm />
       </main>
       <Footer />
-      
     </div>
   );
 }
