@@ -1,15 +1,49 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
 import { Bell, CircleUserRound, ChevronDown } from 'lucide-react';
-
+import { useState, useEffect } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { useAuth } from "@/context/AuthContext";
+import { db } from "@/firebase";
 
 interface HeaderProps {
-    isLoggedIn: boolean;
     pageName: string; // Nama halaman untuk menentukan link aktif
-    userName?: string; // Optional, hanya ada jika pengguna sudah login
 }
 
-export default function Header({ isLoggedIn, pageName, userName }: HeaderProps) {
+type UserData = {
+  fullName: string;
+};
+
+export default function Header({ pageName }: HeaderProps) {
+  const { user, isLoading } = useAuth();
+  const [userData, setUserData] = useState<UserData | null>(null);
+
+  // Efek untuk mengambil data dari Firestore saat pengguna login
+  useEffect(() => {
+    const fetchUserData = async () => {
+      if (user) {
+        // Membuat referensi ke dokumen pengguna di Firestore
+        const userDocRef = doc(db, "users", user.uid);
+        const userDoc = await getDoc(userDocRef);
+
+        if (userDoc.exists()) {
+          // Jika dokumen ada, simpan datanya ke state
+          setUserData(userDoc.data() as UserData);
+        } else {
+          console.log("No such document!");
+        }
+      }
+    };
+
+    fetchUserData();
+  }, [user]); // Jalankan efek ini setiap kali 'user' berubah
+
+  // Menampilkan pesan loading saat AuthContext sedang memeriksa status login
+  if (isLoading) {
+    return <div className={styles.loading}>Loading...</div>;
+  }
+  const isLoggedIn = !!user;
+
   return (
     <div className={styles.header}>
         <div className={styles.left_container}>
@@ -45,7 +79,7 @@ export default function Header({ isLoggedIn, pageName, userName }: HeaderProps) 
                         </Link>
                         {/*To-do: Add dropdown menu for user profile */}
                         <Link href="/profile" className={styles.username_display}>
-                            {userName}
+                            {userData?.fullName || ""}
                             <ChevronDown size={25} />
                         </Link>
                     </div>

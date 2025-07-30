@@ -1,0 +1,82 @@
+.main {
+    padding: 3% 5%;
+}
+
+.MyProfile {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: start;
+    color: var(--headline, #21272A);
+    margin-bottom: 20px;
+}
+
+.profileCard{
+    width: 800px;
+    gap: 19px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 20px;
+    border: 1px solid #00000080;
+    box-shadow: 0px 10px 10px 0px #00000033;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+.profileSection {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profileIcons {
+    width: 40px;
+    height: 40px;
+}
+
+.editButton {
+    opacity: 1;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    border: 1px solid #00000080;
+    position: relative;
+    top: 28px;
+    left: 600px;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    transition: 0.25s;
+    background-color: #dcdcdc;
+}
+
+.toggleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+

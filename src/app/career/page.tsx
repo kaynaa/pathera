@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import CareerForm from "@/components/CareerForm";
 import CareerResults from "@/components/CareerResults";
 import styles from "./page.module.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Tipe data untuk hasil prediksi dari JSON
 export type PredictionResult = {
@@ -71,7 +73,7 @@ export default function CareerPage() {
 
   return (
     <>
-      {/* Header telah dihapus dari sini */}
+      <Header pageName="career" />
       <main className={styles.main}>
         <div className={styles.container}>
           {predictionResult ? (
@@ -93,7 +95,7 @@ export default function CareerPage() {
           )}
         </div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

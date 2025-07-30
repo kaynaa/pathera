@@ -1,0 +1,2324 @@
+[
+  {
+    "query": "Accounting",
+    "results": [
+      {
+        "title": "Accounting 1",
+        "organization": "University of Lausanne",
+        "rating": 4.7,
+        "skills": "Balance Sheet, Income Statement, Cash Flows, Financial Accounting, Financial Statements, Accounting, Bookkeeping, Working Capital, General Accounting, Accrual Accounting, Financial Reporting, Financial Analysis, Ledgers (Accounting), Profit and Loss (P&L) Management, Accounts Payable and Receivable, Reconciliation",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/accounting-1"
+      },
+      {
+        "title": "Introduction to Financial Accounting: The Accounting Cycle",
+        "organization": "University of California, Irvine",
+        "rating": 4.7,
+        "skills": "Ledgers (Accounting), Accounting Systems, Accounting, Month End Closing, Accounting Records, Bookkeeping, Financial Accounting, Financial Statements, General Accounting, General Ledger, Accrual Accounting, Standard Accounting Practices, Financial Reporting, Accruals, Income Statement, Balance Sheet, Revenue Recognition, Business Ethics, Ethical Standards And Conduct, Reconciliation",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/accounting"
+      },
+      {
+        "title": "初級會計學二：資產與負債 (Financial Accounting 102)",
+        "organization": "National Taiwan University",
+        "rating": 0.0,
+        "skills": "Financial Statement Analysis, Accounts Receivable, Financial Statements, Accounts Payable and Receivable, Balance Sheet, Inventory Control, Financial Accounting, Business Economics, Accounting, General Accounting, Property Accounting, Fixed Asset, Generally Accepted Accounting Principles (GAAP), Depreciation, Asset Management",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/-financial-accounting-102"
+      },
+      {
+        "title": "Tally Bookkeeper",
+        "organization": "Tally Education and Distribution Services Private Limited",
+        "rating": 4.6,
+        "skills": "Accounts Payable and Receivable, Accounting, Financial Reporting, Bookkeeping, Accounting Software, Budgeting, Accounting and Finance Software, Financial Accounting, Tax Returns, Data Import/Export, Inventory Management System, Order Management, Tax Management, Tax, General Ledger, Inventory Accounting, Tax Compliance, Billing & Invoicing, Finance, Banking",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/tally-bookkeeper"
+      },
+      {
+        "title": "Fundamentals of Accounting",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 4.6,
+        "skills": "Management Accounting, Income Statement, Financial Statements, Performance Measurement, Balance Sheet, Organizational Strategy, Financial Statement Analysis, Capacity Management, Cost Accounting, Cost Control, Cash Flows, Financial Accounting, Financial Reporting, Financial Analysis, Accounting, Budget Management, Business Metrics, Operational Analysis, Product Management, Strategic Decision-Making",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/accounting-fundamentals"
+      },
+      {
+        "title": "Financial Reporting",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 4.7,
+        "skills": "Balance Sheet, Revenue Recognition, Financial Accounting, Financial Reporting, Depreciation, Financial Statement Analysis, Generally Accepted Accounting Principles (GAAP), Accounts Receivable, Accounting, Inventory Accounting, Income Statement, Financial Statements, Cash Management, Accrual Accounting, Tax Management, Fixed Asset, Cash Flows, Asset Management, International Financial Reporting Standards, Technical Accounting",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/financial-reporting"
+      },
+      {
+        "title": "Financial Reporting: Ledgers, Taxes, Auditing Best Practices",
+        "organization": "Coursera Instructor Network",
+        "rating": 4.6,
+        "skills": "Ledgers (Accounting), Tax Planning, Auditing, Tax Compliance, Income Tax, Financial Auditing, Financial Reporting, Compliance Management, Accounting Records, Regulatory Compliance, Financial Controls, Reconciliation",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/financial-reporting-ledgers-taxes-auditing-best-practices"
+      },
+      {
+        "title": "Introduction to Financial Accounting",
+        "organization": "University of Pennsylvania",
+        "rating": 4.7,
+        "skills": "Financial Statements, Financial Statement Analysis, Financial Reporting, Financial Accounting, Balance Sheet, Accrual Accounting, Financial Analysis, Accounting, Cash Flows, Income Statement, Bookkeeping, Revenue Recognition, Depreciation",
+        "difficulty": "Mixed",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/wharton-accounting"
+      },
+      {
+        "title": "Bookkeeping Basics",
+        "organization": "Intuit",
+        "rating": 4.6,
+        "skills": "Bookkeeping, QuickBooks (Accounting Software), Financial Statements, Accounting Software, Ledgers (Accounting), Accounting, Accounting Records, Balance Sheet, Income Statement, General Ledger, Ethical Standards And Conduct, Cash Flows",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/bookkeeping-basics"
+      }
+    ]
+  },
+  {
+    "query": "Android",
+    "results": [
+      {
+        "title": "Introduction to Android Mobile Application Development",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "Android Studio, Android Development, Android (Operating System), Mobile Development, Gradle, Application Development, Integrated Development Environments, Development Environment, Virtual Environment, Extensible Markup Language (XML), UI Components",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-android-mobile-application-development"
+      },
+      {
+        "title": "Android App Capstone",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "Git (Version Control System), Android Jetpack, Version Control, Android Development, Android Studio, User Interface and User Experience (UI/UX) Design, Mobile Development, User Interface (UI), UI/UX Strategy, Kotlin, User Flows, Development Environment",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/android-app-capstone"
+      },
+      {
+        "title": "Desarrollo de aplicaciones móviles con Android",
+        "organization": "Universidad Nacional Autónoma de México",
+        "rating": 4.6,
+        "skills": "Android Development, Android Studio, Java, Mobile Development, Object Oriented Programming (OOP), Java Programming, Mockups, Mobile Development Tools, Application Development, Software Design Patterns, User Interface (UI) Design, Prototyping, JSON, Application Lifecycle Management, User Interface and User Experience (UI/UX) Design, Geospatial Information and Technology, Program Development, Restful API, Google Cloud Platform, Instagram",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/programacion-android"
+      },
+      {
+        "title": "Programming Mobile Applications for Android Handheld Systems: Part 1",
+        "organization": "University of Maryland, College Park",
+        "rating": 4.6,
+        "skills": "Android Development, Mobile Development, Android Studio, Android (Operating System), Application Development, UI Components, Java, Development Environment, Authorization (Computing), Application Lifecycle Management, Debugging",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/android-programming"
+      },
+      {
+        "title": "Java for Android",
+        "organization": "Vanderbilt University",
+        "rating": 4.5,
+        "skills": "Android Studio, Android Development, Object Oriented Programming (OOP), Java Programming, Java, Mobile Development, Data Structures, Integrated Development Environments, Computer Programming, Development Environment, Debugging, Algorithms",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/java-for-android"
+      },
+      {
+        "title": "Build Your First Android App (Project-Centered Course)",
+        "organization": "CentraleSupélec",
+        "rating": 4.2,
+        "skills": "Android Studio, Android Development, Storyboarding, Mobile Development, Application Development, Java, User Interface (UI) Design, Software Design, Interactive Design, Development Environment, Software Installation, User Centered Design",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/android-app"
+      },
+      {
+        "title": "Meta Android UI Development",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "Android Studio, Android Jetpack, Kotlin, Android Development, Android (Operating System), Responsive Web Design, Mobile Development, UI Components, Unit Testing, Gradle, User Interface (UI) Design, Application Development, User Interface (UI), Integrated Development Environments, Object Oriented Programming (OOP), Development Environment, Programming Principles, Test Driven Development (TDD), Wireframing, Prototyping",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/meta-android-ui-development"
+      },
+      {
+        "title": "Android App Development",
+        "organization": "Vanderbilt University",
+        "rating": 4.5,
+        "skills": "Git (Version Control System), JUnit, Android Studio, Android Development, Unit Testing, Maintainability, Software Design Patterns, Test Automation, Object Oriented Programming (OOP), Integration Testing, Test Driven Development (TDD), Mobile Development, Development Testing, Software Testing, Testability, Software Engineering, Secure Coding, Java Programming, Java, Software Design",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/android-app-development"
+      },
+      {
+        "title": "Advanced App Development in Android",
+        "organization": "Imperial College London",
+        "rating": 4.3,
+        "skills": "Virtual Reality, Augmented and Virtual Reality (AR/VR), Computer Graphics, Visualization (Computer Graphics), Virtual Environment, Logo Design, Android Studio, Android Development, Computer Graphic Techniques, Animation and Game Design, Application Development, Graphics Software, Interactive Design, Linear Algebra",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/advanced-app-android"
+      }
+    ]
+  },
+  {
+    "query": "Artificial Intelligence",
+    "results": [
+      {
+        "title": "Artificial Intelligence: an Overview",
+        "organization": "Politecnico di Milano",
+        "rating": 4.6,
+        "skills": "Unsupervised Learning, Supervised Learning, Machine Learning Algorithms, Machine Learning, Applied Machine Learning, Intellectual Property, Data Ethics, Artificial Intelligence and Machine Learning (AI/ML), Legal Risk, Reinforcement Learning, Artificial Intelligence, Ethical Standards And Conduct, General Data Protection Regulation (GDPR), Dimensionality Reduction, Cloud Platforms, Deep Learning, Hardware Architecture, Information Technology Architecture, Law, Regulation, and Compliance, Computer Science",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/artificial-intelligence-overview"
+      },
+      {
+        "title": "AI Foundations for Everyone",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Prompt Engineering, ChatGPT, Generative AI, OpenAI, Workflow Management, Machine Learning, Application Deployment, Large Language Modeling, IBM Cloud, Artificial Intelligence, Program Development, Natural Language Processing, Deep Learning, Business Process Automation, Automation, Customer Service, Content Creation, Market Opportunities, Image Analysis, Data Science",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/ai-foundations-for-everyone"
+      },
+      {
+        "title": "Introduction to AI",
+        "organization": "Google",
+        "rating": 4.9,
+        "skills": "Generative AI, Artificial Intelligence and Machine Learning (AI/ML), Machine Learning Software, Machine Learning, Innovation, Data Quality, Critical Thinking",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/google-introduction-to-ai"
+      },
+      {
+        "title": "Fundamentals of Machine Learning and Artificial Intelligence",
+        "organization": "Amazon Web Services",
+        "rating": 4.5,
+        "skills": "Artificial Intelligence and Machine Learning (AI/ML), Generative AI, Deep Learning, Artificial Intelligence, AWS SageMaker, Amazon Web Services, Applied Machine Learning, Machine Learning, Digital Transformation",
+        "difficulty": "Mixed",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/fundamentals-of-machine-learning-and-artificial-intelligence"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "organization": "O.P. Jindal Global University",
+        "rating": 0.0,
+        "skills": "Artificial Intelligence, Machine Learning, Natural Language Processing, Supervised Learning, Business Strategy, Knowledge Transfer, Artificial Neural Networks, Programming Principles, Text Mining, Bayesian Statistics, Complex Problem Solving, Decision Making, Algorithms, Probability & Statistics",
+        "difficulty": "Mixed",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/learn/artificial-intelligence-1"
+      },
+      {
+        "title": "Introduction to Artificial Intelligence",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 4.5,
+        "skills": "Generative AI, Applied Machine Learning, Deep Learning, Artificial Intelligence, Data Ethics, Artificial Intelligence and Machine Learning (AI/ML), Machine Learning, Machine Learning Algorithms, Unsupervised Learning, Artificial Neural Networks, Regression Analysis, Emerging Technologies, Law, Regulation, and Compliance, Business Analytics, Ethical Standards And Conduct, Computer Vision, Governance",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/intro-to-artificial-intelligence"
+      },
+      {
+        "title": "Human-Centered Artificial Intelligence",
+        "organization": "Clemson University",
+        "rating": 0.0,
+        "skills": "Artificial Intelligence, Data Ethics, Human Centered Design, Human Computer Interaction, Human Factors, Generative AI, Machine Learning, Machine Learning Algorithms, Research Methodologies, Artificial Neural Networks, Ethical Standards And Conduct, Qualitative Research, Reinforcement Learning, Algorithms",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/hcc-6600-human-centered-ai"
+      },
+      {
+        "title": "Machine Learning with Small Data Part 1",
+        "organization": "Northeastern University",
+        "rating": 0.0,
+        "skills": "Small Data, Deep Learning, Applied Machine Learning, PyTorch (Machine Learning Library), Unsupervised Learning, Tensorflow, Machine Learning, Generative AI, Supervised Learning, Artificial Intelligence and Machine Learning (AI/ML), Computer Vision",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/machine-learning-with-small-data"
+      },
+      {
+        "title": "Artificial Intelligence in Finance and Wealth Management",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 0.0,
+        "skills": "Data Ethics, Wealth Management, Supervised Learning, Machine Learning, Financial Services, Applied Machine Learning, Artificial Intelligence and Machine Learning (AI/ML), Learning Management Systems, Artificial Intelligence, FinTech, Data Mining, Investment Management, Regulatory Compliance, Financial Planning, Relationship Building, Risk Modeling, Legal Risk, ChatGPT, Mobile Development, Human Computer Interaction",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/aimachinelearninginfinance"
+      }
+    ]
+  },
+  {
+    "query": "Cloud Computing",
+    "results": [
+      {
+        "title": "Introduction to Cloud Computing",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Cloud Computing Architecture, Cloud Services, Cloud Security, Cloud Technologies, Cloud Infrastructure, Cloud Platforms, Cloud Hosting, Cloud Engineering, Cloud Computing, Cloud Solutions, Cloud Development, Cloud Storage, Infrastructure As A Service (IaaS), Software As A Service, Emerging Technologies, Cloud-Native Computing, Cloud Management, Hybrid Cloud Computing, IBM Cloud, DevOps",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/introduction-to-cloud"
+      },
+      {
+        "title": "Cloud Computing",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 4.3,
+        "skills": "Distributed Computing, Cloud Infrastructure, Cloud Services, Big Data, Apache Spark, Cloud Computing, Cloud Storage, Cloud Platforms, Network Architecture, Data Storage Technologies, Computer Networking, File Systems, Apache Hadoop, Network Infrastructure, Cloud Applications, Infrastructure As A Service (IaaS), Middleware, Containerization, Software-Defined Networking, NoSQL",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/cloud-computing"
+      },
+      {
+        "title": "Amazon EC2 Basics",
+        "organization": "Amazon Web Services",
+        "rating": 4.6,
+        "skills": "Amazon Elastic Compute Cloud, Amazon Web Services, Performance Tuning, Cloud Infrastructure, Computing Platforms, Infrastructure As A Service (IaaS), Cloud Services, Public Cloud, Capacity Management",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/aws-amazon-ec2-basics"
+      },
+      {
+        "title": "Introduction to AWS for Cloud Beginners",
+        "organization": "Simplilearn",
+        "rating": 0.0,
+        "skills": "Amazon Web Services, AWS Identity and Access Management (IAM), Amazon CloudWatch, Amazon DynamoDB, Database Management, AWS CloudFormation, Amazon Elastic Compute Cloud, Cloud Infrastructure, Amazon S3, Cloud Computing, Public Cloud, Cloud Storage, Scalability",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-aws-for-cloud-beginners"
+      },
+      {
+        "title": "Create a Virtual Private Cloud (VPC) Using AWS",
+        "organization": "Coursera Project Network",
+        "rating": 4.4,
+        "skills": "Virtual Machines, Virtual Private Networks (VPN), Cloud Security, Public Cloud, Amazon Web Services, Scalability, Private Cloud, Cloud Computing Architecture, Amazon Elastic Compute Cloud, Cloud Computing, Cloud Infrastructure, Infrastructure As A Service (IaaS)",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/create-virtual-private-cloud-vpc-aws"
+      },
+      {
+        "title": "AWS Cloud Practitioner Essentials",
+        "organization": "Amazon Web Services",
+        "rating": 4.8,
+        "skills": "Amazon Web Services, Amazon CloudWatch, Public Cloud, AWS Identity and Access Management (IAM), Cloud Computing, Cloud Platforms, Cloud Infrastructure, Amazon Elastic Compute Cloud, Cloud Security, Amazon S3, Cloud Storage, Continuous Monitoring, Scalability",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/aws-cloud-practitioner-essentials"
+      },
+      {
+        "title": "Cloud Computing Basics (Cloud 101)",
+        "organization": "LearnQuest",
+        "rating": 4.6,
+        "skills": "Cloud Computing, Cloud Services, Cloud Technologies, Cloud Infrastructure, Cloud Computing Architecture, Public Cloud, Infrastructure As A Service (IaaS), Serverless Computing, Amazon Web Services, Virtual Machines, Hybrid Cloud Computing, Software As A Service, Private Cloud, Microsoft Azure, Platform As A Service (PaaS), Scalability",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/cloud-computing-basics"
+      },
+      {
+        "title": "Google Cloud Fundamentals: Core Infrastructure",
+        "organization": "Google Cloud",
+        "rating": 4.7,
+        "skills": "Google Cloud Platform, Cloud Infrastructure, Prompt Engineering, Kubernetes, Containerization, Cloud Storage, Cloud Services, Identity and Access Management, Application Deployment, Virtual Machines, Cloud Computing, Application Development, Generative AI, Network Infrastructure, NoSQL, Scalability",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/gcp-fundamentals"
+      },
+      {
+        "title": "AWS Cloud Technical Essentials",
+        "organization": "Amazon Web Services",
+        "rating": 4.8,
+        "skills": "AWS Identity and Access Management (IAM), Amazon CloudWatch, Amazon DynamoDB, Amazon Web Services, Cloud Computing, Amazon S3, Scalability, Amazon Elastic Compute Cloud, Cloud Security, Serverless Computing, Cloud Storage, Databases, Virtual Private Networks (VPN), Load Balancing, General Networking, Containerization",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/aws-cloud-technical-essentials"
+      }
+    ]
+  },
+  {
+    "query": "Communication Skills",
+    "results": [
+      {
+        "title": "Communication Skills for University Success",
+        "organization": "The University of Sydney",
+        "rating": 4.8,
+        "skills": "Editing, Public Speaking, Proofreading, Research, Writing, Communication, English Language, Professionalism, Ethical Standards And Conduct, Interpersonal Communications, Critical Thinking, Collaboration",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/communication-skills"
+      },
+      {
+        "title": "Verbal Communications and Presentation Skills",
+        "organization": "Starweaver",
+        "rating": 4.6,
+        "skills": "Verbal Communication Skills, Presentations, Communication, Public Speaking, Persuasive Communication, Drive Engagement, Interpersonal Communications, Non-Verbal Communication, Professionalism, Rapport Building",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/verbal-communications-and-presentation-skills"
+      },
+      {
+        "title": "Successful Presentation",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.8,
+        "skills": "Public Speaking, Presentations, Verbal Communication Skills, Storytelling, Drive Engagement, Persuasive Communication, Communication, Non-Verbal Communication, Business Writing, Cognitive flexibility, Composure, Adaptability, Creativity",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/presentation-skills"
+      },
+      {
+        "title": "Improving Communication Skills",
+        "organization": "University of Pennsylvania",
+        "rating": 4.7,
+        "skills": "Active Listening, Communication, Communication Strategies, Persuasive Communication, Verbal Communication Skills, Interpersonal Communications, Business Communication, Trustworthiness, Rapport Building, Goal Setting, Relationship Building, Non-Verbal Communication, Cooperation, Negotiation, Honesty",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/wharton-communication-skills"
+      },
+      {
+        "title": "Good with Words: Speaking and Presenting",
+        "organization": "University of Michigan",
+        "rating": 4.6,
+        "skills": "Tactfulness, Public Speaking, Storytelling, Verbal Communication Skills, Persuasive Communication, Non-Verbal Communication, Communication, Cognitive flexibility, Communication Strategies, Presentations, Ingenuity, Interpersonal Communications, Rapport Building, Constructive Feedback, Empathy, Social Skills, Professionalism, Active Listening, Optimism, Creativity",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/good-with-words-speaking-and-presenting"
+      },
+      {
+        "title": "Developing Interpersonal Skills",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Active Listening, Interpersonal Communications, Conflict Management, Constructive Feedback, Social Skills, Trustworthiness, Relationship Building, Business Communication, Collaboration, Communication, Communication Strategies, Professional Development, Empathy, Assertiveness, Emotional Intelligence, Influencing, People Management",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/interpersonal-skills"
+      },
+      {
+        "title": "مهارات العرض والتقديم | Presentation Skills",
+        "organization": "Alfaisal University | KLD",
+        "rating": 4.8,
+        "skills": "Presentations, Persuasive Communication, Public Speaking, Communication, Verbal Communication Skills, Non-Verbal Communication, Target Audience",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/presentation-skills-"
+      },
+      {
+        "title": "Improve Your English Communication Skills",
+        "organization": "Georgia Institute of Technology",
+        "rating": 4.7,
+        "skills": "Sales Presentation, Presentations, Business Writing, Verbal Communication Skills, Business Correspondence, Public Speaking, Cultural Diversity, Professional Networking, Cultural Sensitivity, English Language, Vocabulary, Communication, Interpersonal Communications, LinkedIn, Writing, Business Communication, Interviewing Skills, Instagram, Social Skills, Concision",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/improve-english"
+      },
+      {
+        "title": "Dynamic Public Speaking",
+        "organization": "University of Washington",
+        "rating": 4.7,
+        "skills": "Public Speaking, Persuasive Communication, Presentations, Verbal Communication Skills, Microsoft PowerPoint, Oral Expression, Communication, Storytelling, Motivational Skills, Constructive Feedback, Performing Arts, Concision, Drive Engagement, Communication Strategies, Target Audience, Writing, Non-Verbal Communication, Problem Solving, Composure, Instructional Design",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/public-speaking"
+      }
+    ]
+  },
+  {
+    "query": "Cybersecurity",
+    "results": [
+      {
+        "title": "Introduction to Cybersecurity Fundamentals",
+        "organization": "Coursera Instructor Network",
+        "rating": 4.6,
+        "skills": "Computer Security Awareness Training, Cybersecurity, Security Awareness, Cyber Attacks, Data Security, Personally Identifiable Information, Malware Protection, Threat Management, Email Security, Mitigation",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-cybersecurity-fundamentals"
+      },
+      {
+        "title": "Cybersecurity Operations Fundamentals",
+        "organization": "Cisco Learning and Certifications",
+        "rating": 4.8,
+        "skills": "MITRE ATT&CK Framework, Incident Response, Cyber Threat Intelligence, Cyber Threat Hunting, Key Management, Data Security, Threat Modeling, Computer Security Incident Management, File Systems, Endpoint Security, Cryptography, Network Security, Distributed Denial-Of-Service (DDoS) Attacks, Linux, Malware Protection, Vulnerability Assessments, Encryption, Incident Management, Threat Detection, Cybersecurity",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/cbrops"
+      },
+      {
+        "title": "Automate Cybersecurity Tasks with Python",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Debugging, Python Programming, Cybersecurity, Cyber Security Assessment, Scripting, Programming Principles, Algorithms, Automation, Computer Programming, Integrated Development Environments, File Management, Data Structures",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/automate-cybersecurity-tasks-with-python"
+      },
+      {
+        "title": "IT Fundamentals for Cybersecurity",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "IT Service Management, Cloud Computing, Information Technology Infrastructure Library, Malware Protection, Identity and Access Management, Linux, Incident Response, Networking Hardware, TCP/IP, Cybersecurity, Network Security, Network Protocols, Linux Servers, Computer Security Incident Management, Cloud Security, Operating Systems, Windows Servers, Cyber Risk, Data Ethics, Cyber Attacks",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/it-fundamentals-cybersecurity"
+      },
+      {
+        "title": "Introduction to Cybersecurity Essentials",
+        "organization": "IBM",
+        "rating": 4.8,
+        "skills": "Cybersecurity, Cyber Attacks, Security Awareness, Hardening, Data Security, Application Security, Computer Security Awareness Training, Network Security, Personally Identifiable Information, Information Systems Security, Security Controls, Threat Management, Malware Protection, Cryptography, Encryption, Multi-Factor Authentication, Authentications",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-cybersecurity-essentials"
+      },
+      {
+        "title": "AI for Cybersecurity",
+        "organization": "Johns Hopkins University",
+        "rating": 4.4,
+        "skills": "Anomaly Detection, Generative AI, Intrusion Detection and Prevention, Malware Protection, Continuous Monitoring, Cybersecurity, Threat Detection, Cyber Threat Intelligence, Feature Engineering, Network Analysis, Cyber Attacks, Email Security, System Design and Implementation, Network Security, Artificial Intelligence and Machine Learning (AI/ML), Threat Modeling, Jupyter, Authentications, Deep Learning, Machine Learning Software",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/ai-for-cybersecurity"
+      },
+      {
+        "title": "Cybersecurity for Everyone",
+        "organization": "University of Maryland, College Park",
+        "rating": 4.7,
+        "skills": "Cyber Risk, Cyber Security Policies, Security Management, Cybersecurity, Risk Management, Cyber Security Strategy, Cyber Attacks, Cyber Governance, Infrastructure Security, Telecommunications, Computer Security Awareness Training, Threat Detection, Enterprise Security, Security Awareness, General Networking, Data Security, Vulnerability, Public Safety and National Security, Governance, Political Sciences",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/cybersecurity-for-everyone"
+      },
+      {
+        "title": "Foundations of Cybersecurity",
+        "organization": "Google",
+        "rating": 4.9,
+        "skills": "Cybersecurity, Security Controls, Cyber Attacks, Security Management, Cyber Security Strategy, Incident Response, Cyber Risk, Security Information and Event Management (SIEM), Information Assurance, Data Ethics, Network Analysis, Ethical Standards And Conduct",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/foundations-of-cybersecurity"
+      },
+      {
+        "title": "IBM Cybersecurity Analyst",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Cyber Threat Hunting, Incident Response, IT Service Management, Identity and Access Management, Cloud Computing, Information Technology Infrastructure Library, Endpoint Security, Malware Protection, Penetration Testing, Linux, Computer Security Incident Management, Database Management, Network Security, Networking Hardware, TCP/IP, Cybersecurity, Intrusion Detection and Prevention, Cyber Threat Intelligence, Interviewing Skills, Cyber Security Assessment",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst"
+      }
+    ]
+  },
+  {
+    "query": "Excel",
+    "results": [
+      {
+        "title": "Microsoft Excel",
+        "organization": "Microsoft",
+        "rating": 4.2,
+        "skills": "Excel Macros, Prompt Engineering, Microsoft Excel, Data Cleansing, Excel Formulas, Pivot Tables And Charts, Microsoft Copilot, Dashboard, Forecasting, Data Presentation, Data Storytelling, Data Processing, Data Visualization Software, Data Manipulation, Data Visualization, Predictive Modeling, Data Quality, Statistical Analysis, Data Transformation, Data Analysis",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/microsoft-excel-skills"
+      },
+      {
+        "title": "Everyday Excel",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.7,
+        "skills": "Data Import/Export, Microsoft Excel, Regression Analysis, Data Validation, Data Visualization, Depreciation, Data Management, Excel Macros, Excel Formulas, Statistical Modeling, Financial Analysis, Cash Flows, Predictive Modeling, Financial Modeling, Analysis, Microsoft Word, Business Mathematics, Mathematical Modeling, Complex Problem Solving, Problem Solving",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/everyday-excel"
+      },
+      {
+        "title": "Statistics and Data Analysis with Excel: Advanced",
+        "organization": "Macquarie University",
+        "rating": 0.0,
+        "skills": "Data-Driven Decision-Making, Microsoft Excel, Forecasting, Regression Analysis, Business Analytics, Statistical Analysis, Time Series Analysis and Forecasting, Analytics, Statistical Methods, Advanced Analytics, Data Analysis, Statistics, Data Visualization Software, Probability & Statistics, Statistical Inference, Statistical Modeling, Variance Analysis",
+        "difficulty": "Advanced",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/mq-statistics-and-data-analysis-with-excel-advanced"
+      },
+      {
+        "title": "Business Analytics with Excel: Elementary to Advanced",
+        "organization": "Johns Hopkins University",
+        "rating": 4.8,
+        "skills": "Risk Modeling, Operations Research, Regression Analysis, Microsoft Excel, Business Analytics, Risk Analysis, Business Process Modeling, Business Modeling, Data Modeling, Resource Allocation, Analysis, Statistical Analysis, Mathematical Modeling, Process Optimization, Financial Analysis, Statistical Methods, Predictive Analytics, Transportation Operations, Complex Problem Solving, Linear Algebra",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/business-analytics-excel"
+      },
+      {
+        "title": "Data Skills for Excel Professionals",
+        "organization": "Corporate Finance Institute",
+        "rating": 4.8,
+        "skills": "Dashboard, Microsoft Excel, Pivot Tables And Charts, Star Schema, Spreadsheet Software, Data Transformation, Data Analysis Expressions (DAX), Data Storytelling, Data Analysis, Excel Formulas, Exploratory Data Analysis, Extract, Transform, Load, Data Visualization Software, Data Presentation, Data Modeling, Business Intelligence, Competitive Analysis, Data Manipulation, Data Cleansing, Data Integration",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/data-skills-for-excel"
+      },
+      {
+        "title": "Business Analytics using Excel",
+        "organization": "Simplilearn",
+        "rating": 0.0,
+        "skills": "Data Visualization, Microsoft Excel, Excel Formulas, Pivot Tables And Charts, Dashboard, Excel Macros, Spreadsheet Software, Data Analysis, Analytics, Data Cleansing, Data Processing, Regression Analysis, Productivity Software, Descriptive Statistics",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/business-analytics-using-excel"
+      },
+      {
+        "title": "Excel Skills for Business: Essentials",
+        "organization": "Macquarie University",
+        "rating": 4.9,
+        "skills": "Data Visualization, Microsoft Excel, Data Entry, Spreadsheet Software, Excel Formulas, Productivity Software, Data Management",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/excel-essentials"
+      },
+      {
+        "title": "Excel Basics for Data Analysis",
+        "organization": "IBM",
+        "rating": 4.8,
+        "skills": "Excel Formulas, Microsoft Excel, Data Cleansing, Data Analysis, Data Import/Export, Spreadsheet Software, Data Wrangling, Data Quality, Pivot Tables And Charts, Google Sheets, Data Manipulation, Data Science, Data Visualization Software, Information Privacy",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
+      },
+      {
+        "title": "Excel Skills for Data Analytics and Visualization",
+        "organization": "Macquarie University",
+        "rating": 4.8,
+        "skills": "Pivot Tables And Charts, Data Storytelling, Power BI, Excel Formulas, Data Analysis Expressions (DAX), Data Visualization Software, Data Visualization, Interactive Data Visualization, Microsoft Excel, Dashboard, Data Modeling, Data Cleansing, Data Transformation, Data Manipulation, Excel Macros, Infographics, Spreadsheet Software, Data Analysis Software, Data Validation, Data Analysis",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/excel-data-analytics-visualization"
+      }
+    ]
+  },
+  {
+    "query": "Graphic Design",
+    "results": [
+      {
+        "title": "Graphic Design Elements for Non-Designers",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.7,
+        "skills": "Logo Design, Color Theory, Design Elements And Principles, Graphic Design, Design, Typography, Color Matching, User Experience Design, Digital Design, Graphic and Visual Design, Graphics Software, Adobe InDesign, Graphic and Visual Design Software, Design Software, Photo Editing, Content Creation, Design Research, Information Architecture, Adobe Photoshop, Web Design and Development",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/graphic-design-elements-non-designers"
+      },
+      {
+        "title": "Fundamentals of Graphic Design",
+        "organization": "California Institute of the Arts",
+        "rating": 4.8,
+        "skills": "Typography, Design Elements And Principles, Graphic Design, Visual Design, Design Software, Logo Design, Digital Design, Color Theory, Photo Editing, Adobe Creative Cloud, Creativity",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/fundamentals-of-graphic-design"
+      },
+      {
+        "title": "Graphic design: pop your Linkedin with 3D effect using Canva",
+        "organization": "Coursera Project Network",
+        "rating": 4.4,
+        "skills": "Canva (Software), LinkedIn, Graphic Design, Graphic and Visual Design, Computer Graphic Techniques, Social Media Content, Professional Networking, Design Elements And Principles",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/linkedin-cover-with-canva"
+      },
+      {
+        "title": "Graphic Design",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.8,
+        "skills": "Graphic Design, Graphic and Visual Design, Graphic and Visual Design Software, Design, Visual Design, Typography, Adobe InDesign, Design Reviews, Adobe Photoshop, Design Elements And Principles, Peer Review, Color Theory, Editing, Creativity",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/presentation-design"
+      },
+      {
+        "title": "Graphic Design",
+        "organization": "California Institute of the Arts",
+        "rating": 4.7,
+        "skills": "Typography, Design Elements And Principles, Graphic Design, Visual Design, Logo Design, Design Software, Digital Design, Creative Design, Graphic and Visual Design, Color Theory, Adobe InDesign, Photo Editing, Photography, Design, Style Guides, Branding, Peer Review, Art History, Design Strategies, Design Research",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/graphic-design"
+      },
+      {
+        "title": "Xbox Graphic Designer",
+        "organization": "Xbox",
+        "rating": 4.4,
+        "skills": "Color Theory, User Interface and User Experience (UI/UX) Design, Logo Design, Typography, User Interface (UI), Interaction Design, Figma (Design Software), Adobe Illustrator, Design Reviews, Wireframing, Usability, Graphic and Visual Design, Web Content Accessibility Guidelines, Adobe Photoshop, User Experience, Graphic Design, User Centered Design, Photo Editing, Game Design, Generative AI",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/xbox-graphic-designer"
+      },
+      {
+        "title": "Graphic Design",
+        "organization": "Adobe",
+        "rating": 4.6,
+        "skills": "Adobe Illustrator, Color Theory, Typography, Graphic and Visual Design, Graphic Design, Graphic and Visual Design Software, Design, Adobe Creative Cloud, Design Elements And Principles, Logo Design, Digital Design, Generative AI, Creativity",
+        "difficulty": "Mixed",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/adobe-graphic-design"
+      },
+      {
+        "title": "Design Fundamentals with AI",
+        "organization": "Adobe",
+        "rating": 4.7,
+        "skills": "Typography, Logo Design, Digital Design, Creative Design, Visual Design, Branding, Graphic Design, User Interface and User Experience (UI/UX) Design, Color Theory, Content Creation, Creativity, Generative AI Agents",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/design-fundamentals-ai"
+      },
+      {
+        "title": "Adobe Graphic Designer",
+        "organization": "Adobe",
+        "rating": 4.7,
+        "skills": "Adobe Illustrator, Adobe Photoshop, Logo Design, Digital Design, Generative AI, Graphic Design, User Interface and User Experience (UI/UX) Design, Visual Design, File Management, Process Design, Design Reviews, Prompt Engineering, Image Analysis, Presentations, Client Services, Content Creation, Artificial Intelligence, Version Control, Branding, Storytelling",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/adobe-graphic-designer"
+      }
+    ]
+  },
+  {
+    "query": "HR",
+    "results": [
+      {
+        "title": "Human Resource Management: HR for People Managers",
+        "organization": "University of Minnesota",
+        "rating": 4.8,
+        "skills": "Performance Management, Performance Appraisal, Performance Review, Compensation Management, Compensation Strategy, Compensation and Benefits, Constructive Feedback, Workforce Planning, Human Resource Strategy, Human Resources, Employee Onboarding, Recruitment, Employee Performance Management, Recruitment Strategies, Human Capital, Compensation Analysis, Talent Acquisition, Human Resources Management and Planning, People Management, Job Analysis",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/human-resource-management"
+      },
+      {
+        "title": "HRCI Human Resource Associate",
+        "organization": "HRCI",
+        "rating": 4.8,
+        "skills": "Talent Acquisition, Training and Development, Compensation and Benefits, Training Programs, Recruitment, Employee Training, Full Cycle Recruitment, Job Analysis, Employee Performance Management, Compensation Management, Performance Appraisal, Job Evaluation, Developing Training Materials, Compensation Strategy, Performance Management, Human Resource Policies, Employee Relations, Occupational Safety And Health, Business Continuity Planning, Risk Management",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/hrci-human-resource-associate"
+      },
+      {
+        "title": "Generative AI for HR Professionals",
+        "organization": "Fractal Analytics",
+        "rating": 0.0,
+        "skills": "Prompt Engineering, HR Tech, Generative AI Agents, Data Ethics, ChatGPT, Human Resources, Verification And Validation, Ethical Standards And Conduct, Recruitment, Employee Engagement, Talent Acquisition, Diversity and Inclusion, Compliance Management",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/generativeaiforhrprofessionals"
+      },
+      {
+        "title": "Generative AI in HR - Impact and Application of Gen AI",
+        "organization": "Board Infinity",
+        "rating": 4.3,
+        "skills": "HR Tech, People Analytics, Human Resources, Data Ethics, Generative AI, Talent Acquisition, Employee Engagement, Recruitment, Human Resource Strategy, Training Programs, Training and Development, Workforce Planning, Artificial Intelligence, Ethical Standards And Conduct, Information Privacy, Diversity and Inclusion",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/generative-ai-in-hr"
+      },
+      {
+        "title": "Payroll & HR Management",
+        "organization": "Tally Education and Distribution Services Private Limited",
+        "rating": 4.3,
+        "skills": "Payroll, Payroll Systems, Payroll Administration, Payroll Processing, Payroll Reporting, Income Tax, Human Resources Software, Compensation Management, Tax Compliance, Tax Laws",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/payroll-hr--management"
+      },
+      {
+        "title": "Strategic HRM: Talent, Performance, Compensation Design",
+        "organization": "Coursera Instructor Network",
+        "rating": 4.7,
+        "skills": "Performance Appraisal, Human Resource Strategy, Human Resources, Compensation Strategy, Talent Management, Compensation Management, Performance Management, Organizational Development, Employee Engagement, Workforce Development, Talent Acquisition, Employee Retention",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/strategic-hrm-talent-performance-compensation-design"
+      },
+      {
+        "title": "Generative AI for Human Resources (HR) Professionals",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Prompt Engineering, ChatGPT, Generative AI, HR Tech, Human Resources Software, Human Resources Management and Planning, OpenAI, Human Resources, Workforce Planning, Human Resource Strategy, Data Ethics, Large Language Modeling, Artificial Intelligence, Program Development, Employee Engagement, Content Creation, Recruitment, IBM Cloud, Image Analysis, Performance Appraisal",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/generative-ai-for-human-resources"
+      },
+      {
+        "title": "SHRM Certified Professional (SHRM-CP) Exam Prep",
+        "organization": "Board Infinity",
+        "rating": 3.9,
+        "skills": "Talent Acquisition, Human Resources, Diversity Equity and Inclusion Initiatives, Recruitment Strategies, Human Resource Strategy, Leadership Development, Organizational Development, Talent Recruitment, HR Tech, Human Capital, Organizational Change, Communication, Strategic Leadership, Organizational Effectiveness, Leadership Studies, Human Resources Information System (HRIS), Workforce Development, Intercultural Competence, Employee Training, Innovation",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/shrm"
+      },
+      {
+        "title": "Generative AI HR Professional",
+        "organization": "Vanderbilt University",
+        "rating": 4.8,
+        "skills": "Prompt Engineering, ChatGPT, Generative AI, Productivity, Artificial Intelligence, Large Language Modeling, Human Resources, Management Training And Development, Employee Performance Management, Performance Review, Professional Development, Policy Development, New Hire Orientations, Communication, Communication Planning, Human Development, Recruitment, Interviewing Skills, Talent Recruitment, Policy Analysis",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/generative-ai-hr-professional"
+      }
+    ]
+  },
+  {
+    "query": "iOS",
+    "results": [
+      {
+        "title": "Advanced iOS Development",
+        "organization": "Meta",
+        "rating": 0.0,
+        "skills": "",
+        "difficulty": "Beginner",
+        "duration": NaN,
+        "link": "https://www.coursera.org/learn/advanced-ios-development"
+      },
+      {
+        "title": "Introduction to iOS Mobile Application Development",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "iOS Development, Apple iOS, Apple Xcode, Mobile Development, Swift Programming, Mobile Development Tools, Objective-C (Programming Language), User Interface (UI), Application Development, UI Components, Integrated Development Environments, Development Environment, Storyboarding",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-ios-mobile-application-development"
+      },
+      {
+        "title": "iOS App Development with Swift",
+        "organization": "University of Toronto",
+        "rating": 3.9,
+        "skills": "Apple iOS, iOS Development, Swift Programming, Model View Controller, Apple Xcode, User Interface (UI), User Interface (UI) Design, Mobile Development, Application Development, Objective-C (Programming Language), UI Components, Animations, Object Oriented Programming (OOP), Application Frameworks, Interaction Design, Programming Principles, Integrated Development Environments, Computer Graphics, Image Analysis, Persistence",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/app-development"
+      },
+      {
+        "title": "iOS App Development Basics",
+        "organization": "University of Toronto",
+        "rating": 4.2,
+        "skills": "Model View Controller, Apple iOS, Apple Xcode, Swift Programming, User Interface (UI), User Interface (UI) Design, Mobile Development, UI Components, Application Frameworks, Computer Programming",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/ios-app-development-basics"
+      },
+      {
+        "title": "End-to-End iOS Development Mastery",
+        "organization": "Board Infinity",
+        "rating": 0.0,
+        "skills": "Apple iOS, Swift Programming, Apple Xcode, Secure Coding, iOS Development, Mobile Development, Core Data (Software), Application Deployment, User Interface (UI), Scalability, Performance Tuning, Debugging, Application Programming Interface (API), Model View Controller, API Design, JSON, Application Development, Application Security, Data Management, Data Storage",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/ene-to-end-ios-development-mastery"
+      },
+      {
+        "title": "SwiftUI - The Complete iOS 17 Reference Library of Code",
+        "organization": "Packt",
+        "rating": 0.0,
+        "skills": "Swift Programming, Apple Xcode, Apple iOS, iOS Development, Knowledge of Apple Software, Application Development, Mobile Development, Cross Platform Development, UI Components, Mobile Development Tools, Animations, Data Storage Technologies, Object Oriented Programming (OOP), Programming Principles, Data Storage, Cloud Storage, Application Deployment, Responsive Web Design, Development Environment, Integrated Development Environments",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/packt-swiftui-the-complete-ios-17-reference-library-of-code"
+      },
+      {
+        "title": "Swift 5 iOS Application Developer",
+        "organization": "LearnQuest",
+        "rating": 4.4,
+        "skills": "Model View Controller, Apple iOS, JSON, Swift Programming, Apple Xcode, iOS Development, Responsive Web Design, Data Structures, Object Oriented Programming (OOP), Unit Testing, Programming Principles, Transaction Processing, Mobile Development, User Interface (UI), Application Development, UI Components, Application Programming Interface (API), Software As A Service, Data Storage, Data Modeling",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/swift-5-ios-app-developer"
+      },
+      {
+        "title": "Meta iOS UI Development",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "iOS Development, Apple iOS, Apple Xcode, User Interface (UI), Mobile Development, Swift Programming, Unit Testing, User Interface (UI) Design, UI Components, Mobile Development Tools, Objective-C (Programming Language), Application Development, Data Structures, Programming Principles, Development Testing, Software Testing, Object Oriented Programming (OOP), Software Design Patterns, Integrated Development Environments, Prototyping",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/meta-ios-ui-development"
+      },
+      {
+        "title": "Meta iOS Developer",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "React Native, iOS Development, Core Data (Software), Restful API, Version Control, Apple iOS, UI/UX Research, Usability Testing, Apple Xcode, Data Structures, Swift Programming, Jest (JavaScript Testing Framework), User Interface (UI), Unix Commands, Git (Version Control System), Persona (User Experience), GitHub, Interaction Design, Mobile Development, Javascript",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/meta-ios-developer"
+      }
+    ]
+  },
+  {
+    "query": "Java",
+    "results": [
+      {
+        "title": "Java Programming for Beginners",
+        "organization": "IBM",
+        "rating": 4.9,
+        "skills": "Java Programming, Java, Object Oriented Programming (OOP), Development Environment, Application Development, Programming Principles, Computer Programming, Integrated Development Environments, Data Structures, Software Installation",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/java-for-programming-beginners"
+      },
+      {
+        "title": "Introduction to Java",
+        "organization": "LearnQuest",
+        "rating": 4.6,
+        "skills": "Eclipse (Software), Java, Java Programming, Integrated Development Environments, Development Environment, Software Installation, Computer Programming, Programming Principles, Program Development, Object Oriented Programming (OOP)",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/java-introduction"
+      },
+      {
+        "title": "Fundamentals of Java Programming",
+        "organization": "Board Infinity",
+        "rating": 4.4,
+        "skills": "Eclipse (Software), Object Oriented Programming (OOP), Java Programming, Object Oriented Design, Java, Integrated Development Environments, Development Environment, Computer Programming, Programming Principles, Algorithms, Virtual Machines",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/fundamentals-of-java-programming"
+      },
+      {
+        "title": "Programming with Java",
+        "organization": "Amazon",
+        "rating": 4.2,
+        "skills": "Object Oriented Programming (OOP), Object Oriented Design, Java, File Management, Data Import/Export, Maintainability, Debugging, Software Development",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/programming-with-java"
+      },
+      {
+        "title": "Object Oriented Java Programming: Data Structures and Beyond",
+        "organization": "University of California San Diego",
+        "rating": 4.7,
+        "skills": "Unit Testing, Growth Mindedness, Data Structures, Graph Theory, Event-Driven Programming, Interactive Data Visualization, Java, Java Programming, Network Analysis, Object Oriented Programming (OOP), Technical Communication, Development Testing, User Interface (UI), Software Testing, Computer Programming, Adaptability, Object Oriented Design, Performance Tuning, Algorithms, Problem Solving",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/java-object-oriented"
+      },
+      {
+        "title": "Java for Android",
+        "organization": "Vanderbilt University",
+        "rating": 4.5,
+        "skills": "Android Studio, Android Development, Object Oriented Programming (OOP), Java Programming, Java, Mobile Development, Data Structures, Integrated Development Environments, Computer Programming, Development Environment, Debugging, Algorithms",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/java-for-android"
+      },
+      {
+        "title": "Learn Java Programming",
+        "organization": "Heriot-Watt University",
+        "rating": 0.0,
+        "skills": "Object Oriented Programming (OOP), Java, Java Programming, Computer Programming, Programming Principles, Software Development, Algorithms, Computational Logic",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/learn-java-programming"
+      },
+      {
+        "title": "Java Programming: Solving Problems with Software",
+        "organization": "Duke University",
+        "rating": 4.6,
+        "skills": "Debugging, Java, Algorithms, Java Programming, Statistical Analysis, Software Design, Computer Programming, Integrated Development Environments, Data Processing, Object Oriented Programming (OOP), Data Analysis, Software Testing, Problem Solving",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/java-programming"
+      },
+      {
+        "title": "Object Oriented Programming in Java",
+        "organization": "Multiple educators",
+        "rating": 4.6,
+        "skills": "Unit Testing, Data Structures, Event-Driven Programming, Interactive Data Visualization, Java, Java Programming, Development Testing, User Interface (UI), Object Oriented Programming (OOP), Debugging, Software Testing, Computer Programming, Cryptography, Software Engineering, Performance Tuning, Encryption, Algorithms, Data Analysis, Software Design, Problem Solving",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/object-oriented-programming"
+      }
+    ]
+  },
+  {
+    "query": "JavaScript",
+    "results": [
+      {
+        "title": "JavaScript for Beginners",
+        "organization": "University of California, Davis",
+        "rating": 4.7,
+        "skills": "jQuery, Javascript and jQuery, Ajax, Javascript, Data Manipulation, Data Validation, UI Components, HTML and CSS, Scripting, JSON, Scripting Languages, Event-Driven Programming, Web Development Tools, JavaScript Frameworks, Web Applications, Web Design and Development, Game Design, Application Programming Interface (API), Object Oriented Programming (OOP), Animations",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/javascript-beginner"
+      },
+      {
+        "title": "JavaScript Basics",
+        "organization": "University of California, Davis",
+        "rating": 4.7,
+        "skills": "Javascript, HTML and CSS, Scripting, Web Design and Development, Event-Driven Programming, Web Development Tools, Programming Principles, Integrated Development Environments, Debugging",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/javascript-basics"
+      },
+      {
+        "title": "Interactivity with JavaScript",
+        "organization": "University of Michigan",
+        "rating": 4.7,
+        "skills": "Javascript, Interactive Design, HTML and CSS, Web Design and Development, Web Content Accessibility Guidelines, Event-Driven Programming, Web Applications, Web Development, Data Structures, Programming Principles, Debugging",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/javascript"
+      },
+      {
+        "title": "JavaScript Programming Essentials",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Ajax, Javascript, Data Structures, Debugging, JSON, Scripting, Web Development, Web Applications, Computer Programming, HTML and CSS, Software Development, Object Oriented Programming (OOP), Git (Version Control System), Application Programming Interface (API)",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/javascript-programming-essentials"
+      },
+      {
+        "title": "JavaScript Programming with React, Node & MongoDB",
+        "organization": "IBM",
+        "rating": 4.4,
+        "skills": "Node.JS, Server Side, MongoDB, React Redux, NoSQL, Restful API, React.js, Front-End Web Development, JavaScript Frameworks, Ajax, Javascript, Back-End Web Development, UI Components, Application Deployment, Data Structures, Authentications, Database Development, Debugging, Full-Stack Web Development, Web Applications",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/javascript-programming-with-react-node-mongodb"
+      },
+      {
+        "title": "Fundamentals of Web Development",
+        "organization": "Illinois Tech",
+        "rating": 4.6,
+        "skills": "Javascript and jQuery, Responsive Web Design, Web Development, Version Control, Web Design, Cascading Style Sheets (CSS), HTML and CSS, GitHub, Web Applications, JavaScript Frameworks, Web Development Tools, Infrastructure Architecture, Browser Compatibility, Application Programming Interface (API), Animations",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/illinois-tech-fundamentals-of-web-development"
+      },
+      {
+        "title": "Advanced JavaScript",
+        "organization": "Scrimba",
+        "rating": 4.5,
+        "skills": "Ajax, Object Oriented Programming (OOP), Javascript, JSON, Application Programming Interface (API), Scripting, Software Design Patterns, Data Management, Data Structures, Event-Driven Programming, Data Validation, Programming Principles, Web Development, Software Development, Debugging, Software Engineering, Performance Tuning",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/advanced-javascript"
+      },
+      {
+        "title": "Introduction to JavaScript Programming",
+        "organization": "Microsoft",
+        "rating": 0.0,
+        "skills": "Javascript, Program Development, Web Applications, Programming Principles, Software Development, Data Structures, Web Development Tools, Development Environment, Video Game Development, Debugging, Object Oriented Programming (OOP), Data Validation, Computer Programming",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-javascript-programming"
+      },
+      {
+        "title": "HTML, CSS, and Javascript for Web Developers",
+        "organization": "Johns Hopkins University",
+        "rating": 4.7,
+        "skills": "Cascading Style Sheets (CSS), HTML and CSS, Javascript, Ajax, Responsive Web Design, Bootstrap (Front-End Framework), Front-End Web Development, Web Design, Hypertext Markup Language (HTML), Browser Compatibility, Web Design and Development, Web Development, JSON, Web Applications, Scripting, Usability, Cross Platform Development, Object Oriented Programming (OOP), Event-Driven Programming, User Interface and User Experience (UI/UX) Design",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/html-css-javascript-for-web-developers"
+      }
+    ]
+  },
+  {
+    "query": "Machine Learning",
+    "results": [
+      {
+        "title": "Machine Learning with Small Data Part 1",
+        "organization": "Northeastern University",
+        "rating": 0.0,
+        "skills": "Small Data, Deep Learning, Applied Machine Learning, PyTorch (Machine Learning Library), Unsupervised Learning, Tensorflow, Machine Learning, Generative AI, Supervised Learning, Artificial Intelligence and Machine Learning (AI/ML), Computer Vision",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/machine-learning-with-small-data"
+      },
+      {
+        "title": "Fundamentals of Machine Learning and Artificial Intelligence",
+        "organization": "Amazon Web Services",
+        "rating": 4.5,
+        "skills": "Artificial Intelligence and Machine Learning (AI/ML), Generative AI, Deep Learning, Artificial Intelligence, AWS SageMaker, Amazon Web Services, Applied Machine Learning, Machine Learning, Digital Transformation",
+        "difficulty": "Mixed",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/fundamentals-of-machine-learning-and-artificial-intelligence"
+      },
+      {
+        "title": "IBM Introduction to Machine Learning",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Exploratory Data Analysis, Unsupervised Learning, Supervised Learning, Feature Engineering, Regression Analysis, Dimensionality Reduction, Data Cleansing, Data Access, Applied Machine Learning, Data Analysis, Predictive Modeling, Statistical Inference, Statistical Hypothesis Testing, Data Quality, Data Science, Machine Learning Algorithms, Classification And Regression Tree (CART), Scikit Learn (Machine Learning Library), Statistical Modeling, Machine Learning",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/ibm-intro-machine-learning"
+      },
+      {
+        "title": "Applied Machine Learning",
+        "organization": "Johns Hopkins University",
+        "rating": 3.6,
+        "skills": "PyTorch (Machine Learning Library), Unsupervised Learning, Computer Vision, Machine Learning Algorithms, Applied Machine Learning, Image Analysis, Dimensionality Reduction, Supervised Learning, Reinforcement Learning, Feature Engineering, Regression Analysis, Data Cleansing, Machine Learning, Data Mining, Scikit Learn (Machine Learning Library), Statistical Machine Learning, Advanced Analytics, Deep Learning, Artificial Neural Networks, Decision Tree Learning",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/applied-machine-learning"
+      },
+      {
+        "title": "Machine Learning with Python",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Unsupervised Learning, Supervised Learning, Feature Engineering, Applied Machine Learning, Scikit Learn (Machine Learning Library), Machine Learning, Predictive Modeling, Dimensionality Reduction, Regression Analysis, Decision Tree Learning, Classification And Regression Tree (CART), Statistical Modeling",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/machine-learning-with-python"
+      },
+      {
+        "title": "IBM Machine Learning",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Exploratory Data Analysis, Unsupervised Learning, Supervised Learning, Feature Engineering, Generative AI, Regression Analysis, Dimensionality Reduction, Reinforcement Learning, Data Cleansing, Data Access, Deep Learning, Data Analysis, Applied Machine Learning, Predictive Modeling, Statistical Analysis, Statistical Inference, Data Science, Machine Learning Algorithms, Machine Learning, Python Programming",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/ibm-machine-learning"
+      },
+      {
+        "title": "Artificial Intelligence: an Overview",
+        "organization": "Politecnico di Milano",
+        "rating": 4.6,
+        "skills": "Unsupervised Learning, Supervised Learning, Machine Learning Algorithms, Machine Learning, Applied Machine Learning, Intellectual Property, Data Ethics, Artificial Intelligence and Machine Learning (AI/ML), Legal Risk, Reinforcement Learning, Artificial Intelligence, Ethical Standards And Conduct, General Data Protection Regulation (GDPR), Dimensionality Reduction, Cloud Platforms, Deep Learning, Hardware Architecture, Information Technology Architecture, Law, Regulation, and Compliance, Computer Science",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/artificial-intelligence-overview"
+      },
+      {
+        "title": "Introduction to Artificial Intelligence",
+        "organization": "University of Illinois Urbana-Champaign",
+        "rating": 4.5,
+        "skills": "Generative AI, Applied Machine Learning, Deep Learning, Artificial Intelligence, Data Ethics, Artificial Intelligence and Machine Learning (AI/ML), Machine Learning, Machine Learning Algorithms, Unsupervised Learning, Artificial Neural Networks, Regression Analysis, Emerging Technologies, Law, Regulation, and Compliance, Business Analytics, Ethical Standards And Conduct, Computer Vision, Governance",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/intro-to-artificial-intelligence"
+      },
+      {
+        "title": "Machine Learning",
+        "organization": "University of Washington",
+        "rating": 4.6,
+        "skills": "Regression Analysis, Applied Machine Learning, Feature Engineering, Machine Learning, Image Analysis, Unsupervised Learning, Artificial Intelligence and Machine Learning (AI/ML), Predictive Modeling, Classification And Regression Tree (CART), Supervised Learning, Bayesian Statistics, Statistical Modeling, Artificial Intelligence, Deep Learning, Data Mining, Computer Vision, Statistical Machine Learning, Predictive Analytics, Text Mining, Machine Learning Algorithms",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/machine-learning"
+      }
+    ]
+  },
+  {
+    "query": "Marketing",
+    "results": [
+      {
+        "title": "Attract and Engage Customers with Digital Marketing",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Search Engine Marketing, Google Ads, Search Engine Optimization, Target Audience, Digital Marketing, Online Advertising, Web Analytics and SEO, Persona Development, Keyword Research, Pay Per Click Advertising, Digital Advertising, Marketing, Advertising Campaigns, Marketing Strategies, Customer Acquisition Management, Lead Generation, Google Analytics",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/attract-and-engage-customers"
+      },
+      {
+        "title": "Think Outside the Inbox: Email Marketing",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Email Marketing, Campaign Management, Copywriting, Marketing Strategy and Techniques, Personally Identifiable Information, Digital Marketing, Marketing Automation, Newsletters, HubSpot CRM, Marketing Analytics, Promotional Strategies, Data Ethics, Performance Analysis, A/B Testing, Customer Retention, Key Performance Indicators (KPIs)",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/think-outside-the-inbox"
+      },
+      {
+        "title": "Foundations of Digital Marketing and E-commerce",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Data Storytelling, Performance Measurement, Search Engine Marketing, Content Performance Analysis, Data-Driven Decision-Making, Search Engine Optimization, Branding, Web Analytics and SEO, Business Metrics, Marketing Strategy and Techniques, Digital Marketing, Customer Engagement, Customer experience strategy (CX), Digital Advertising, Marketing, E-Commerce, Email Marketing, Brand Awareness, Marketing Analytics, Target Audience",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/foundations-of-digital-marketing-and-e-commerce"
+      },
+      {
+        "title": "Strategic Digital Marketing Channels - SEO & SEM",
+        "organization": "Simplilearn",
+        "rating": 4.8,
+        "skills": "Search Engine Marketing, Google Ads, Search Engine Optimization, Customer Retention, Marketing Strategies, Web Analytics and SEO, Online Advertising, Marketing, Digital Marketing, Paid media, Growth Strategies, Campaign Management, Customer Acquisition Management, Marketing Automation, Advertising Campaigns, Google Analytics, Customer Relationship Management, UI/UX Strategy, Social Media Marketing, Digital Advertising",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/stratergicdigitalmarketingchannels-seoandsem"
+      },
+      {
+        "title": "Generative AI in Marketing",
+        "organization": "University of Virginia Darden School Foundation",
+        "rating": 4.3,
+        "skills": "Large Language Modeling, Customer Insights, ChatGPT, Branding, Design Thinking, Keyword Research, Search Engine Marketing, Pay Per Click Advertising, Brand Awareness, Brand Strategy, Digital Marketing, Marketing Design, Generative AI, Marketing Strategy and Techniques, Business Marketing, Personalized Service, Prompt Engineering, Customer Relationship Management, AI Personalization, Machine Learning",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/generative-ai-in-marketing"
+      },
+      {
+        "title": "Marketing con Redes Sociales",
+        "organization": "Tecnológico de Monterrey",
+        "rating": 4.5,
+        "skills": "Social Media Strategy, Goal Setting, Social Media, Social Media Marketing, Target Audience, Social Media Campaigns, Content Marketing, Business Marketing, Digital Media Strategy, Performance Measurement, Marketing, Marketing Strategies, Active Listening, Social Media Management, Key Performance Indicators (KPIs), Social Media Content, Drive Engagement, Content Strategy, Facebook, Strategic Communication",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/marketing-redes-sociales"
+      },
+      {
+        "title": "Unilever Digital Marketing Analyst",
+        "organization": "Unilever",
+        "rating": 4.7,
+        "skills": "Data Storytelling, Marketing Automation, Web Analytics, Marketing Effectiveness, Marketing Analytics, Customer Insights, Digital Marketing, Social Media Campaigns, Market Analysis, Google Analytics, Digital Advertising, Social Media Marketing, Customer Analysis, Search Engine Marketing, Marketing Strategies, Social Media Strategy, Customer experience strategy (CX), Performance Reporting, Search Engine Optimization, MarTech",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/unilever-digital-marketing-analyst"
+      },
+      {
+        "title": "The Strategy of Content Marketing",
+        "organization": "University of California, Davis",
+        "rating": 4.5,
+        "skills": "Content Marketing, Content Performance Analysis, Content Strategy, Marketing Strategies, Content Creation, Strategic Marketing, Social Media Strategy, Marketing, Multimedia, Copywriting, Branding, Target Audience, Persona Development, Business Ethics, Writing",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/content-marketing"
+      },
+      {
+        "title": "Marketing Strategy",
+        "organization": "IE Business School",
+        "rating": 4.5,
+        "skills": "Survey Creation, Surveys, Marketing Planning, Market Research, Business Research, Product Marketing, Consumer Behaviour, Value Propositions, Market Analysis, Marketing, Business Planning, Marketing Channel, Peer Review, Product Strategy, Target Market, Research Design, Data Analysis, Marketing Communications, Marketing Strategies, Research Reports",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/marketing-strategy"
+      }
+    ]
+  },
+  {
+    "query": "Math",
+    "results": [
+      {
+        "title": "Math Prep: College & Work Ready",
+        "organization": "University of North Texas",
+        "rating": 4.5,
+        "skills": "Arithmetic, Probability & Statistics, Graphing, Geometry, Statistics, Algebra, Applied Mathematics, Systems Of Measurement",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/tsi-math-prep"
+      },
+      {
+        "title": "Introduction to Mathematical Thinking",
+        "organization": "Stanford University",
+        "rating": 4.8,
+        "skills": "Mathematical Theory & Analysis, Mathematics and Mathematical Modeling, Calculus, Deductive Reasoning, Logical Reasoning",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/mathematical-thinking"
+      },
+      {
+        "title": "Honors Algebra 2: Linear and Quadratic Functions",
+        "organization": "Johns Hopkins University",
+        "rating": 0.0,
+        "skills": "Algebra, Graphing, Advanced Mathematics, Logical Reasoning, General Mathematics, Mathematical Theory & Analysis, Applied Mathematics, Mathematical Modeling, Visualization (Computer Graphics), Correlation Analysis",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/linear-quadratic-functions"
+      },
+      {
+        "title": "Algebra: Elementary to Advanced",
+        "organization": "Johns Hopkins University",
+        "rating": 4.8,
+        "skills": "Algebra, Mathematical Modeling, Graphing, Arithmetic, Advanced Mathematics, Applied Mathematics, General Mathematics, Mathematical Theory & Analysis, Analytical Skills, Probability & Statistics, Geometry",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/algebra-elementary-to-advanced"
+      },
+      {
+        "title": "Basic Mathematics",
+        "organization": "Birla Institute of Technology & Science, Pilani",
+        "rating": 4.6,
+        "skills": "Integral Calculus, Calculus, Trigonometry, Algebra, Differential Equations, Linear Algebra, Derivatives",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/basicmathematics"
+      },
+      {
+        "title": "Introduction to Calculus",
+        "organization": "The University of Sydney",
+        "rating": 4.8,
+        "skills": "Calculus, Integral Calculus, Algebra, Advanced Mathematics, Geometry, Engineering Calculations, Trigonometry, Arithmetic, Derivatives, Mathematical Modeling, Graphing, Estimation",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/introduction-to-calculus"
+      },
+      {
+        "title": "Data Science Math Skills",
+        "organization": "Duke University",
+        "rating": 4.5,
+        "skills": "Probability, Bayesian Statistics, General Mathematics, Calculus, Graphing, Data Science, Data Analysis, Plot (Graphics), Algebra, Geometry, Arithmetic, Derivatives",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/datasciencemathskills"
+      },
+      {
+        "title": "Mathematics for Machine Learning and Data Science",
+        "organization": "DeepLearning.AI",
+        "rating": 4.6,
+        "skills": "Descriptive Statistics, Bayesian Statistics, Statistical Hypothesis Testing, Probability & Statistics, Sampling (Statistics), Probability Distribution, Linear Algebra, Statistical Inference, A/B Testing, Statistical Analysis, Statistical Machine Learning, Applied Mathematics, NumPy, Probability, Calculus, Dimensionality Reduction, Mathematical Modeling, Machine Learning, Machine Learning Methods, Jupyter",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science"
+      },
+      {
+        "title": "Mathematics for Machine Learning",
+        "organization": "Imperial College London",
+        "rating": 4.6,
+        "skills": "Linear Algebra, Dimensionality Reduction, NumPy, Regression Analysis, Calculus, Applied Mathematics, Probability & Statistics, Feature Engineering, Jupyter, Data Science, Advanced Mathematics, Statistics, Machine Learning Algorithms, Statistical Analysis, Artificial Neural Networks, Algorithms, Python Programming, Machine Learning, Derivatives",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/mathematics-machine-learning"
+      }
+    ]
+  },
+  {
+    "query": "Network",
+    "results": [
+      {
+        "title": "Introduction to Networking",
+        "organization": "NVIDIA",
+        "rating": 4.6,
+        "skills": "OSI Models, TCP/IP, Data Centers, Network Protocols, Network Infrastructure, Local Area Networks, General Networking, Network Architecture, Computer Networking, Network Switches, System Requirements",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-networking-nvidia"
+      },
+      {
+        "title": "Networking Fundamentals",
+        "organization": "Akamai Technologies, Inc.",
+        "rating": 4.7,
+        "skills": "Routing Protocols, OSI Models, Remote Access Systems, Network Architecture, TCP/IP, General Networking, Network Protocols, Network Troubleshooting, Computer Networking, Networking Hardware, Network Administration, Network Security, Network Infrastructure, Network Model, Virtual Private Networks (VPN), Wireless Networks, Network Routers, Network Routing, Dynamic Host Configuration Protocol (DHCP), Intrusion Detection and Prevention",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/akamai-networking"
+      },
+      {
+        "title": "Introduction to Networking and Storage",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Network Troubleshooting, Data Storage, Networking Hardware, General Networking, Cloud Storage, OSI Models, Network Protocols, Local Area Networks, Network Architecture, Cloud Services, Computer Networking, Network Administration, System Configuration, Network Infrastructure, TCP/IP, Microsoft Windows, Wireless Networks, Command-Line Interface",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/introduction-to-networking-and-storage"
+      },
+      {
+        "title": "Fundamentals of Network Communication",
+        "organization": "University of Colorado System",
+        "rating": 4.6,
+        "skills": "Digital Communications, OSI Models, Network Protocols, TCP/IP, Network Routing, Network Architecture, Network Planning And Design, Computer Networking, System Programming, Data Integrity",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/fundamentals-network-communications"
+      },
+      {
+        "title": "Computer Communications",
+        "organization": "University of Colorado System",
+        "rating": 4.6,
+        "skills": "TCP/IP, Local Area Networks, Routing Protocols, Network Routing, Digital Communications, OSI Models, Network Protocols, Dynamic Host Configuration Protocol (DHCP), Network Planning And Design, Network Security, Network Architecture, Network Performance Management, Computer Networking, Network Infrastructure, Wireless Networks, Telecommunications, Software-Defined Networking, Algorithms, System Programming, Data Integrity",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/computer-communications"
+      },
+      {
+        "title": "The Bits and Bytes of Computer Networking",
+        "organization": "Google",
+        "rating": 4.7,
+        "skills": "Computer Networking, Network Troubleshooting, TCP/IP, Network Architecture, Network Protocols, OSI Models, Network Routing, Network Infrastructure, Dynamic Host Configuration Protocol (DHCP), Virtual Private Networks (VPN), Network Security, Wireless Networks, Network Model, Data Integrity",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/computer-networking"
+      },
+      {
+        "title": "Computer Networks and Network Security",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Networking Hardware, TCP/IP, Network Security, Network Protocols, Endpoint Detection and Response, Network Routing, Cybersecurity, Local Area Networks, Dynamic Host Configuration Protocol (DHCP), Firewall, General Networking, Information Systems Security, Intrusion Detection and Prevention, Endpoint Security, Network Infrastructure, Network Planning And Design, Wireless Networks, Security Information and Event Management (SIEM), Network Analysis, Data Loss Prevention",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/network-security-database-vulnerabilities"
+      },
+      {
+        "title": "Configure and Test Basic Network Connectivity",
+        "organization": "Coursera Project Network",
+        "rating": 4.6,
+        "skills": "Dynamic Host Configuration Protocol (DHCP), Virtual Local Area Network (VLAN), Network Administration, System Configuration, TCP/IP, Computer Networking, General Networking, Virtual Environment, Network Switches, Network Routers, Networking Hardware, Network Engineering, Simulations, Configuration Management, Information Technology, Verification And Validation",
+        "difficulty": "Intermediate",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/configure-test-basic-network-connectivity-ccna-1-2"
+      },
+      {
+        "title": "Cisco CCNA 200-301: The Complete Guide to Getting Certified",
+        "organization": "Packt",
+        "rating": 4.8,
+        "skills": "Open Shortest Path First (OSPF), Virtual Local Area Network (VLAN), OSI Models, Wide Area Networks, Network Troubleshooting, TCP/IP, Wireless Networks, Cloud Computing, Network Routing, Routing Protocols, Network Security, Network Monitoring, Event Monitoring, Threat Detection, Threat Management, Network Performance Management, Network Switches, Network Planning And Design, Network Administration, Network Protocols",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/packt-cisco-ccna-200-301-the-complete-guide-to-getting-certified"
+      }
+    ]
+  },
+  {
+    "query": "Networking",
+    "results": [
+      {
+        "title": "Introduction to Networking",
+        "organization": "NVIDIA",
+        "rating": 4.6,
+        "skills": "OSI Models, TCP/IP, Data Centers, Network Protocols, Network Infrastructure, Local Area Networks, General Networking, Network Architecture, Computer Networking, Network Switches, System Requirements",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-networking-nvidia"
+      },
+      {
+        "title": "Networking Fundamentals",
+        "organization": "Akamai Technologies, Inc.",
+        "rating": 4.7,
+        "skills": "Routing Protocols, OSI Models, Remote Access Systems, Network Architecture, TCP/IP, General Networking, Network Protocols, Network Troubleshooting, Computer Networking, Networking Hardware, Network Administration, Network Security, Network Infrastructure, Network Model, Virtual Private Networks (VPN), Wireless Networks, Network Routers, Network Routing, Dynamic Host Configuration Protocol (DHCP), Intrusion Detection and Prevention",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/akamai-networking"
+      },
+      {
+        "title": "Fundamentals of Network Communication",
+        "organization": "University of Colorado System",
+        "rating": 4.6,
+        "skills": "Digital Communications, OSI Models, Network Protocols, TCP/IP, Network Routing, Network Architecture, Network Planning And Design, Computer Networking, System Programming, Data Integrity",
+        "difficulty": "Intermediate",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/fundamentals-network-communications"
+      },
+      {
+        "title": "Introduction to Networking and Storage",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "Network Troubleshooting, Data Storage, Networking Hardware, General Networking, Cloud Storage, OSI Models, Network Protocols, Local Area Networks, Network Architecture, Cloud Services, Computer Networking, Network Administration, System Configuration, Network Infrastructure, TCP/IP, Microsoft Windows, Wireless Networks, Command-Line Interface",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/introduction-to-networking-and-storage"
+      },
+      {
+        "title": "Configure and Test Basic Network Connectivity",
+        "organization": "Coursera Project Network",
+        "rating": 4.6,
+        "skills": "Dynamic Host Configuration Protocol (DHCP), Virtual Local Area Network (VLAN), Network Administration, System Configuration, TCP/IP, Computer Networking, General Networking, Virtual Environment, Network Switches, Network Routers, Networking Hardware, Network Engineering, Simulations, Configuration Management, Information Technology, Verification And Validation",
+        "difficulty": "Intermediate",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/configure-test-basic-network-connectivity-ccna-1-2"
+      },
+      {
+        "title": "Computer Communications",
+        "organization": "University of Colorado System",
+        "rating": 4.6,
+        "skills": "TCP/IP, Local Area Networks, Routing Protocols, Network Routing, Digital Communications, OSI Models, Network Protocols, Dynamic Host Configuration Protocol (DHCP), Network Planning And Design, Network Security, Network Architecture, Network Performance Management, Computer Networking, Network Infrastructure, Wireless Networks, Telecommunications, Software-Defined Networking, Algorithms, System Programming, Data Integrity",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/computer-communications"
+      },
+      {
+        "title": "Software Defined Networking",
+        "organization": "The University of Chicago",
+        "rating": 4.5,
+        "skills": "Software-Defined Networking, Computer Networking, Virtualization, Network Architecture, General Networking, Network Administration, Network Routing, Network Security, Network Protocols, Hardware Architecture, Scalability",
+        "difficulty": "Mixed",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/sdn"
+      },
+      {
+        "title": "The Bits and Bytes of Computer Networking",
+        "organization": "Google",
+        "rating": 4.7,
+        "skills": "Computer Networking, Network Troubleshooting, TCP/IP, Network Architecture, Network Protocols, OSI Models, Network Routing, Network Infrastructure, Dynamic Host Configuration Protocol (DHCP), Virtual Private Networks (VPN), Network Security, Wireless Networks, Network Model, Data Integrity",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/computer-networking"
+      },
+      {
+        "title": "Networking 101",
+        "organization": "Google Cloud",
+        "rating": 4.2,
+        "skills": "Network Performance Management, General Networking, Google Cloud Platform, Network Administration, Computer Networking, Network Architecture, Network Infrastructure, Network Security, Network Routing, Network Planning And Design, Firewall, System Configuration, Infrastructure Security, Security Controls, Security Software",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/googlecloud-networking-101-rlciy"
+      }
+    ]
+  },
+  {
+    "query": "OOP",
+    "results": [
+      {
+        "title": "Introduction to Object-Oriented Programming in C++",
+        "organization": "University of London",
+        "rating": 4.7,
+        "skills": "C++ (Programming Language), Object Oriented Programming (OOP), Computer Programming, Interactive Design, Program Development, Command-Line Interface, Development Environment, Debugging",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/cplusplus-crypto-i"
+      },
+      {
+        "title": "Programming in Python: A Hands-on Introduction",
+        "organization": "Codio",
+        "rating": 4.5,
+        "skills": "Object Oriented Programming (OOP), Programming Principles, Computer Programming, Scripting Languages, Data Import/Export, Data Structures, Python Programming, Scripting, Computational Logic, Computer Science, File Management",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/hands-on-python"
+      },
+      {
+        "title": "Learn Java Programming",
+        "organization": "Heriot-Watt University",
+        "rating": 0.0,
+        "skills": "Object Oriented Programming (OOP), Java, Java Programming, Computer Programming, Programming Principles, Software Development, Algorithms, Computational Logic",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/learn-java-programming"
+      },
+      {
+        "title": "Programming with Java",
+        "organization": "Amazon",
+        "rating": 4.2,
+        "skills": "Object Oriented Programming (OOP), Object Oriented Design, Java, File Management, Data Import/Export, Maintainability, Debugging, Software Development",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/programming-with-java"
+      },
+      {
+        "title": "Introduction to Java",
+        "organization": "LearnQuest",
+        "rating": 4.6,
+        "skills": "Eclipse (Software), Java, Java Programming, Integrated Development Environments, Development Environment, Software Installation, Computer Programming, Programming Principles, Program Development, Object Oriented Programming (OOP)",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/java-introduction"
+      },
+      {
+        "title": "Oracle Java Foundations",
+        "organization": "Oracle",
+        "rating": 4.8,
+        "skills": "Java, Object Oriented Programming (OOP), Oracle Cloud, Computer Programming, Cloud Development, Integrated Development Environments, Development Environment",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/oracle-java-foundations"
+      },
+      {
+        "title": "Fundamentals of Java Programming",
+        "organization": "Board Infinity",
+        "rating": 4.4,
+        "skills": "Eclipse (Software), Object Oriented Programming (OOP), Java Programming, Object Oriented Design, Java, Integrated Development Environments, Development Environment, Computer Programming, Programming Principles, Algorithms, Virtual Machines",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/fundamentals-of-java-programming"
+      },
+      {
+        "title": "Create a Supermarket app using Java OOP",
+        "organization": "Coursera Project Network",
+        "rating": 4.5,
+        "skills": "Object Oriented Programming (OOP), Java, Java Programming, Software Design, Software Testing, Application Development",
+        "difficulty": "Intermediate",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/java-oop-supermarket-app"
+      },
+      {
+        "title": "Object-Oriented Design",
+        "organization": "University of Alberta",
+        "rating": 4.7,
+        "skills": "Object Oriented Design, Unified Modeling Language, Software Design, Object Oriented Programming (OOP), Java, Maintainability, Software Architecture, Android Development, Technical Design, Conceptual Design",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/object-oriented-design"
+      }
+    ]
+  },
+  {
+    "query": "Power BI",
+    "results": [
+      {
+        "title": "Power BI Fundamentals",
+        "organization": "Corporate Finance Institute",
+        "rating": 4.9,
+        "skills": "Power BI, Data Analysis Expressions (DAX), Dashboard, Business Intelligence, Data Import/Export, Business Reporting, Interactive Data Visualization, Data Storytelling, Data Modeling, Data Transformation, Data Visualization Software, Data Analysis, Data Sharing, Sales, Key Performance Indicators (KPIs)",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/power-bi-fundamentals"
+      },
+      {
+        "title": "Power BI: Data Visualization and Analysis",
+        "organization": "Whizlabs",
+        "rating": 0.0,
+        "skills": "Business Intelligence, Data Presentation, Data Storytelling, Interactive Data Visualization, Data Visualization Software, Business Analytics, Power BI, Pivot Tables And Charts, Dashboard, Key Performance Indicators (KPIs), Performance Reporting, Data Analysis, Scatter Plots, Business Reporting, Trend Analysis, Time Series Analysis and Forecasting",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/power-bi-data-visualization-essentials"
+      },
+      {
+        "title": "Power BI: Data Modeling and Data Analysis",
+        "organization": "Whizlabs",
+        "rating": 0.0,
+        "skills": "Power BI, Data Analysis Expressions (DAX), Data Modeling, Star Schema, Data Warehousing, Data Security, Data Visualization Software, Pivot Tables And Charts, Performance Tuning, Business Intelligence, Excel Formulas, Role-Based Access Control (RBAC)",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/power-bi-data-modeling-and-data-analysis"
+      },
+      {
+        "title": "Microsoft Copilot for Power BI: AI-Powered Report Insights",
+        "organization": "Coursera Instructor Network",
+        "rating": 0.0,
+        "skills": "Data Analysis Expressions (DAX), Power BI, Dashboard, Data Modeling, Business Intelligence, Microsoft Excel, Data Visualization Software, Microsoft Copilot, Data Integration, Interactive Data Visualization, Data-Driven Decision-Making, Data Manipulation, Data Transformation, Data Cleansing, ChatGPT",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/microsoft-copilot-for-power-bi-ai-powered-report-insights"
+      },
+      {
+        "title": "Microsoft Power BI and Power Platform for Productivity",
+        "organization": "Microsoft",
+        "rating": 4.5,
+        "skills": "Extract, Transform, Load, Star Schema, Microsoft Power Platform, Data Analysis Expressions (DAX), Data Storytelling, Microsoft Power Automate/Flow, Dashboard, Microsoft Excel, Excel Formulas, Power BI, Data-Driven Decision-Making, Microsoft Copilot, Data Presentation, Spreadsheet Software, Data Transformation, Data Literacy, Data Modeling, Data Visualization, Data Analysis, Business Intelligence",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/microsoft-power-bi-and-power-platform-productivity"
+      },
+      {
+        "title": "BI Essentials for Finance Analysts (Power BI Edition)",
+        "organization": "Corporate Finance Institute",
+        "rating": 4.8,
+        "skills": "Data Analysis Expressions (DAX), Power BI, Snowflake Schema, Data Modeling, SQL, Dashboard, Microsoft Excel, Business Intelligence, Excel Formulas, Pivot Tables And Charts, Data Import/Export, Business Reporting, Databases, Interactive Data Visualization, Data Storytelling, Financial Statements, Data Manipulation, Data Transformation, Financial Analysis, Data Visualization",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/bi-essentials-for-finance-professionals-powerbi"
+      },
+      {
+        "title": "Mastering Power BI for Data Analytics & Storytelling",
+        "organization": "Edureka",
+        "rating": 4.3,
+        "skills": "Power BI, Snowflake Schema, Data Analysis Expressions (DAX), Data Modeling, Microsoft SQL Servers, AWS Identity and Access Management (IAM), Inventory Management System, Transact-SQL, Amazon Web Services, SQL, Data Visualization Software, Interactive Data Visualization, Dashboard, Data Storytelling, Database Design, Data Analysis, Data Presentation, Data Transformation, Analytical Skills, Business Intelligence",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/mastering-power-bi-data-analytics-storytelling"
+      },
+      {
+        "title": "Data Analysis and Visualization with Power BI",
+        "organization": "Microsoft",
+        "rating": 4.7,
+        "skills": "Dashboard, Power BI, Data Storytelling, Data Visualization Software, Data Visualization, Data Presentation, Advanced Analytics, Statistical Reporting, Interactive Data Visualization, Business Intelligence, Data Analysis, Web Content Accessibility Guidelines",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/data-analysis-and-visualization-with-power-bi"
+      },
+      {
+        "title": "Microsoft Power Platform Fundamentals PL-900 Exam Prep",
+        "organization": "Microsoft",
+        "rating": 4.4,
+        "skills": "Microsoft Power Platform, Microsoft Power Automate/Flow, Power BI, Dashboard, Data Visualization, Business Intelligence, Business Process Automation, Productivity Software, Application Development, Data Integration, Performance Analysis, Automation, Data Security, Workflow Management, Cloud Applications, Data Analysis Software, Business Process, Generative AI Agents, Microsoft Teams, Data Modeling",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/microsoft-power-platform-fundamentals"
+      }
+    ]
+  },
+  {
+    "query": "Presentation Skills",
+    "results": [
+      {
+        "title": "Present with Purpose: Create/Deliver Effective Presentations",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Presentations, Public Speaking, Persuasive Communication, Microsoft PowerPoint, Verbal Communication Skills, Target Audience, Communication, Storytelling, Non-Verbal Communication, Drive Engagement, Composure",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/present-with-purpose"
+      },
+      {
+        "title": "مهارات العرض والتقديم | Presentation Skills",
+        "organization": "Alfaisal University | KLD",
+        "rating": 4.8,
+        "skills": "Presentations, Persuasive Communication, Public Speaking, Communication, Verbal Communication Skills, Non-Verbal Communication, Target Audience",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/presentation-skills-"
+      },
+      {
+        "title": "Successful Presentation",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.8,
+        "skills": "Public Speaking, Presentations, Verbal Communication Skills, Storytelling, Drive Engagement, Persuasive Communication, Communication, Non-Verbal Communication, Business Writing, Cognitive flexibility, Composure, Adaptability, Creativity",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/presentation-skills"
+      },
+      {
+        "title": "Effective Business Presentations with Powerpoint",
+        "organization": "PwC",
+        "rating": 4.5,
+        "skills": "Microsoft PowerPoint, Presentations, Data Storytelling, Verbal Communication Skills, Public Speaking, Data Visualization, Business Communication, Storytelling, Communication, Peer Review, Communication Strategies, Data Analysis, Target Audience",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/powerpoint-presentations"
+      },
+      {
+        "title": "Dynamic Public Speaking",
+        "organization": "University of Washington",
+        "rating": 4.7,
+        "skills": "Public Speaking, Persuasive Communication, Presentations, Verbal Communication Skills, Microsoft PowerPoint, Oral Expression, Communication, Storytelling, Motivational Skills, Constructive Feedback, Performing Arts, Concision, Drive Engagement, Communication Strategies, Target Audience, Writing, Non-Verbal Communication, Problem Solving, Composure, Instructional Design",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/public-speaking"
+      },
+      {
+        "title": "Designing and Formatting a Presentation in PowerPoint",
+        "organization": "Coursera Project Network",
+        "rating": 4.4,
+        "skills": "Microsoft PowerPoint, Presentations, Data Visualization, Drive Engagement, Photo Editing, Editing, Writing and Editing, Graphic Design, Business Communication",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/designing-formatting-presentation-powerpoint"
+      },
+      {
+        "title": "Verbal Communications and Presentation Skills",
+        "organization": "Starweaver",
+        "rating": 4.6,
+        "skills": "Verbal Communication Skills, Presentations, Communication, Public Speaking, Persuasive Communication, Drive Engagement, Interpersonal Communications, Non-Verbal Communication, Professionalism, Rapport Building",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/verbal-communications-and-presentation-skills"
+      },
+      {
+        "title": "Good with Words: Speaking and Presenting",
+        "organization": "University of Michigan",
+        "rating": 4.6,
+        "skills": "Tactfulness, Public Speaking, Storytelling, Verbal Communication Skills, Persuasive Communication, Non-Verbal Communication, Communication, Cognitive flexibility, Communication Strategies, Presentations, Ingenuity, Interpersonal Communications, Rapport Building, Constructive Feedback, Empathy, Social Skills, Professionalism, Active Listening, Optimism, Creativity",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/good-with-words-speaking-and-presenting"
+      },
+      {
+        "title": "Communication Skills for University Success",
+        "organization": "The University of Sydney",
+        "rating": 4.8,
+        "skills": "Editing, Public Speaking, Proofreading, Research, Writing, Communication, English Language, Professionalism, Ethical Standards And Conduct, Interpersonal Communications, Critical Thinking, Collaboration",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/communication-skills"
+      }
+    ]
+  },
+  {
+    "query": "Project Management",
+    "results": [
+      {
+        "title": "Project Management in Construction",
+        "organization": "L&T EduTech",
+        "rating": 4.7,
+        "skills": "Scope Management, Stakeholder Management, Project Schedules, Project Risk Management, Environment Health And Safety, Work Breakdown Structure, Project Scoping, Earned Value Management, Feasibility Studies, Risk Analysis, Quality Management, Procurement, Cost Estimation, Scheduling, Cost Management, Project Management Life Cycle, Contract Management, Communication Strategies, Risk Management, Project Controls",
+        "difficulty": "Advanced",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/project-management-in-construction"
+      },
+      {
+        "title": "Project Management and Planning",
+        "organization": "Johns Hopkins University",
+        "rating": 4.7,
+        "skills": "Project Closure, Work Breakdown Structure, Earned Value Management, Configuration Management, Project Portfolio Management, Negotiation, Project Management Life Cycle, Project Management, Project Schedules, Agile Methodology, Project Controls, Product Roadmaps, Scheduling, Conflict Management, Agile Project Management, Project Coordination, Risk Management, Project Planning, Team Leadership, Stakeholder Engagement",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/project-management-and-planning"
+      },
+      {
+        "title": "Project Management Essentials",
+        "organization": "Howard University",
+        "rating": 4.6,
+        "skills": "Project Management Life Cycle, Project Management Institute (PMI) Methodology, Project Management, Project Coordination, Agile Project Management, Project Risk Management, Scope Management, Project Controls, Project Planning, Project Closure, Stakeholder Management, Change Control, Leadership",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/copy-of-project-management-essentials"
+      },
+      {
+        "title": "Foundations of Project Management",
+        "organization": "Google",
+        "rating": 4.9,
+        "skills": "Project Management Life Cycle, Change Management, Organizational Structure, Project Management, Organizational Change, Program Management, Project Closure, Agile Methodology, Project Planning, Waterfall Methodology, Strategic Thinking",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/project-management-foundations"
+      },
+      {
+        "title": "Project Management Principles and Practices",
+        "organization": "University of California, Irvine",
+        "rating": 4.7,
+        "skills": "Cost Estimation, Stakeholder Management, Project Risk Management, Project Controls, Project Schedules, Work Breakdown Structure, Project Performance, Estimation, Conflict Management, Quality Management, Change Control, Project Management, Timelines, Milestones (Project Management), Peer Review, Project Planning, Budgeting, Scheduling, Project Management Life Cycle, Risk Management",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/project-management"
+      },
+      {
+        "title": "Engineering Project Management",
+        "organization": "Rice University",
+        "rating": 4.7,
+        "skills": "Project Scoping, Communication Planning, Cost Management, Scope Management, Project Estimation, Project Schedules, Earned Value Management, Scheduling, Team Management, Quality Assurance, Stakeholder Management, Work Breakdown Structure, Risk Management, Organizational Structure, Procurement, Project Risk Management, Project Documentation, Requirements Management, Project Management, Planning",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/engineering-project-management"
+      },
+      {
+        "title": "Learn Notion for Client and Project Management",
+        "organization": "Skillshare",
+        "rating": 0.0,
+        "skills": "Timelines, Database Management, Databases, Database Design, Workflow Management, Information Architecture, Organizational Skills, Project Management Software, Project Management, Productivity Software, Client Services, Process Improvement and Optimization, Customer Relationship Management (CRM) Software, Content Management, Collaborative Software, Productivity, Kanban Principles, Automation, Collaboration",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/learnnotionforclientandprojectmanagement"
+      },
+      {
+        "title": "Project Management",
+        "organization": "University of California, Irvine",
+        "rating": 4.7,
+        "skills": "Project Schedules, Project Planning, Stakeholder Management, Communication Planning, Project Implementation, Earned Value Management, Agile Methodology, Agile Project Management, Stakeholder Communications, Project Scoping, Work Breakdown Structure, Project Management, Program Management, Conflict Management, Project Coordination, Milestones (Project Management), Resource Utilization, Resource Planning, Project Documentation, Leadership",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/uci-project-management"
+      },
+      {
+        "title": "Project Management",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.7,
+        "skills": "User Story, Supplier Management, Project Schedules, Project Closure, Engineering Management, Milestones (Project Management), Team Leadership, Stakeholder Management, Scheduling, Agile Project Management, Scrum (Software Development), Procurement, Quality Management, Team Management, Project Planning, Agile Methodology, Project Scoping, Project Management, Risk Management, Stakeholder Communications",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/meem-project-management"
+      }
+    ]
+  },
+  {
+    "query": "Python",
+    "results": [
+      {
+        "title": "Programming in Python: A Hands-on Introduction",
+        "organization": "Codio",
+        "rating": 4.5,
+        "skills": "Object Oriented Programming (OOP), Programming Principles, Computer Programming, Scripting Languages, Data Import/Export, Data Structures, Python Programming, Scripting, Computational Logic, Computer Science, File Management",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/hands-on-python"
+      },
+      {
+        "title": "Python for Data Science, AI & Development",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Jupyter, Python Programming, Data Structures, Web Scraping, Data Manipulation, Programming Principles, Pandas (Python Package), Computer Programming, Object Oriented Programming (OOP), Restful API, NumPy, Application Programming Interface (API), Data Analysis, Data Import/Export, File Management",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+      },
+      {
+        "title": "Learn Python",
+        "organization": "Scrimba",
+        "rating": 4.8,
+        "skills": "Object Oriented Programming (OOP), Data Structures, Python Programming, Programming Principles, User Interface (UI), Computer Programming, Scripting, Software Engineering, Performance Tuning, Scripting Languages, File Management, Web Development, Computational Thinking, Debugging, Software Development, Web Development Tools",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/specializations/learn-python"
+      },
+      {
+        "title": "Python for Everybody",
+        "organization": "University of Michigan",
+        "rating": 4.8,
+        "skills": "Web Scraping, Data Processing, Relational Databases, Data Visualization, JSON, Database Design, SQL, Network Protocols, Web Services, Restful API, Data Modeling, Programming Principles, Application Programming Interface (API), Database Systems, Database Management, Extensible Markup Language (XML), Data Structures, Data Collection, Computer Programming, Python Programming",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/python"
+      },
+      {
+        "title": "Programación con Python, nivel básico",
+        "organization": "Universidad Nacional de Colombia",
+        "rating": 0.0,
+        "skills": "Programming Principles, Debugging, Computational Thinking, Computer Programming, Algorithms, Program Development, Computational Logic, Python Programming, Integrated Development Environments, Development Environment, Software Testing",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/programacion-con-python-basico"
+      },
+      {
+        "title": "Get Started with Python",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Object Oriented Programming (OOP), Data Structures, Python Programming, NumPy, Pandas (Python Package), Data Analysis, Programming Principles, Scripting, Data Manipulation, Data Visualization, Algorithms",
+        "difficulty": "Advanced",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/get-started-with-python"
+      },
+      {
+        "title": "Python for Cybersecurity",
+        "organization": "Infosec",
+        "rating": 4.5,
+        "skills": "MITRE ATT&CK Framework, Cyber Threat Hunting, Threat Detection, Threat Modeling, Cybersecurity, Network Security, Cyber Security Strategy, System Monitoring, Cyber Operations, Continuous Monitoring, Cyber Threat Intelligence, Incident Response, Scripting, Network Monitoring, Command-Line Interface, Persistence, Python Programming, Data Access, Authorization (Computing), Computer Programming",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/pythonforcybersecurity"
+      },
+      {
+        "title": "Python 3 Programming",
+        "organization": "University of Michigan",
+        "rating": 4.8,
+        "skills": "Unified Modeling Language, JSON, Object Oriented Programming (OOP), Software Design, Debugging, Object Oriented Design, Data Processing, Web Scraping, Unit Testing, Programming Principles, Python Programming, Data Import/Export, Restful API, Image Analysis, Data Manipulation, Jupyter, Computer Programming, Maintainability, Data Structures, File Management",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/python-3-programming"
+      },
+      {
+        "title": "Programming in Python",
+        "organization": "Meta",
+        "rating": 4.6,
+        "skills": "Object Oriented Programming (OOP), Unit Testing, Test Driven Development (TDD), Programming Principles, Software Testing, Data Structures, Python Programming, Computer Programming, Development Environment, Integrated Development Environments, Debugging, Django (Web Framework), Cloud Hosting",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/programming-in-python"
+      }
+    ]
+  },
+  {
+    "query": "SEO",
+    "results": [
+      {
+        "title": "Search Engine Optimization (SEO) with Squarespace",
+        "organization": "Coursera Project Network",
+        "rating": 4.5,
+        "skills": "Blogs, Content Management Systems, Search Engine Optimization, Web Analytics and SEO, Keyword Research, Web Content",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/search-engine-optimization-with-squarespace"
+      },
+      {
+        "title": "Google SEO Fundamentals",
+        "organization": "University of California, Davis",
+        "rating": 4.8,
+        "skills": "Search Engine Optimization, Web Analytics and SEO, Keyword Research, Content Strategy, Digital Marketing, Marketing, Content Performance Analysis, Content Creation, Social Media, Artificial Intelligence, Information Architecture, User Experience",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/seo-fundamentals"
+      },
+      {
+        "title": "Introduction to Google SEO",
+        "organization": "University of California, Davis",
+        "rating": 4.6,
+        "skills": "Search Engine Optimization, Web Analytics and SEO, Target Audience, Keyword Research, Consumer Behaviour, Google Analytics, Digital Marketing, User Research, Content Strategy, Web Content, Data Analysis, Business Reporting",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/search-engine-optimization"
+      },
+      {
+        "title": "Mastering SEO with Jasper: Ranking and Optimization",
+        "organization": "Coursera Instructor Network",
+        "rating": 3.8,
+        "skills": "Blogs, Search Engine Optimization, Keyword Research, Web Content, Web Analytics and SEO, Content Creation, Content Marketing, Online Advertising, Drive Engagement, Generative AI, Business Marketing",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/mastering-seo-with-jasper-ranking-and-optimization-4"
+      },
+      {
+        "title": "Increase SEO Traffic with WordPress",
+        "organization": "Coursera Project Network",
+        "rating": 4.5,
+        "skills": "WordPress, Search Engine Optimization, Blogs, Web Analytics, Web Content, Keyword Research, Information Architecture, Content Management, Marketing, Analytics, Web Design, Web Development",
+        "difficulty": "Advanced",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/increase-seo-traffic-with-wordpress"
+      },
+      {
+        "title": "Search Engine Optimization (SEO)",
+        "organization": "University of California, Davis",
+        "rating": 4.6,
+        "skills": "Keyword Research, Search Engine Optimization, Web Analytics and SEO, Content Creation, Social Media Strategy, Target Audience, Client Services, Social Media, Content Strategy, Social Media Marketing, Competitive Analysis, Consumer Behaviour, Google Analytics, Forecasting, Content Development and Management, Digital Marketing, Expectation Management, User Research, Content Marketing, Marketing",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/seo"
+      },
+      {
+        "title": "Search Engine Optimization and Content Marketing",
+        "organization": "IBM",
+        "rating": 0.0,
+        "skills": "Web Analytics and SEO, Search Engine Optimization, Content Marketing, Web Analytics, Blogs, Search Engine Marketing, Content Creation, MarTech, Marketing Strategy and Techniques, Content Development and Management, Digital Marketing, Growth Strategies, Content Strategy, Market Research",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/search-engine-optimization-and-content-marketing"
+      },
+      {
+        "title": "Brand Marketing and SEO Tools using Wix",
+        "organization": "Coursera Project Network",
+        "rating": 4.6,
+        "skills": "Email Marketing, Search Engine Optimization, Web Analytics and SEO, Social Media Marketing, Brand Marketing, Brand Awareness, Branding, Digital Marketing, Marketing Design, Marketing, Content Creation, Web Design and Development",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/brand-marketing-seo-tools-using-wix"
+      },
+      {
+        "title": "Attract and Engage Customers with Digital Marketing",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Search Engine Marketing, Google Ads, Search Engine Optimization, Target Audience, Digital Marketing, Online Advertising, Web Analytics and SEO, Persona Development, Keyword Research, Pay Per Click Advertising, Digital Advertising, Marketing, Advertising Campaigns, Marketing Strategies, Customer Acquisition Management, Lead Generation, Google Analytics",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/attract-and-engage-customers"
+      }
+    ]
+  },
+  {
+    "query": "Social Media",
+    "results": [
+      {
+        "title": "Social Media Content and Strategy",
+        "organization": "Adobe",
+        "rating": 4.8,
+        "skills": "Social Media Content, Social Media, Content Creation, Social Media Strategy, Social Media Marketing, Content Performance Analysis, Social Media Management, Intellectual Property, Target Audience, Drive Engagement, Customer Engagement, Content Strategy, Ethical Standards And Conduct, Regulation and Legal Compliance, Multimedia, Scheduling, Video Production, Branding, Generative AI Agents",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/social-media-content-and-strategy"
+      },
+      {
+        "title": "Content Creation for TikTok, YouTube, Instagram, Facebook",
+        "organization": "Coursera",
+        "rating": 0.0,
+        "skills": "TikTok, Video Production, Content Creation, Web Analytics and SEO, Content Performance Analysis, Social Media Content, Search Engine Optimization, Video Editing, Photography, Social Media, Branding, Social Media Marketing, Social Media Strategy, Content Strategy, Photo Editing, Storytelling, Social Media Campaigns, Drive Engagement, Digital Content, Photo/Video Production and Technology",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/content-creation-tiktok-youtube-instagram-facebook"
+      },
+      {
+        "title": "Build a social media presence for your business using Canva",
+        "organization": "Coursera Project Network",
+        "rating": 4.6,
+        "skills": "Target Audience, Content Creation, Social Media Content, Social Media, Content Strategy, Marketing Materials, Social Media Marketing, Social Media Strategy, Graphic Design, Marketing Design, Branding",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/build-a-social-media-presence-for-your-business-using-canva"
+      },
+      {
+        "title": "Social Media Analytics",
+        "organization": "Johns Hopkins University",
+        "rating": 4.2,
+        "skills": "Network Analysis, Data Visualization, Social Media, Graph Theory, Relational Databases, Social Media Marketing, Data Visualization Software, Data Storytelling, Data Analysis, Exploratory Data Analysis, Data Literacy, Social Sciences, Statistical Analysis, Machine Learning, R Programming, Sociology, Natural Language Processing, Data Manipulation, Text Mining, Analytics",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/social-media-analytics"
+      },
+      {
+        "title": "Facebook Storytelling: Write Compelling Stories",
+        "organization": "Coursera",
+        "rating": 0.0,
+        "skills": "Writing, Storytelling, Copywriting, Persuasive Communication, Facebook, Content Creation, Social Media Content, Social Media, Drive Engagement, Prompt Engineering, Generative AI Agents",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/facebook-storytelling-write-compelling-stories"
+      },
+      {
+        "title": "Social Media Management",
+        "organization": "Meta",
+        "rating": 4.8,
+        "skills": "Social Media Management, Social Media Marketing, Content Creation, Social Media Strategy, Social Media Campaigns, Content Marketing, Instagram, Content Management, Content Performance Analysis, Brand Management, Facebook, Branding, Customer Engagement",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/social-media-management"
+      },
+      {
+        "title": "Meta Social Media Marketing",
+        "organization": "Meta",
+        "rating": 4.8,
+        "skills": "Paid media, Social Media Marketing, Social Media Management, Social Media, Marketing Analytics, Target Audience, Marketing Budgets, Social Media Strategy, Social Media Campaigns, Instagram, Content Creation, Campaign Management, Marketing Effectiveness, Online Advertising, Marketing, Performance Analysis, Key Performance Indicators (KPIs), Presentations, Brand Management, Digital Marketing",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/professional-certificates/facebook-social-media-marketing"
+      },
+      {
+        "title": "Instagram Optimization: Grow Your Presence",
+        "organization": "Coursera",
+        "rating": 0.0,
+        "skills": "Instagram, Content Performance Analysis, Social Media Management, Social Media, Social Media Marketing, Brand Marketing, Social Media Strategy, Drive Engagement, Content Strategy, Customer Engagement, Marketing Analytics, Content Creation, Performance Metric, Analytics",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/instagram-optimization-grow-your-presence"
+      },
+      {
+        "title": "Increase Engagement to your Instagram Business Profile",
+        "organization": "Coursera Project Network",
+        "rating": 4.0,
+        "skills": "Instagram, Social Media, Social Media Marketing, Social Media Strategy, Content Creation, Scheduling, Branding",
+        "difficulty": "Beginner",
+        "duration": "Less Than 2 Hours",
+        "link": "https://www.coursera.org/projects/increase-engagement-instagram-business-profile"
+      }
+    ]
+  },
+  {
+    "query": "SQL",
+    "results": [
+      {
+        "title": "SQL: A Practical Introduction for Querying Databases",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "SQL, Relational Databases, Microsoft SQL Servers, MySQL, Query Languages, Database Systems, Databases, Database Management, Stored Procedure, IBM DB2, Data Manipulation, Data Analysis, Transaction Processing",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/sql-practical-introduction-for-querying-databases"
+      },
+      {
+        "title": "Master SQL for Data Analysis",
+        "organization": "Packt",
+        "rating": 0.0,
+        "skills": "",
+        "difficulty": "Intermediate",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/learn/packt-master-sql-for-data-analysis-creek"
+      },
+      {
+        "title": "Introduction to Structured Query Language (SQL)",
+        "organization": "University of Michigan",
+        "rating": 4.8,
+        "skills": "Database Design, SQL, MySQL, Relational Databases, Databases, Data Modeling, Development Environment, PHP (Scripting Language), Software Installation",
+        "difficulty": "Intermediate",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/intro-sql"
+      },
+      {
+        "title": "The Structured Query Language (SQL)",
+        "organization": "University of Colorado Boulder",
+        "rating": 4.7,
+        "skills": "SQL, Database Management, Query Languages, Relational Databases, Database Design, Database Theory, Database Administration, Data Analysis, Database Application, Data Access, Data Manipulation, Data Science, Data Modeling",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/the-structured-query-language-sql"
+      },
+      {
+        "title": "SQL for Data Science",
+        "organization": "University of California, Davis",
+        "rating": 4.6,
+        "skills": "Data Governance, SQL, Data Quality, Database Design, Query Languages, Data Manipulation, Data Modeling, Relational Databases, Data Science, Data Analysis, Data Cleansing",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/sql-for-data-science"
+      },
+      {
+        "title": "Intro to SQL",
+        "organization": "Scrimba",
+        "rating": 4.4,
+        "skills": "SQL, Data Manipulation, Query Languages, Database Management, Relational Databases, Stored Procedure, Data Synthesis, IT Automation, Scripting, Database Management Systems, Data Access",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/intro-to-sql"
+      },
+      {
+        "title": "SQL Foundations",
+        "organization": "Microsoft",
+        "rating": 4.4,
+        "skills": "Microsoft SQL Servers, SQL, Transact-SQL, Databases, Database Management Systems, Relational Databases, Data Transformation, Data Manipulation, Data Access, Query Languages, Generative AI, Data Presentation",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/sql-foundations"
+      },
+      {
+        "title": "Learn SQL Basics for Data Science",
+        "organization": "University of California, Davis",
+        "rating": 4.6,
+        "skills": "Data Governance, Presentations, SQL, Apache Spark, Distributed Computing, Descriptive Statistics, Data Lakes, Data Storytelling, Peer Review, Exploratory Data Analysis, Data Quality, Data Pipelines, Databricks, JSON, Statistical Analysis, Data Modeling, Database Design, Data Analysis, Complex Problem Solving, Data Visualization",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/learn-sql-basics-data-science"
+      },
+      {
+        "title": "Databases and SQL for Data Science with Python",
+        "organization": "IBM",
+        "rating": 4.7,
+        "skills": "SQL, Databases, Stored Procedure, Relational Databases, Database Design, Query Languages, Database Management, Data Analysis, Jupyter, Data Manipulation, Pandas (Python Package), Python Programming, Transaction Processing",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/sql-data-science"
+      }
+    ]
+  },
+  {
+    "query": "Statistics",
+    "results": [
+      {
+        "title": "Probability and Statistics: To p or not to p?",
+        "organization": "University of London",
+        "rating": 4.6,
+        "skills": "Descriptive Statistics, Statistics, Probability & Statistics, Statistical Hypothesis Testing, Data-Driven Decision-Making, Data Analysis, Probability, Risk Modeling, Statistical Inference, Data Visualization Software, Mathematical Modeling",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/probability-statistics"
+      },
+      {
+        "title": "Basic Statistics",
+        "organization": "University of Amsterdam",
+        "rating": 4.6,
+        "skills": "Statistical Hypothesis Testing, Statistics, Scientific Methods, R Programming",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/basic-statistics"
+      },
+      {
+        "title": "Introduction to Statistics",
+        "organization": "Stanford University",
+        "rating": 4.6,
+        "skills": "Descriptive Statistics, Statistics, Statistical Methods, Sampling (Statistics), Statistical Analysis, Data Analysis, Statistical Modeling, Statistical Hypothesis Testing, Regression Analysis, Statistical Inference, Probability, Exploratory Data Analysis, Quantitative Research, Data Collection, Probability Distribution",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/stanford-statistics"
+      },
+      {
+        "title": "Methods and Statistics in Social Sciences",
+        "organization": "University of Amsterdam",
+        "rating": 4.6,
+        "skills": "Qualitative Research, Scientific Methods, Statistical Analysis, Statistical Hypothesis Testing, Research, Research Design, Sampling (Statistics), Research Reports, Science and Research, Interviewing Skills, Data Analysis, Data Collection, Research Methodologies, Social Sciences, Surveys, Quantitative Research, Statistics, Regression Analysis, Statistical Inference, R Programming",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/social-science"
+      },
+      {
+        "title": "Understanding Clinical Research: Behind the Statistics",
+        "organization": "University of Cape Town",
+        "rating": 4.8,
+        "skills": "Biostatistics, Statistical Methods, Statistical Hypothesis Testing, Probability & Statistics, Clinical Research, Statistical Analysis, Quantitative Research, Statistics, Descriptive Statistics, Statistical Inference, Data Collection, Probability",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/clinical-research"
+      },
+      {
+        "title": "Statistics Foundations",
+        "organization": "Meta",
+        "rating": 4.7,
+        "skills": "Bayesian Statistics, Descriptive Statistics, Statistical Hypothesis Testing, Statistical Inference, Sampling (Statistics), Data Modeling, Statistics, Probability & Statistics, Statistical Analysis, Statistical Methods, Data Analysis Software, Statistical Modeling, Marketing Analytics, Tableau Software, Data Analysis, Spreadsheet Software, Quantitative Research, Analytics, Descriptive Analytics, Time Series Analysis and Forecasting",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/statistics-for-marketing"
+      },
+      {
+        "title": "The Power of Statistics",
+        "organization": "Google",
+        "rating": 4.8,
+        "skills": "Sampling (Statistics), Descriptive Statistics, Statistical Hypothesis Testing, Data Analysis, Probability Distribution, Statistics, Data Science, Statistical Analysis, A/B Testing, Statistical Methods, Probability, Statistical Inference, Statistical Programming, Python Programming, Technical Communication",
+        "difficulty": "Advanced",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/the-power-of-statistics"
+      },
+      {
+        "title": "Business Statistics and Analysis",
+        "organization": "Rice University",
+        "rating": 4.7,
+        "skills": "Statistical Hypothesis Testing, Microsoft Excel, Pivot Tables And Charts, Regression Analysis, Statistics, Descriptive Statistics, Probability & Statistics, Graphing, Spreadsheet Software, Probability Distribution, Business Analytics, Statistical Analysis, Statistical Modeling, Statistical Inference, Excel Formulas, Data Analysis, Data Presentation, Business Analysis, Statistical Methods, Sample Size Determination",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/business-statistics-analysis"
+      },
+      {
+        "title": "Advanced Statistics for Data Science",
+        "organization": "Johns Hopkins University",
+        "rating": 4.4,
+        "skills": "Statistical Hypothesis Testing, Sampling (Statistics), Regression Analysis, Bayesian Statistics, Statistical Analysis, Probability & Statistics, Statistical Inference, Statistical Methods, Statistical Modeling, Linear Algebra, Probability, R Programming, Biostatistics, Data Science, Statistics, Probability Distribution, Mathematical Modeling, Data Analysis, Applied Mathematics, Predictive Modeling",
+        "difficulty": "Advanced",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/advanced-statistics-data-science"
+      }
+    ]
+  },
+  {
+    "query": "Web Development",
+    "results": [
+      {
+        "title": "Introduction to Web Development with HTML, CSS, JavaScript",
+        "organization": "IBM",
+        "rating": 4.6,
+        "skills": "Hypertext Markup Language (HTML), HTML and CSS, Web Development, Web Development Tools, Cascading Style Sheets (CSS), Front-End Web Development, Web Design, Javascript, Interactive Design, Web Applications, Full-Stack Web Development, Back-End Web Development",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript"
+      },
+      {
+        "title": "Introduction to Web Development",
+        "organization": "University of California, Davis",
+        "rating": 4.7,
+        "skills": "Version Control, Hypertext Markup Language (HTML), GitHub, Git (Version Control System), HTML and CSS, Cascading Style Sheets (CSS), Web Design and Development, Web Development, Web Design, Web Content, Front-End Web Development, Web Servers, Image Analysis, Semantic Web, Cloud Hosting, Browser Compatibility",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/web-development"
+      },
+      {
+        "title": "Web Development Fundamentals",
+        "organization": "Microsoft",
+        "rating": 0.0,
+        "skills": "Responsive Web Design, Cascading Style Sheets (CSS), HTML and CSS, Web Applications, Front-End Web Development, Semantic Web, Javascript, Web Content Accessibility Guidelines, Data Storage Technologies, Application Security, User Interface (UI), Data Validation",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/web-development-fundamentals"
+      },
+      {
+        "title": "Fundamentals of Web Development",
+        "organization": "Illinois Tech",
+        "rating": 4.6,
+        "skills": "Javascript and jQuery, Responsive Web Design, Web Development, Version Control, Web Design, Cascading Style Sheets (CSS), HTML and CSS, GitHub, Web Applications, JavaScript Frameworks, Web Development Tools, Infrastructure Architecture, Browser Compatibility, Application Programming Interface (API), Animations",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/learn/illinois-tech-fundamentals-of-web-development"
+      },
+      {
+        "title": "HTML, CSS, and Javascript for Web Developers",
+        "organization": "Johns Hopkins University",
+        "rating": 4.7,
+        "skills": "Cascading Style Sheets (CSS), HTML and CSS, Javascript, Ajax, Responsive Web Design, Bootstrap (Front-End Framework), Front-End Web Development, Web Design, Hypertext Markup Language (HTML), Browser Compatibility, Web Design and Development, Web Development, JSON, Web Applications, Scripting, Usability, Cross Platform Development, Object Oriented Programming (OOP), Event-Driven Programming, User Interface and User Experience (UI/UX) Design",
+        "difficulty": "Beginner",
+        "duration": "1 - 3 Months",
+        "link": "https://www.coursera.org/specializations/html-css-javascript-for-web-developers"
+      },
+      {
+        "title": "Web Design for Everybody: Basics of Web Development & Coding",
+        "organization": "University of Michigan",
+        "rating": 4.7,
+        "skills": "Wireframing, Responsive Web Design, HTML and CSS, Web Content Accessibility Guidelines, Cascading Style Sheets (CSS), Web Design, Hypertext Markup Language (HTML), Browser Compatibility, Bootstrap (Front-End Framework), Javascript, Front-End Web Development, User Interface (UI), Verification And Validation, Web Development, Web Design and Development, Interactive Design, Application Frameworks, Usability, Code Review, Event-Driven Programming",
+        "difficulty": "Beginner",
+        "duration": "3 - 6 Months",
+        "link": "https://www.coursera.org/specializations/web-design"
+      },
+      {
+        "title": "Introduction to Front-End Development",
+        "organization": "Meta",
+        "rating": 4.8,
+        "skills": "HTML and CSS, Bootstrap (Front-End Framework), Responsive Web Design, Front-End Web Development, User Interface (UI), JavaScript Frameworks, Web Design and Development, Web Applications, Web Development Tools, React.js, Javascript",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-to-front-end-development"
+      },
+      {
+        "title": "Interactivity with JavaScript",
+        "organization": "University of Michigan",
+        "rating": 4.7,
+        "skills": "Javascript, Interactive Design, HTML and CSS, Web Design and Development, Web Content Accessibility Guidelines, Event-Driven Programming, Web Applications, Web Development, Data Structures, Programming Principles, Debugging",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/javascript"
+      },
+      {
+        "title": "Introduction to HTML, CSS, & JavaScript",
+        "organization": "IBM",
+        "rating": 4.5,
+        "skills": "Cascading Style Sheets (CSS), Bootstrap (Front-End Framework), Responsive Web Design, Web Development, Javascript, Scripting, Browser Compatibility, Application Programming Interface (API)",
+        "difficulty": "Beginner",
+        "duration": "1 - 4 Weeks",
+        "link": "https://www.coursera.org/learn/introduction-html-css-javascript"
+      }
+    ]
+  }
+]
