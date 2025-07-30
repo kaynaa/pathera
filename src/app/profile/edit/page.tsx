@@ -117,11 +117,7 @@ export default function ProfilePage() {
   return (
     <main>
       {showSuccess && <SuccessUpdateAlert />}
-      <Header
-        isLoggedIn={true}
-        pageName="profile"
-        userName={userData?.fullName}
-      />
+      <Header pageName="profile" />
       <div className={styles.main}>
         <div className={styles.MyProfile}>Edit Profil</div>
         <div className="mb-6">Kelola informasi pribadi dan preferensi anda</div>
