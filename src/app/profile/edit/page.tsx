@@ -22,24 +22,29 @@ export default function ProfilePage() {
   const db = getFirestore();
   const { user } = useAuth();
   const [userData, setUserData] = useState<UserData | null>(null);
-  const [selectedCareer, setSelectedCareer] = useState<string[]>([]);
   const [error, setError] = useState("");
+  const [careerInterest, setCareerInterest] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false); // State untuk loading
   const [showSuccess, setShowSuccess] = useState(false) //state untuk alert
   const majorOptions = [
-    "Teknik Informatika",
-    "Ilmu Komunikasi",
+    "Teknik Komputer",
+    "Komunikasi",
     "Akuntansi",
     "Psikologi",
+    "Sistem Informasi",
+    "Ilmu Komputer",
+    "Manajemen",
+    "Ekonomi",
+    "Matematika",
+    "Desain Grafis"
   ];
   const skillOptions = [
-    "Design",
-    "Coding",
-    "Management",
-    "Marketing",
-    "Accounting",
-    "Data Analyst",
-    "Relation",
+    "Accounting", "Android", "Artificial Intelligence", "Cloud Computing",
+    "Communication Skills", "Cybersecurity", "Excel", "Graphic Design",
+    "HR", "iOS", "Java", "JavaScript", "Machine Learning", "Marketing",
+    "Math", "Network", "Networking", "OOP", "Power BI", "Presentation Skills",
+    "Project Management", "Python", "SEO", "Social Media", "SQL",
+    "Statistics", "Web Development"
   ];
   const careerOptions = [
     "Data Analyst",
@@ -82,7 +87,7 @@ export default function ProfilePage() {
   }
 
   const handleCareerToggle = (career: string) => {
-    setSelectedCareer((prev) =>
+    setCareerInterest((prev) =>
       prev.includes(career)
         ? prev.filter((c) => c !== career)
         : [...prev, career]
@@ -102,7 +107,7 @@ export default function ProfilePage() {
       fullName,
       email,
       major,
-      selectedCareer,
+      careerInterest,
     });
 
     // alert("Profile updated!");
@@ -166,7 +171,7 @@ export default function ProfilePage() {
                 defaultValue={userData?.major || ""}
                 className={styles.inputField}
               >
-                <option value="">Pilih Jurusan</option>
+                <option value={userData?.major || ""}>Pilih Jurusan</option>
                 {majorOptions.map((m) => (
                   <option key={m} value={m}>
                     {m}
@@ -186,7 +191,7 @@ export default function ProfilePage() {
                     key={career}
                     onClick={() => handleCareerToggle(career)}
                     className={`${styles.careerButton} ${
-                      selectedCareer.includes(career)
+                      careerInterest.includes(career)
                         ? styles.careerButtonActive
                         : ""
                     }`}

@@ -71,3 +71,12 @@
     transition: 0.25s;
     background-color: #dcdcdc;
 }
+
+.toggleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
