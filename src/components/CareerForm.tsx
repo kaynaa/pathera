@@ -61,6 +61,7 @@ export default function CareerForm({ onSearch }: CareerFormProps) {
             <option value="" disabled>
               Pilih Jurusan Anda
             </option>
+            {/* PERBAIKAN: Daftar jurusan diperbarui sesuai JSON */}
             <option value="Teknik Informatika">Teknik Informatika</option>
             <option value="Sistem Informasi">Sistem Informasi</option>
             <option value="Teknik Komputer">Teknik Komputer</option>

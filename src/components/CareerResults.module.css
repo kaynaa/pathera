@@ -16,13 +16,13 @@
 .title {
     font-size: 2rem;
     font-weight: 700;
-    color: #0A2647;
+    color: #21272A;
     text-align: center;
 }
 
 .subtitle {
     font-size: 1rem;
-    color: #64748B;
+    color: #21272A;
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 2.5rem;
@@ -63,7 +63,7 @@
 .jobTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1E293B;
+    color: #1E2B3B;
 }
 
 .jobDescription {

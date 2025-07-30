@@ -77,6 +77,7 @@ export default function CareerResults({
 
       <div className={styles.mainCard}>
         <h2 className={styles.jobTitle}>{result.predicted_job_title}</h2>
+        {/* PERBAIKAN: Menampilkan deskripsi asli dari JSON */}
         <p className={styles.jobDescription}>{result.job_description}</p>
 
         <div className={styles.section}>
