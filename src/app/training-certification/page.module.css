@@ -1,0 +1,21 @@
+
+.main {
+    background-color: white;
+}
+
+.trainingPage{
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: 'Montserrat';
+}
+
+.title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 43px;
+    text-align: center;
+}

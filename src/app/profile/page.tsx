@@ -89,11 +89,7 @@ export default function ProfilePage() {
 
   return (
     <main>
-      <Header
-        isLoggedIn={true}
-        pageName="profile"
-        userName={userData?.fullName}
-      />
+      <Header pageName="profile" />
       <div className={styles.main}>
         <div className={styles.MyProfile}>Profil Saya</div>
         <div className="mb-6">Kelola informasi pribadi dan preferensi anda</div>
@@ -242,7 +238,7 @@ export default function ProfilePage() {
           </div>
         </div>
       </div>
-
+      <div className="p-8"></div>
       <Footer />
     </main>
   );
