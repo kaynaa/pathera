@@ -1,6 +1,7 @@
 // src/components/HeroUser.tsx
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 type HeroUserProps = {
   userName: string;
@@ -24,12 +25,12 @@ export default function HeroUser({ userName }: HeroUserProps) {
           Anda.
         </p>
         <div className={styles.buttonGroup}>
-          <button className={styles.primaryButton}>
+          <Link href="/training-certification" className={styles.primaryButton}>
             Cek Hasil Rekomendasimu Sekarang
-          </button>
-          <button className={styles.secondaryButton}>
+          </Link>
+          <Link href="/career" className={styles.secondaryButton}>
             Riwayat Karir Tersimpan
-          </button>
+          </Link>
         </div>
       </div>
     </section>

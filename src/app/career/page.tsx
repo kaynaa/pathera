@@ -2,11 +2,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { useAuth } from "@/context/AuthContext";
+import { db } from "@/firebase";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import CareerForm from "@/components/CareerForm";
 import CareerResults from "@/components/CareerResults";
 import styles from "./page.module.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 // Tipe data untuk hasil prediksi dari JSON
 export type PredictionResult = {
@@ -26,64 +29,86 @@ export type Course = {
   difficulty: string;
   duration: string;
   link: string;
+  // image_url dihapus karena tidak jadi digunakan
 };
 
 export default function CareerPage() {
-  // State untuk menyimpan semua data dari JSON
+  const { user, isLoading } = useAuth();
   const [allPredictions, setAllPredictions] = useState<PredictionResult[]>([]);
-  // State untuk menyimpan hasil prediksi yang dipilih
   const [predictionResult, setPredictionResult] =
     useState<PredictionResult | null>(null);
-  // State untuk menyimpan minat yang dipilih untuk ditampilkan di hasil
   const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
+  // State baru untuk menyimpan data dari Firestore
+  const [savedResult, setSavedResult] = useState<PredictionResult | null>(null);
 
-  // Mengambil data dari JSON saat halaman dimuat
+  // Mengambil data JSON
   useEffect(() => {
     fetch("/final_job_course_recommendations.json")
       .then((res) => res.json())
       .then((data) => setAllPredictions(data));
   }, []);
 
-  // Fungsi untuk mencari prediksi berdasarkan input form
-  const handleSearch = (major: string, interests: string[]) => {
-    // Simpan minat yang dipilih
-    setSelectedInterests(interests);
+  // Mengambil data yang tersimpan dari Firestore saat pengguna terdeteksi
+  useEffect(() => {
+    const fetchSavedResult = async () => {
+      if (user) {
+        const userDocRef = doc(db, "users", user.uid);
+        const userDoc = await getDoc(userDocRef);
+        if (userDoc.exists() && userDoc.data().savedCareer) {
+          setSavedResult(userDoc.data().savedCareer);
+        }
+      }
+    };
+    if (!isLoading) {
+      fetchSavedResult();
+    }
+  }, [user, isLoading]);
 
-    // Logika pencarian yang lebih baik
+  const handleSearch = (major: string, interests: string[]) => {
+    setSelectedInterests(interests);
     let result = null;
     if (interests.length > 0) {
-      // Cari yang cocok dengan jurusan dan salah satu minat
       result = allPredictions.find(
         (p) => p.query_major === major && interests.includes(p.query_dream_job)
       );
     }
-
-    // Jika tidak ada hasil atau tidak ada minat yang dipilih, cari fallback
     if (!result) {
       result = allPredictions.find((p) => p.query_major === major) || null;
     }
-
     setPredictionResult(result);
+    setSavedResult(null); // Hapus hasil lama saat mencari yang baru
   };
 
-  // Fungsi untuk kembali ke form dari halaman hasil
   const handleBackToForm = () => {
     setPredictionResult(null);
+    setSavedResult(null); // Hapus juga hasil tersimpan agar form muncul
   };
+
+  if (isLoading) {
+    return <div>Loading...</div>; // Tampilan loading sederhana
+  }
 
   return (
     <>
       <Header pageName="career" />
       <main className={styles.main}>
         <div className={styles.container}>
+          {/* Logika tampilan diubah untuk menampilkan hasil tersimpan */}
           {predictionResult ? (
             <CareerResults
               result={predictionResult}
               selectedInterests={selectedInterests}
               onBack={handleBackToForm}
+              isInitiallySaved={false} // Ini adalah hasil baru
+            />
+          ) : savedResult ? (
+            <CareerResults
+              result={savedResult}
+              selectedInterests={[savedResult.query_dream_job]} // Ambil minat dari data tersimpan
+              onBack={handleBackToForm}
+              isInitiallySaved={true} // Ini adalah hasil yang sudah tersimpan
             />
           ) : (
-            // PERBAIKAN: Judul dan subjudul sekarang ada di sini, di luar form
             <>
               <h1 className={styles.pageTitle}>Career Prediction</h1>
               <p className={styles.pageSubtitle}>

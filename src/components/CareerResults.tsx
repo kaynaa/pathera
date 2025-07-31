@@ -1,14 +1,17 @@
 // src/components/CareerResults.tsx
 import { useState } from "react";
-import Image from "next/image"; // Pastikan Image diimpor
+import { doc, updateDoc } from "firebase/firestore"; // <-- Impor updateDoc
 import { PredictionResult } from "@/app/career/page";
 import { useAuth } from "@/context/AuthContext";
+import { db } from "@/firebase"; // <-- Impor db
 import styles from "./CareerResults.module.css";
+import Image from "next/image";
 
 type CareerResultsProps = {
   result: PredictionResult;
   selectedInterests: string[];
   onBack: () => void;
+  isInitiallySaved: boolean; // Prop baru untuk status awal
 };
 
 const formatInterests = (interests: string[]): string => {
@@ -24,20 +27,32 @@ export default function CareerResults({
   result,
   selectedInterests,
   onBack,
+  isInitiallySaved,
 }: CareerResultsProps) {
   const { user } = useAuth();
   const [saveError, setSaveError] = useState("");
-  const [isSaved, setIsSaved] = useState(false);
+  const [isSaved, setIsSaved] = useState(isInitiallySaved);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (!user) {
       setSaveError(
         "Silahkan Login Terlebih Dahulu Dapat Menyimpan Hasil Prediksi"
       );
-    } else {
-      console.log("Hasil disimpan untuk pengguna:", user.uid);
+      return;
+    }
+
+    try {
+      // PERBAIKAN: Menyimpan data ke Firestore
+      const userDocRef = doc(db, "users", user.uid);
+      await updateDoc(userDocRef, {
+        savedCareer: result, // Menyimpan seluruh objek hasil prediksi
+      });
+
       setSaveError("");
       setIsSaved(true);
+    } catch (error) {
+      console.error("Error saving career result:", error);
+      setSaveError("Gagal menyimpan hasil. Coba lagi.");
     }
   };
 
@@ -77,7 +92,6 @@ export default function CareerResults({
 
       <div className={styles.mainCard}>
         <h2 className={styles.jobTitle}>{result.predicted_job_title}</h2>
-        {/* PERBAIKAN: Menampilkan deskripsi asli dari JSON */}
         <p className={styles.jobDescription}>{result.job_description}</p>
 
         <div className={styles.section}>
@@ -88,7 +102,6 @@ export default function CareerResults({
         </div>
 
         <div className={styles.section}>
-          {/* PERBAIKAN: Mengubah h3 menjadi flex container */}
           <h3 className={styles.sectionTitleWithIcon}>
             <Image
               src="/Reko-pelatihan.png"
