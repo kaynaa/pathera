@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import styles from "./CourseResults.module.css";
+import CourseCard from "./CourseCard";
 import { useEffect, useState } from "react";
 
 type courseContent = {
@@ -31,6 +32,7 @@ export default function CourseResults({ query }: { query: string }) {
     ];
     const [orderBy, setOrderBy] = useState<string>("Paling Relevan");
     const [data, setData] = useState<courseData[]>([]);
+    
 
     useEffect(() => {
         const fetchData = async () => {
@@ -41,11 +43,25 @@ export default function CourseResults({ query }: { query: string }) {
         fetchData();
     }, []);
 
+    const combinedResults: courseContent[] = [];
+    const seen = new Set<string>();
+    data.forEach(item => {
+    item.results.forEach(results => {
+        const key = JSON.stringify(results);
+        if (!seen.has(key)) {
+            seen.add(key);
+            combinedResults.push(results);
+        }
+    });
+    });
+
+    const [courses, setCourses] = useState<courseContent[]>([])
+
   return (
     <div className={styles.main}>
 
-    { query=="" ? 
-            (
+    { query=="-" ? 
+            (   <>
                 <div className={styles.between}>
                     <div className="text-black font-bold">Cari pelatihan yang ingin Anda dalami</div>
                     <div className="flex flex-row items-center gap-[10px]">
@@ -54,13 +70,18 @@ export default function CourseResults({ query }: { query: string }) {
                             name="orderBy" 
                             className={styles.orderBy}
                             value={orderBy}
-                            onChange={(e) => setOrderBy(e.target.value)}
-                            >                        
+                            onChange={(e) => setOrderBy(e.target.value)}>                        
                             <option value="Paling Relevan">Paling Relevan</option>
                             <option value="Rating Tertinggi">Rating Tertinggi</option>
                         </select>
                     </div>
                 </div>
+                <div className={styles.cardContainer}>
+                    {combinedResults.map(item => (
+                        <CourseCard course={item} />
+                    ))}
+                </div>
+                </>
             ):(
                 <div className={styles.between}>
                     <div className="text-black font-bold">Hasil untuk "{query}"</div>

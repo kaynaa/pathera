@@ -40,8 +40,8 @@ export default function trainingPage() {
   fetchData();
 }, []);
   
-  const [selectedQuery, setSelectedQuery] = useState<string>("");
-  const [submittedQuery, setSubmittedQuery] = useState<string>("");
+  const [selectedQuery, setSelectedQuery] = useState<string>("-");
+  const [submittedQuery, setSubmittedQuery] = useState<string>("-");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -64,7 +64,7 @@ export default function trainingPage() {
             className={styles.inputField}
             onChange={(e) => setSelectedQuery(e.target.value)}
           >
-            <option value="" className="text-[#64748B]"> 
+            <option value="-" className="text-[#64748B]"> 
               Pilih skill yang Anda minati
             </option>
             {data.map((item) => (
