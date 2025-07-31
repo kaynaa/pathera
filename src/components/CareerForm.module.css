@@ -2,32 +2,15 @@
 .formContainer {
     background-color: white;
     padding: 3rem;
-    /* Padding diperbesar */
     border-radius: 12px;
-    border: 1px solid #E2E8F0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #64748B;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0A2647;
-    text-align: center;
-}
-
-.subtitle {
-    font-size: 1rem;
-    color: #64748B;
-    text-align: center;
-    margin-top: 0.75rem;
-    /* Jarak diperkecil */
-    margin-bottom: 3rem;
-    /* Jarak diperbesar */
-}
+/* PERBAIKAN: Style .title dan .subtitle dihapus dari sini */
 
 .formGroup {
     margin-bottom: 2.5rem;
-    /* Jarak antar grup form diperbesar */
 }
 
 .label {
@@ -35,7 +18,6 @@
     font-weight: 700;
     color: #334155;
     margin-bottom: 0.5rem;
-    /* Jarak dari label ke input diperkecil */
 }
 
 .labelNote {
@@ -53,7 +35,7 @@
 .select {
     width: 100%;
     padding: 0.875rem 1rem;
-    border: 1px solid #CBD5E1;
+    border: 1px solid #00000080;
     border-radius: 8px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -69,24 +51,16 @@
     background-size: 1.2em;
 }
 
-/* Style untuk teks yang ditampilkan saat jurusan sudah dipilih */
 .select.selected {
     font-weight: 700;
-    text-decoration: underline;
-    color: #334155;
-    /* Warna diubah menjadi lebih gelap agar underline terlihat jelas */
+    color: #64748B;
 }
 
-/* PERBAIKAN: Menyederhanakan style untuk option di dalam daftar dropdown */
 .select option {
     background: white;
-    /* Mengatur latar belakang option menjadi putih */
-    color: #334155;
-    font-weight: 600;
-    /* Catatan: Highlight abu-abu/biru saat hover/selected adalah perilaku bawaan browser */
-    /* dan seringkali tidak bisa diubah dengan CSS standar untuk elemen <option> */
+    color: #64748B;
+    font-weight: 400px;
 }
-
 
 .errorText {
     color: red;
@@ -108,13 +82,13 @@
 
 .interestButton {
     padding: 0.75rem;
-    border: 1px solid #CBD5E1;
+    border: 1px solid #00000080;
     border-radius: 8px;
     background-color: white;
     cursor: pointer;
-    text-align: center;
-    font-weight: 600;
-    color: #334155;
+    text-align: left;
+    font-weight: 700;
+    color: #64748B;
     transition: all 0.2s;
     font-size: 0.9rem;
 }

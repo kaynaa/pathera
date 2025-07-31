@@ -62,8 +62,6 @@
 
 .icon {
   margin-bottom: 1.5rem;
-  /* Jarak ikon ke judul */
-  /* PERBAIKAN: Memastikan ikon berada di tengah */
   margin-left: auto;
   margin-right: auto;
 }
@@ -87,7 +85,5 @@
   font-weight: 700;
   text-decoration: none;
   margin-top: 2rem;
-  /* Jarak dari deskripsi ke link */
-  /* PERBAIKAN: Memindahkan link ke kanan */
   align-self: flex-end;
 }

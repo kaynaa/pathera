@@ -3,8 +3,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { signInWithEmailAndPassword } from "firebase/auth"; // Impor fungsi login
-import { auth } from "../firebase"; // Impor dari file konfigurasi kita
+import Image from "next/image"; // PERBAIKAN: Impor komponen Image
+import {
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+  getAdditionalUserInfo,
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "../firebase";
 import styles from "./LoginForm.module.css";
 import { Eye, EyeOff } from "lucide-react";
 
@@ -17,14 +24,13 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // State untuk loading
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setIsLoading(true);
 
-    // Validasi frontend
     if (!email || !password) {
       setError("Email dan Password wajib diisi.");
       setIsLoading(false);
@@ -32,13 +38,10 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
     }
 
     try {
-      // PERBAIKAN: Memanggil fungsi login dari Firebase
       await signInWithEmailAndPassword(auth, email, password);
-
-      // Jika tidak ada error, berarti login berhasil
       onSuccess();
-    } catch (error: any) {
-      // Tangani error dari Firebase
+    } catch (err: unknown) {
+      const error = err as { code?: string };
       if (
         error.code === "auth/user-not-found" ||
         error.code === "auth/wrong-password" ||
@@ -50,14 +53,62 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       }
       console.error("Error signing in:", error);
     } finally {
-      setIsLoading(false); // Hentikan loading
+      setIsLoading(false);
+    }
+  };
+
+  const handleGoogleLogin = async () => {
+    const provider = new GoogleAuthProvider();
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      const additionalInfo = getAdditionalUserInfo(result);
+      if (additionalInfo?.isNewUser) {
+        await setDoc(doc(db, "users", user.uid), {
+          fullName: user.displayName,
+          email: user.email,
+          major: "",
+          skills: [],
+        });
+      }
+
+      onSuccess();
+    } catch (err: unknown) {
+      const error = err as Error;
+      setError("Gagal login dengan Google. Coba lagi.");
+      console.error("Google sign in error:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>SELAMAT DATANG KEMBALI</h1>
-      <p className={styles.subtitle}>Masukkan email dan password anda</p>
+      <p className={styles.subtitle}>Masukkan email dan password anda.</p>
+
+      <button
+        onClick={handleGoogleLogin}
+        className={styles.googleButton}
+        disabled={isLoading}
+      >
+        {/* PERBAIKAN: Mengganti <img> dengan <Image /> */}
+        <Image
+          src="/google-icon.svg"
+          alt="Google icon"
+          width={20}
+          height={20}
+        />
+        <span>Masuk dengan Google</span>
+      </button>
+
+      <div className={styles.divider}>
+        <span>ATAU</span>
+      </div>
 
       <form onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
@@ -89,11 +140,13 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
           </div>
+          <div className={styles.forgotPasswordLink}>
+            <Link href="/forgot-password">Lupa Password?</Link>
+          </div>
         </div>
 
         {error && <p className={styles.error}>{error}</p>}
 
-        {/* PERBAIKAN: Tombol sekarang memiliki state loading */}
         <button
           type="submit"
           className={styles.submitButton}
@@ -104,7 +157,7 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       </form>
 
       <p className={styles.signupLink}>
-        Tidak Punya Akun? <Link href="/signup">Daftar Disini</Link>
+        Belum Punya Akun? <Link href="/signup">Daftar</Link>
       </p>
     </div>
   );

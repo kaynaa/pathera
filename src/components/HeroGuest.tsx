@@ -1,6 +1,7 @@
 // src/components/HeroGuest.tsx
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 export default function HeroGuest() {
   return (
@@ -20,12 +21,12 @@ export default function HeroGuest() {
           dipersonalisasi khusus untukmu.
         </p>
         <div className={styles.buttonGroup}>
-          <button className={styles.primaryButton}>
+          <Link href="/training-certification" className={styles.primaryButton}>
             Dapatkan Rekomendasi Sekarang
-          </button>
-          <button className={styles.secondaryButton}>
+          </Link>
+          <Link href="/career" className={styles.secondaryButton}>
             Prediksi Jalur Karir Anda
-          </button>
+          </Link>
         </div>
       </div>
     </section>

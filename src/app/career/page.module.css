@@ -10,3 +10,20 @@
     max-width: 900px;
     margin: 0 auto;
 }
+
+/* PERBAIKAN: Style baru untuk judul dan subjudul halaman */
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #21272A;
+    text-align: center;
+}
+
+.pageSubtitle {
+    font-size: 1rem;
+    color: #21272A;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    /* Jarak sebelum kotak form */
+}
