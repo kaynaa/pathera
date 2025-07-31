@@ -85,10 +85,7 @@ export default function ProfilePage() {
 
   return (
     <main>
-      <Header
-        pageName="profile"
-        // isLoggedIn dan userName akan diambil dari AuthContext di dalam Header
-      />
+      <Header pageName="profile" />
       <div className={styles.main}>
         <div className={styles.title}>Profil Saya</div>
         <div className={styles.subtitle}>
@@ -256,6 +253,7 @@ export default function ProfilePage() {
           </div>
         </div>
       </div>
+      <div className="p-8"></div>
       <Footer />
     </main>
   );
