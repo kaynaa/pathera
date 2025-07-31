@@ -16,7 +16,8 @@ type UserData = {
   fullName: string;
   email: string;
   major: string;
-  skills: string[]; // Mengganti nama dari careerInterest agar konsisten
+  skills: string[];
+  careerInterest: string[]; 
   notificationPreferences?: {
     email: boolean;
     loker: boolean;
@@ -173,7 +174,24 @@ export default function ProfilePage() {
               <div className={styles.infoData}>
                 {userData.skills && userData.skills.length > 0
                   ? userData.skills.join(", ")
-                  : "Belum ada data skill."}
+                  : "Belum ada data skill. Silakan edit profil."}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.infoRow}>
+            <Image
+              src="/profile-icons/jurusan-minat.png"
+              alt="Minat Karir"
+              width={24}
+              height={24}
+            />
+            <div>
+              <div>Minat Karir</div>
+              <div className={styles.infoData}>
+                {userData.careerInterest && userData.careerInterest.length > 0
+                  ? userData.careerInterest.join(", ")
+                  : "Belum ada data minat karir. Silakan edit profil."}
               </div>
             </div>
           </div>

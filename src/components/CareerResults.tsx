@@ -6,6 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 import { db } from "@/firebase"; // <-- Impor db
 import styles from "./CareerResults.module.css";
 import Image from "next/image";
+import CourseCard from "./CourseCard";
 
 type CareerResultsProps = {
   result: PredictionResult;
@@ -112,24 +113,8 @@ export default function CareerResults({
             <span>Rekomendasi pelatihan untuk kamu</span>
           </h3>
           <div className={styles.courseGrid}>
-            {result.recommended_courses.map((course, index) => (
-              <a
-                href={course.link}
-                key={index}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.courseCard}
-              >
-                <div className={styles.courseImage}></div>
-                <div className={styles.courseContent}>
-                  <h4 className={styles.courseTitle}>{course.title}</h4>
-                  <p className={styles.courseOrg}>{course.organization}</p>
-                  <div className={styles.courseDetails}>
-                    <span>⭐ {course.rating}</span>
-                    <span>{course.difficulty}</span>
-                  </div>
-                </div>
-              </a>
+            {result.recommended_courses.map((course) => (
+              <CourseCard key={`${course.title} and ${course.organization}`} course={course}/>
             ))}
           </div>
         </div>
