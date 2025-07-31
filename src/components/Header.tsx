@@ -44,6 +44,9 @@ export default function Header({ pageName }: HeaderProps) {
   }
   const isLoggedIn = !!user;
 
+  //Toggle Profil
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className={styles.header}>
         <div className={styles.left_container}>
@@ -74,14 +77,23 @@ export default function Header({ pageName }: HeaderProps) {
                         <Link href="/notification">
                             <Bell size={25} fill="white"/>
                         </Link>
-                        <Link href="/profile">
-                            <CircleUserRound size={25}/>
-                        </Link>
-                        {/*To-do: Add dropdown menu for user profile */}
-                        <Link href="/profile" className={styles.username_display}>
-                            {userData?.fullName || ""}
-                            <ChevronDown size={25} />
-                        </Link>
+                        <div className={styles.dropdown}>
+                            <button 
+                                className={styles.username_display}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                <CircleUserRound className="mr-4" size={25}/>
+                                {userData?.fullName || ""}
+                                <ChevronDown size={25} />
+                            </button>
+                            {isOpen && (
+                                <div className={styles.dropdown_menu}>
+                                    <Link href="/profile" className="text-[#023047] text-[14px] px-2 py-1">Profile</Link>
+                                    <a href="#" className="text-[#D35451] text-[14px] px-2 py-1">Log Out</a>
+                                </div>
+                            )}
+                        </div>
+                        
                     </div>
                 </>
             ) : (

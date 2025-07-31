@@ -104,4 +104,35 @@
     line-height: 100%;
     letter-spacing: 0px;
     color: #FFFFFF;
+    cursor: pointer;
 }
+
+.dropdown_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    z-index: 1000;
+    top: 65%;
+    right: 3%;
+    width: 100px;
+    border-radius: 5px;
+    border-width: 1px;
+    opacity: 1;
+    border: 1px solid #697077;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+/* .dropdown_menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.dropdown_menu Link {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+} */
