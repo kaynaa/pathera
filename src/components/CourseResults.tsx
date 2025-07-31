@@ -90,7 +90,7 @@ export default function CourseResults({ query }: { query: string }) {
                     </div>
                 </div>
                 <div className={styles.cardContainer}>
-                    {sortedAllResults.map(item => (
+                    {sortedAllResults.map((item, index) => (
                         <CourseCard course={item} />
                     ))}
                 </div>
@@ -99,7 +99,7 @@ export default function CourseResults({ query }: { query: string }) {
             ):(
                 <>
                 <div className={styles.between}>
-                    <div className="text-black font-bold">Hasil untuk "{query}"</div>
+                    <div className="text-black font-bold">Hasil untuk &quot;{query}&quot;</div>
                     <div className="flex flex-row items-center gap-[10px]">
                         Urutkan berdasarkan:
                         <select 
@@ -115,7 +115,7 @@ export default function CourseResults({ query }: { query: string }) {
                     </div>
                 </div>
                 <div className={styles.cardContainer}>
-                    {sortedCourses.map(item => (
+                    {sortedCourses.map((item, index) => (
                         <CourseCard course={item} />
                     ))}
                 </div>
