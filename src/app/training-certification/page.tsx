@@ -21,7 +21,7 @@ type courseData = {
   results: courseContent[];
 }
 
-export default function trainingPage() {
+export default function TrainingPage() {
   const skillOptions = [
     "Accounting", "Android", "Artificial Intelligence", "Cloud Computing",
     "Communication Skills", "Cybersecurity", "Excel", "Graphic Design",
@@ -30,16 +30,16 @@ export default function trainingPage() {
     "Project Management", "Python", "SEO", "Social Media", "SQL",
     "Statistics", "Web Development"
   ];
-  const [data, setData] = useState<courseData[]>([]);
+//   const [data, setData] = useState<courseData[]>([]);
 
-  useEffect(() => {
-  const fetchData = async () => {
-    const res = await fetch('/skill_course_results.json');
-    const json = await res.json();
-    setData(json);
-  };
-  fetchData();
-}, []);
+//   useEffect(() => {
+//   const fetchData = async () => {
+//     const res = await fetch('/skill_course_results.json');
+//     const json = await res.json();
+//     setData(json);
+//   };
+//   fetchData();
+// }, []);
   
   const [selectedQuery, setSelectedQuery] = useState<string>("-");
   const [submittedQuery, setSubmittedQuery] = useState<string>("-");
@@ -68,9 +68,9 @@ export default function trainingPage() {
             <option value="-" className="text-[#64748B]"> 
               Pilih skill yang Anda minati
             </option>
-            {data.map((item) => (
-              <option key={item.query} value={item.query}>
-                {item.query}
+            {skillOptions.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
               </option>
             ))}
           </select>
