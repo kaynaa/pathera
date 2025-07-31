@@ -1,0 +1,162 @@
+/* src/components/PostCard.module.css */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+}
+
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* PERBAIKAN: Style untuk ikon avatar */
+.avatarIcon {
+    color: #94A3B8;
+    flex-shrink: 0;
+    /* Mencegah ikon menyusut */
+}
+
+.authorName {
+    font-weight: 700;
+}
+
+.timestamp {
+    font-size: 0.875rem;
+    color: #64748B;
+}
+
+.optionsContainer {
+    position: relative;
+}
+
+.optionsButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748B;
+}
+
+.optionsMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.optionsMenu button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.optionsMenu button:hover {
+    background-color: #F8FAFC;
+}
+
+.postContent {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.postActions {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #F1F5F9;
+}
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748B;
+    font-weight: 600;
+}
+
+.repliesSection {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #F1F5F9;
+}
+
+.replyForm {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.replyInput {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 9999px;
+}
+
+.loginPrompt {
+    background-color: #F1F5F9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.loginLink {
+    font-weight: 700;
+    color: #0A2647;
+    text-decoration: none;
+    margin-left: auto;
+    /* Mendorong link ke kanan */
+}
+
+.commentHeader {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.repliesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: filter 0.3s ease;
+    /* Transisi untuk efek blur */
+}
+
+/* PERBAIKAN: Style untuk efek blur */
+.repliesBlurred {
+    filter: blur(4px);
+    pointer-events: none;
+    /* Mencegah interaksi dengan konten yang di-blur */
+    user-select: none;
+    /* Mencegah teks dipilih */
+}
+
+.reply {
+    /* Style untuk setiap balasan */
+}
+
+.replyContent {
+    padding-left: 52px;
+    /* Sejajar dengan nama */
+}
