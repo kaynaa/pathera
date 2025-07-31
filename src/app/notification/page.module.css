@@ -26,15 +26,14 @@
 .notificationItem {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid #e9ecef;
-    transition: background-color 0.2s;
-}
-
-.notificationItem:last-child {
-    border-bottom: none;
+    /* border-bottom: 1px solid #e9ecef; */
+    /* transition: background-color 0.2s; */
+    border: 1px solid #697077;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 .notificationItem:hover {
@@ -49,8 +48,9 @@
     margin: 0 0 8px 0;
     /* Beri jarak bawah ke waktu */
     font-size: 16px;
-    color: #343a40;
+    color: #000000;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .timeWrapper {
@@ -61,13 +61,14 @@
 }
 
 .clockIcon {
-    color: #6c757d;
+    color: #023047;
     /* Warna ikon jam */
 }
 
 .time {
     font-size: 13px;
-    color: #6c757d;
+    color: #023047;
+    font-weight: 400;
 }
 
 .chevron {
