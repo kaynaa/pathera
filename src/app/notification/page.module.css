@@ -1,0 +1,77 @@
+.main {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 32px;
+    color: #023047;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.notificationList {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px D15px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.notificationItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s;
+}
+
+.notificationItem:last-child {
+    border-bottom: none;
+}
+
+.notificationItem:hover {
+    background-color: #f8f9fa;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.message {
+    margin: 0 0 8px 0;
+    /* Beri jarak bawah ke waktu */
+    font-size: 16px;
+    color: #343a40;
+    line-height: 1.5;
+}
+
+.timeWrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* Jarak antara ikon jam dan teks */
+}
+
+.clockIcon {
+    color: #6c757d;
+    /* Warna ikon jam */
+}
+
+.time {
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.chevron {
+    flex-shrink: 0;
+    margin-left: 20px;
+    color: #adb5bd;
+}
