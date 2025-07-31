@@ -136,3 +136,32 @@
   padding: 8px 12px;
   text-decoration: none;
 } */
+
+.notificationWrapper {
+    position: relative;
+    /* Penting untuk posisi dropdown */
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+/* Fix untuk class nav yang duplikat */
+.nav {
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.nav_active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}

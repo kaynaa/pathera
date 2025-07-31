@@ -24,7 +24,7 @@ import {
   Share2,
   MoreHorizontal,
   UserCircle2,
-} from "lucide-react"; // PERBAIKAN: Impor ikon User
+} from "lucide-react";
 import Link from "next/link";
 
 export type Post = {
@@ -55,7 +55,6 @@ export default function PostCard({ post }: PostCardProps) {
   const [showOptionsMenu, setShowOptionsMenu] = useState(false);
 
   useEffect(() => {
-    // Tetap ambil data balasan meskipun user belum login, agar bisa ditampilkan dalam keadaan blur
     if (showReplies) {
       const repliesQuery = query(
         collection(db, `posts/${post.id}/replies`),
@@ -80,7 +79,7 @@ export default function PostCard({ post }: PostCardProps) {
       const userDoc = await getDoc(userDocRef);
       const authorName = userDoc.exists()
         ? userDoc.data().fullName
-        : user.displayName || "Anonymous";
+        : "Pengguna Anonim";
 
       const repliesCollection = collection(db, `posts/${post.id}/replies`);
       await addDoc(repliesCollection, {
@@ -95,6 +94,18 @@ export default function PostCard({ post }: PostCardProps) {
         replyCount: increment(1),
       });
 
+      if (user.uid !== post.authorId) {
+        const userToNotifyRef = doc(db, "users", post.authorId);
+        const notificationRef = collection(userToNotifyRef, "notifications");
+
+        await addDoc(notificationRef, {
+          message: `${authorName} membalas komentar Anda di community space`,
+          link: `/community-space`,
+          timestamp: serverTimestamp(),
+          isRead: false,
+        });
+      }
+
       setNewReplyContent("");
     } catch (error) {
       console.error("Error adding reply:", error);
@@ -103,7 +114,6 @@ export default function PostCard({ post }: PostCardProps) {
 
   const handleDeletePost = async () => {
     if (!user || user.uid !== post.authorId) return;
-
     const confirmDelete = window.confirm(
       "Apakah Anda yakin ingin menghapus postingan ini?"
     );
@@ -135,7 +145,6 @@ export default function PostCard({ post }: PostCardProps) {
     <div className={styles.card}>
       <div className={styles.postHeader}>
         <div className={styles.authorInfo}>
-          {/* PERBAIKAN: Mengganti div avatar dengan ikon */}
           <UserCircle2 size={40} className={styles.avatarIcon} />
           <div>
             <span className={styles.authorName}>{post.authorName}</span>
@@ -158,9 +167,7 @@ export default function PostCard({ post }: PostCardProps) {
           )}
         </div>
       </div>
-
       <p className={styles.postContent}>{post.content}</p>
-
       <div className={styles.postActions}>
         <button
           className={styles.actionButton}
@@ -174,7 +181,6 @@ export default function PostCard({ post }: PostCardProps) {
           <span>Bagikan</span>
         </button>
       </div>
-
       {showReplies && (
         <div className={styles.repliesSection}>
           {!user && (
@@ -189,7 +195,6 @@ export default function PostCard({ post }: PostCardProps) {
               </Link>
             </div>
           )}
-
           {user && (
             <form onSubmit={handleReplySubmit} className={styles.replyForm}>
               <input
@@ -201,8 +206,6 @@ export default function PostCard({ post }: PostCardProps) {
               />
             </form>
           )}
-
-          {/* PERBAIKAN: Menambahkan wrapper dan class blur kondisional */}
           <div
             className={`${styles.repliesList} ${
               !user ? styles.repliesBlurred : ""
