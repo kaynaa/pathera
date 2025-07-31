@@ -22,12 +22,12 @@ export default function CourseCard({ course }: { course:courseContent }){
             <div className={styles.courseImageWrapper}>
             <img
                 className={styles.courseImage}
-                src={`/courseImage/${course.title}.jpg`}
+                src={`/courseImage/${course.title}.png`}
                 alt={course.title}
                 onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    if (target.src.endsWith('.jpg')) {
-                    target.src = `/courseImage/${course.title}.png`;
+                    if (target.src.endsWith('.png')) {
+                    target.src = `/courseImage/${course.title}.jpg`;
                     } else {
                     // If not found, fallback to blank
                     target.onerror = null; // prevent infinite loop
