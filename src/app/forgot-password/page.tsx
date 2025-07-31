@@ -26,12 +26,13 @@ export default function ForgotPasswordPage() {
     }
 
     try {
-      // Memanggil fungsi Firebase untuk mengirim email reset
       await sendPasswordResetEmail(auth, email);
       setSuccessMessage(
         "Tautan untuk mereset password telah dikirim. Silakan periksa kotak masuk email Anda."
       );
-    } catch (error: any) {
+    } catch (err: unknown) {
+      // PERBAIKAN: Mengubah 'any' menjadi 'unknown'
+      const error = err as { code?: string }; // Type assertion
       if (error.code === "auth/user-not-found") {
         setError("Email tidak terdaftar.");
       } else {
@@ -48,10 +49,10 @@ export default function ForgotPasswordPage() {
       <div className={styles.card}>
         <h1 className={styles.title}>Lupa Password</h1>
         <p className={styles.subtitle}>
-          Masukkan alamat email Anda yang terdaftar. Kami akan mengirimkan tautan untuk mereset password Anda.
+          Masukkan alamat email Anda yang terdaftar. Kami akan mengirimkan
+          tautan untuk mereset password Anda.
         </p>
 
-        {/* Form hanya muncul jika belum ada pesan sukses */}
         {!successMessage && (
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
@@ -67,16 +68,17 @@ export default function ForgotPasswordPage() {
 
             {error && <p className={styles.error}>{error}</p>}
 
-            <button type="submit" className={styles.button} disabled={isLoading}>
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={isLoading}
+            >
               {isLoading ? "Mengirim..." : "Kirim Tautan Reset"}
             </button>
           </form>
         )}
 
-        {/* Pesan sukses akan ditampilkan di sini */}
-        {successMessage && (
-          <p className={styles.success}>{successMessage}</p>
-        )}
+        {successMessage && <p className={styles.success}>{successMessage}</p>}
 
         <p className={styles.backLink}>
           <Link href="/login">Kembali ke Login</Link>

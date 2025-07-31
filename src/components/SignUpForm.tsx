@@ -8,7 +8,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import { auth, db } from "../firebase"; // Impor dari file konfigurasi kita
+import { auth, db } from "../firebase";
 import styles from "./SignUpForm.module.css";
 
 type SignUpFormProps = { onSuccess: () => void };
@@ -60,7 +60,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
     setError("");
     setIsLoading(true);
 
-    // Validasi frontend
     if (
       !formData.fullName ||
       !formData.email ||
@@ -88,7 +87,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
     }
 
     try {
-      // 1. Buat pengguna baru di Firebase Authentication
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         formData.email,
@@ -112,7 +110,9 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
       });
 
       onSuccess();
-    } catch (error: any) {
+    } catch (err: unknown) {
+      // PERBAIKAN: Mengubah 'any' menjadi 'unknown'
+      const error = err as { code?: string }; // Type assertion
       if (error.code === "auth/email-already-in-use") {
         setError("Email ini sudah terdaftar.");
       } else if (error.code === "auth/weak-password") {
@@ -191,7 +191,6 @@ export default function SignUpForm({ onSuccess }: SignUpFormProps) {
             <option value="" disabled>
               Pilih Jurusan Anda
             </option>
-            {/* Daftar jurusan yang sudah disamakan */}
             <option value="Teknik Informatika">Teknik Informatika</option>
             <option value="Sistem Informasi">Sistem Informasi</option>
             <option value="Teknik Komputer">Teknik Komputer</option>

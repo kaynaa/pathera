@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; // PERBAIKAN: Impor komponen Image
 import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
@@ -39,7 +40,8 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       onSuccess();
-    } catch (error: any) {
+    } catch (err: unknown) {
+      const error = err as { code?: string };
       if (
         error.code === "auth/user-not-found" ||
         error.code === "auth/wrong-password" ||
@@ -67,15 +69,16 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       const additionalInfo = getAdditionalUserInfo(result);
       if (additionalInfo?.isNewUser) {
         await setDoc(doc(db, "users", user.uid), {
-          fullName: user.displayName, // Ambil nama dari akun Google
+          fullName: user.displayName,
           email: user.email,
-          major: "", // Jurusan bisa diisi nanti di halaman profil
+          major: "",
           skills: [],
         });
       }
 
-      onSuccess(); 
-    } catch (error: any) {
+      onSuccess();
+    } catch (err: unknown) {
+      const error = err as Error;
       setError("Gagal login dengan Google. Coba lagi.");
       console.error("Google sign in error:", error);
     } finally {
@@ -93,7 +96,13 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
         className={styles.googleButton}
         disabled={isLoading}
       >
-        <img src="/google-icon.svg" alt="Google icon" width={20} height={20} />
+        {/* PERBAIKAN: Mengganti <img> dengan <Image /> */}
+        <Image
+          src="/google-icon.svg"
+          alt="Google icon"
+          width={20}
+          height={20}
+        />
         <span>Masuk dengan Google</span>
       </button>
 
@@ -102,7 +111,6 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       </div>
 
       <form onSubmit={handleSubmit}>
-        {/* ... form email dan password tetap sama ... */}
         <div className={styles.formGroup}>
           <label className={styles.label}>E-mail</label>
           <input
