@@ -53,8 +53,8 @@ export default function HomePage() {
 
   return (
     <div className={styles.pageContainer}>
-      <Header isLoggedIn={!!user} pageName="home" userName={userData?.fullName || ""} />
-
+      {/* <Header isLoggedIn={!!user} pageName="home" userName={userData?.fullName || ""} /> */}
+      <Header pageName="home" />
       {/* BErikut ini adalah toggle login untuk development */}
       {/* <Header isLoggedIn={devIsLoggedIn} pageName="home" userName="Amel" /> */}
       <main>

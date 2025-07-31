@@ -58,7 +58,7 @@ export default function Header({ pageName }: HeaderProps) {
             <Link href="/training-certification" className={`styles.nav ${pageName === 'training' ? styles.nav_active : styles.nav}`}>
                 Training & Certification
             </Link>
-            <Link href="/community-space" className={`styles.nav ${pageName === 'community' ? styles.nav_active : styles.nav}`}>
+            <Link href="/community-space" className={`styles.nav ${pageName === 'community-space' ? styles.nav_active : styles.nav}`}>
                 Community Space
             </Link>
             <Link href="/about-us" className={`styles.nav ${pageName === 'about-us' ? styles.nav_active : styles.nav}`}>

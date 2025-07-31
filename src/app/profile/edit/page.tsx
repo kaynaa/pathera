@@ -5,11 +5,13 @@ import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SuccessUpdateAlert from "@/components/SuccessUpdateAlert";
-import { getFirestore, doc, getDoc, updateDoc } from "firebase/firestore";
+// Import Image dari Next.js
+import Image from "next/image";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
-import { db } from "@/firebase";
+import { db } from "@/firebase"; // Kita akan gunakan db yang sudah diimpor ini
 import { useState, useEffect } from "react";
-import Link from 'next/link';
+import Link from "next/link";
 
 type UserData = {
   fullName: string;
@@ -19,13 +21,12 @@ type UserData = {
 };
 
 export default function ProfilePage() {
-  const db = getFirestore();
-  const { user } = useAuth();
+  const { user, isLoading: authIsLoading } = useAuth(); // Ganti nama isLoading agar tidak konflik
   const [userData, setUserData] = useState<UserData | null>(null);
-  const [error, setError] = useState("");
   const [careerInterest, setCareerInterest] = useState<string[]>([]);
-  const [isLoading, setIsLoading] = useState(false); // State untuk loading
-  const [showSuccess, setShowSuccess] = useState(false) //state untuk alert
+  const [isUpdating, setIsUpdating] = useState(false); // State untuk loading saat update
+  const [showSuccess, setShowSuccess] = useState(false);
+
   const majorOptions = [
     "Teknik Komputer",
     "Komunikasi",
@@ -36,15 +37,7 @@ export default function ProfilePage() {
     "Manajemen",
     "Ekonomi",
     "Matematika",
-    "Desain Grafis"
-  ];
-  const skillOptions = [
-    "Accounting", "Android", "Artificial Intelligence", "Cloud Computing",
-    "Communication Skills", "Cybersecurity", "Excel", "Graphic Design",
-    "HR", "iOS", "Java", "JavaScript", "Machine Learning", "Marketing",
-    "Math", "Network", "Networking", "OOP", "Power BI", "Presentation Skills",
-    "Project Management", "Python", "SEO", "Social Media", "SQL",
-    "Statistics", "Web Development"
+    "Desain Grafis",
   ];
   const careerOptions = [
     "Data Analyst",
@@ -61,17 +54,19 @@ export default function ProfilePage() {
     "User Researcher",
   ];
 
-  // Efek untuk mengambil data dari Firestore
   useEffect(() => {
     const fetchUserData = async () => {
       if (user) {
-        // Membuat referensi ke dokumen pengguna di Firestore
         const userDocRef = doc(db, "users", user.uid);
         const userDoc = await getDoc(userDocRef);
 
         if (userDoc.exists()) {
-          // Jika dokumen ada, simpan datanya ke state
-          setUserData(userDoc.data() as UserData);
+          const data = userDoc.data() as UserData;
+          setUserData(data);
+          // Inisialisasi careerInterest dari data user jika ada
+          if (data.careerInterest) {
+            setCareerInterest(data.careerInterest);
+          }
         } else {
           console.log("No such document!");
           alert("User data not found.");
@@ -79,10 +74,12 @@ export default function ProfilePage() {
       }
     };
 
-    fetchUserData();
-  }, [user]); // Jalankan efek ini setiap kali 'user' berubah
+    if (!authIsLoading) {
+      fetchUserData();
+    }
+  }, [user, authIsLoading]);
 
-  if (isLoading) {
+  if (authIsLoading || !userData) {
     return <div className={styles.loading}>Loading...</div>;
   }
 
@@ -94,24 +91,32 @@ export default function ProfilePage() {
     );
   };
 
-  async function updateProfile(formData: FormData) {
+  async function updateProfile(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     if (!user) return;
+    setIsUpdating(true);
 
+    const formData = new FormData(e.currentTarget);
     const fullName = formData.get("fullName") as string;
     const email = formData.get("email") as string;
     const major = formData.get("major") as string;
 
     const userRef = doc(db, "users", user.uid);
 
-    await updateDoc(userRef, {
-      fullName,
-      email,
-      major,
-      careerInterest,
-    });
-
-    // alert("Profile updated!");
-    setShowSuccess(true);
+    try {
+      await updateDoc(userRef, {
+        fullName,
+        email,
+        major,
+        careerInterest,
+      });
+      setShowSuccess(true);
+    } catch (err) {
+      console.error("Update failed:", err);
+      alert("Gagal memperbarui profil.");
+    } finally {
+      setIsUpdating(false);
+    }
   }
 
   return (
@@ -123,8 +128,11 @@ export default function ProfilePage() {
         <div className="mb-6">Kelola informasi pribadi dan preferensi anda</div>
         <div className={styles.profileCard}>
           <div className={styles.profileContent}>
-            <img
+            <Image
               src="/profile-icons/user-circle.png"
+              alt="Ikon Informasi Pribadi"
+              width={40}
+              height={40}
               className={styles.profileIcons}
             />
             <div>
@@ -133,8 +141,7 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          {/* Form edit profil */}
-          <form action={updateProfile}>
+          <form onSubmit={updateProfile}>
             <div className={styles.profileContainer}>
               <div className={styles.editContainer}>
                 <div className={styles.profileSection}>Nama Lengkap</div>
@@ -150,7 +157,7 @@ export default function ProfilePage() {
                 <div className={styles.editContainer}>
                   <div className={styles.profileSection}>Email</div>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     className={styles.inputField}
                     placeholder="Masukkan email"
@@ -167,7 +174,9 @@ export default function ProfilePage() {
                 defaultValue={userData?.major || ""}
                 className={styles.inputField}
               >
-                <option value={userData?.major || ""}>Pilih Jurusan</option>
+                <option value="" disabled>
+                  Pilih Jurusan
+                </option>
                 {majorOptions.map((m) => (
                   <option key={m} value={m}>
                     {m}
@@ -198,17 +207,27 @@ export default function ProfilePage() {
               </div>
             </div>
             <div className={styles.profileContainer}>
-              <button type="submit" className={styles.submitButton}>
-                <img
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isUpdating}
+              >
+                <Image
                   src="/profile-icons/save-change.png"
+                  alt="Simpan"
+                  width={20}
+                  height={20}
                   className={styles.otherIcons}
                 />
-                Simpan Perubahan
+                {isUpdating ? "Menyimpan..." : "Simpan Perubahan"}
               </button>
 
               <Link href="/profile" className={styles.batal}>
-                <img
+                <Image
                   src="/profile-icons/cross.png"
+                  alt="Batal"
+                  width={20}
+                  height={20}
                   className={styles.otherIcons}
                 />
                 Batal
@@ -217,7 +236,6 @@ export default function ProfilePage() {
           </form>
         </div>
       </div>
-
       <Footer />
     </main>
   );
