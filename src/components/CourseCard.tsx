@@ -13,16 +13,30 @@ type courseContent = {
 
 export default function CourseCard({ course }: { course:courseContent }){
     return(
-        // <div>{course.title}</div>
         <a
             href={course.link}
-            // key={index}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.courseCard}
             >
-            <div className={styles.courseImage}>
-                
+            <div className={styles.courseImageWrapper}>
+            <img
+                className={styles.courseImage}
+                src={`/courseImage/${course.title}.jpg`}
+                alt={course.title}
+                onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (target.src.endsWith('.jpg')) {
+                    target.src = `/courseImage/${course.title}.png`;
+                    } else {
+                    // If not found, fallback to blank
+                    target.onerror = null; // prevent infinite loop
+                    target.src = "";
+                    target.alt = "";
+                    target.style.display = 'none';
+                    }
+                }}
+            />
             </div>
             <div className={styles.courseContent}>
                 <h4 className={styles.courseTitle}>{course.title}</h4>

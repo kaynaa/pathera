@@ -54,8 +54,20 @@ export default function CourseResults({ query }: { query: string }) {
         }
     });
     });
+    const sortedAllResults = [...combinedResults];
+    if (orderBy === "Rating Tertinggi") {
+        sortedAllResults.sort((a, b) => b.rating - a.rating); // highest rating
+    } else if (orderBy === "Rating Terendah") {
+        sortedAllResults.sort((a, b) => a.rating - b.rating); // lowest rating
+    }
 
-    const [courses, setCourses] = useState<courseContent[]>([])
+    const courses = data.find(item => item.query === query)?.results || [];
+    const sortedCourses = [...courses];
+    if (orderBy === "Rating Tertinggi") {
+        sortedCourses.sort((a, b) => b.rating - a.rating); // highest rating
+    } else if (orderBy === "Rating Terendah") {
+        sortedCourses.sort((a, b) => a.rating - b.rating); // lowest rating
+    }
 
   return (
     <div className={styles.main}>
@@ -73,16 +85,19 @@ export default function CourseResults({ query }: { query: string }) {
                             onChange={(e) => setOrderBy(e.target.value)}>                        
                             <option value="Paling Relevan">Paling Relevan</option>
                             <option value="Rating Tertinggi">Rating Tertinggi</option>
+                            <option value="Rating Terendah">Rating Terendah</option>
                         </select>
                     </div>
                 </div>
                 <div className={styles.cardContainer}>
-                    {combinedResults.map(item => (
+                    {sortedAllResults.map(item => (
                         <CourseCard course={item} />
                     ))}
                 </div>
+                <div className="pb-10"></div>
                 </>
             ):(
+                <>
                 <div className={styles.between}>
                     <div className="text-black font-bold">Hasil untuk "{query}"</div>
                     <div className="flex flex-row items-center gap-[10px]">
@@ -95,9 +110,17 @@ export default function CourseResults({ query }: { query: string }) {
                             >                        
                             <option value="Paling Relevan">Paling Relevan</option>
                             <option value="Rating Tertinggi">Rating Tertinggi</option>
+                            <option value="Rating Terendah">Rating Terendah</option>
                         </select>
                     </div>
                 </div>
+                <div className={styles.cardContainer}>
+                    {sortedCourses.map(item => (
+                        <CourseCard course={item} />
+                    ))}
+                </div>
+                <div className="pb-10"></div>
+                </>
             )
         }
 

@@ -33,11 +33,31 @@
 
 .courseImage {
     height: 120px;
+    width: 100%;
     background-color: #0A2647;
     box-shadow:
     -2px 0 8px rgba(0, 0, 0, 0.1),   
      2px 0 8px rgba(0, 0, 0, 0.1),   
      0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courseImageWrapper {
+    height: 120px;
+    width: 100%;
+    background-color: #0A2647;
+    box-shadow:
+    -2px 0 8px rgba(0, 0, 0, 0.1),   
+     2px 0 8px rgba(0, 0, 0, 0.1),   
+     0 -2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.courseImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 .courseContent {
