@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
 import { db } from "@/firebase";
+import { getAuth, signOut } from "firebase/auth";
 
 interface HeaderProps {
     pageName: string; // Nama halaman untuk menentukan link aktif
@@ -44,8 +45,22 @@ export default function Header({ pageName }: HeaderProps) {
   }
   const isLoggedIn = !!user;
 
-  //Toggle Profil
+  //Toggle dropdown profil
   const [isOpen, setIsOpen] = useState(false);
+
+  //Sign out
+  const auth = getAuth();
+   const handleLogout = () => {
+    signOut(auth)
+      .then(() => {
+        console.log("User signed out");
+        alert("Anda berhasil log out");
+      })
+      .catch((error) => {
+        console.error("Error signing out:", error);
+        alert("Terjadi error");
+      });
+  };
 
   return (
     <div className={styles.header}>
@@ -89,7 +104,7 @@ export default function Header({ pageName }: HeaderProps) {
                             {isOpen && (
                                 <div className={styles.dropdown_menu}>
                                     <Link href="/profile" className="text-[#023047] text-[14px] px-2 py-1">Profile</Link>
-                                    <a href="#" className="text-[#D35451] text-[14px] px-2 py-1">Log Out</a>
+                                    <p onClick={handleLogout} className="text-[#D35451] text-[14px] px-2 py-1 cursor-pointer">Log Out</p>
                                 </div>
                             )}
                         </div>
