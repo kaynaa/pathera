@@ -3,21 +3,21 @@ import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
-// import data from "skill_course_results.json"
+import CourseResults from "@/components/CourseResults";
 
 type courseContent = {
-    title: string;
-    organization: string;
-    rating: number;
-    skills: string;
-    difficulty: string;
-    duration: string;
-    link: string;
+  title: string;
+  organization: string;
+  rating: number;
+  skills: string;
+  difficulty: string;
+  duration: string;
+  link: string;
 }
 
 type courseData = {
-    query: string;
-    results: courseContent[];
+  query: string;
+  results: courseContent[];
 }
 
 export default function trainingPage() {
@@ -41,20 +41,18 @@ export default function trainingPage() {
 }, []);
   
   const [selectedQuery, setSelectedQuery] = useState<string>("");
+  const [submittedQuery, setSubmittedQuery] = useState<string>("");
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    const formData = new FormData(e.currentTarget);
-    const newQuery = formData.get("selectQuery") as string;
-
-    console.log("User picked:", newQuery);
-    setSelectedQuery(newQuery);
+    setSubmittedQuery(selectedQuery);
   };
 
   return (
     <div className={styles.main}>
       <Header pageName="training" />
       <div className="p-8"></div>
+
       <div className={styles.trainingPage}>
         <div className={styles.title}>Training and Certification</div>
         <div className={styles.subtitle}>Ikuti pelatihan bersertifikat sesuai dengan minat dan karir</div>
@@ -64,9 +62,10 @@ export default function trainingPage() {
             name="selectQuery" 
             value={selectedQuery} 
             className={styles.inputField}
+            onChange={(e) => setSelectedQuery(e.target.value)}
           >
-            <option value={selectedQuery} className="text-[#64748B]"> 
-              {selectedQuery}
+            <option value="" className="text-[#64748B]"> 
+              Pilih skill yang Anda minati
             </option>
             {data.map((item) => (
               <option key={item.query} value={item.query}>
@@ -82,33 +81,11 @@ export default function trainingPage() {
             Tampilkan Rekomendasi
           </button>
         </form>
-        
-        {selectedQuery=="" ? 
-            (
-                <div className={styles.between}>
-                    <div className="text-black font-bold">Cari pelatihan yang ingin Anda dalami</div>
-                    <div className="flex flex-row items-center gap-[10px]">
-                        Urutkan berdasarkan:
-                        <select name="orderBy" className={styles.orderBy}>
-                            <option>Paling Relevan</option>
-                            <option>Rating Tertinggi</option>
-                        </select>
-                    </div>
-                </div>
-            ):(
-                <div className={styles.between}>
-                    <div className="text-black font-bold">Hasil untuk "{selectedQuery}"</div>
-                    <div className="flex flex-row items-center gap-[10px]">
-                        Urutkan berdasarkan:
-                        <select name="orderBy" className={styles.orderBy}>
-                            <option>Paling Relevan</option>
-                            <option>Rating Tertinggi</option>
-                        </select>
-                    </div>
-                </div>
-            )
-        }
 
+        {submittedQuery && (
+          <CourseResults query={submittedQuery} />
+        )}
+        
       </div>
       <Footer />
     </div>
