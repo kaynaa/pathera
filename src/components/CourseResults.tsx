@@ -91,7 +91,7 @@ export default function CourseResults({ query }: { query: string }) {
                 </div>
                 <div className={styles.cardContainer}>
                     {sortedAllResults.map((item) => (
-                        <CourseCard key={item.title} course={item} />
+                        <CourseCard key={`${item.title} and ${item.organization}`} course={item} />
                     ))}
                 </div>
                 <div className="pb-10"></div>
@@ -116,7 +116,7 @@ export default function CourseResults({ query }: { query: string }) {
                 </div>
                 <div className={styles.cardContainer}>
                     {sortedCourses.map((item) => (
-                        <CourseCard key={item.title} course={item}/>
+                        <CourseCard key={`${item.title} and ${item.organization}`} course={item}/>
                     ))}
                 </div>
                 <div className="pb-10"></div>

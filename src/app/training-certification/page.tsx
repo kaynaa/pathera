@@ -30,16 +30,6 @@ export default function TrainingPage() {
     "Project Management", "Python", "SEO", "Social Media", "SQL",
     "Statistics", "Web Development"
   ];
-//   const [data, setData] = useState<courseData[]>([]);
-
-//   useEffect(() => {
-//   const fetchData = async () => {
-//     const res = await fetch('/skill_course_results.json');
-//     const json = await res.json();
-//     setData(json);
-//   };
-//   fetchData();
-// }, []);
   
   const [selectedQuery, setSelectedQuery] = useState<string>("-");
   const [submittedQuery, setSubmittedQuery] = useState<string>("-");
@@ -68,8 +58,8 @@ export default function TrainingPage() {
             <option value="-" className="text-[#64748B]"> 
               Pilih skill yang Anda minati
             </option>
-            {skillOptions.map((item, index) => (
-              <option key={index} value={item}>
+            {skillOptions.map((item) => (
+              <option key={item} value={item}>
                 {item}
               </option>
             ))}

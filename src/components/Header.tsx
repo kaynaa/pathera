@@ -18,6 +18,8 @@ type UserData = {
 export default function Header({ pageName }: HeaderProps) {
   const { user, isLoading } = useAuth();
   const [userData, setUserData] = useState<UserData | null>(null);
+  //Toggle dropdown profil
+  const [isOpen, setIsOpen] = useState(false);
 
   // Efek untuk mengambil data dari Firestore saat pengguna login
   useEffect(() => {
@@ -45,8 +47,7 @@ export default function Header({ pageName }: HeaderProps) {
   }
   const isLoggedIn = !!user;
 
-  //Toggle dropdown profil
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   //Sign out
   const auth = getAuth();
