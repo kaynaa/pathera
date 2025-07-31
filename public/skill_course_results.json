@@ -782,7 +782,7 @@
         "rating": 0.0,
         "skills": "",
         "difficulty": "Beginner",
-        "duration": NaN,
+        "duration": "",
         "link": "https://www.coursera.org/learn/advanced-ios-development"
       },
       {

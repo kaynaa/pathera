@@ -4,7 +4,7 @@
 }
 
 .trainingPage{
-    padding: 20px 10%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,9 +13,75 @@
     font-family: 'Montserrat';
 }
 
-.title {
+.between {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.inputField {
+    padding: 0px 10px;
+    /* width: 400px; */
+    flex-grow: 1;
+    height: 35px;
+    top: 323px;
+    left: 162px;
+    opacity: 1;
+    border-radius: 10px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #00000080;
+    color: #000000;
+}
+
+.showResult {
+    width: 200px;
+    height: 35px;
+    top: 323px;
+    left: 1052px;
+    opacity: 1;
+    border-radius: 10px;
+    background: var(--Dongker, #023047);
+    font-family: Montserrat;
     font-weight: 700;
     font-style: Bold;
-    font-size: 43px;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.orderBy {
+    padding: 0px 8px;
+    flex-grow: 1;
+    height: 30px;
+    top: 323px;
+    left: 162px;
+    opacity: 1;
+    border-radius: 10px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #adadad80;
+    color: #000000;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A2647;
     text-align: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #64748B;
+    text-align: center;
+    margin-top: 0.75rem;
+    /* Jarak diperkecil */
+    margin-bottom: 3rem;
+    /* Jarak diperbesar */
 }
