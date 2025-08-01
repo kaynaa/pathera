@@ -1,0 +1,35 @@
+/* src/components/SuccessPopup.module.css */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popupBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #22C55E;
+    border-radius: 50%;
+    color: white;
+}
+
+.message {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}

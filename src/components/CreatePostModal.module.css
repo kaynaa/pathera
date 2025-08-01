@@ -1,0 +1,81 @@
+/* src/components/CreatePostModal.module.css */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.authorInfo {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.authorInfo span {
+    font-weight: 400;
+    color: #64748B;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 1rem;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.charCount {
+    font-size: 0.875rem;
+    color: #64748B;
+}
+
+.postButton {
+    background-color: #0A2647;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}

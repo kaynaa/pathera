@@ -1,3 +1,4 @@
+/* src/app/community-space/page.module.css */
 .main {
     font-family: 'Montserrat', sans-serif;
     background-color: #F8FAFC;
@@ -25,11 +26,18 @@
     margin-bottom: 2rem;
 }
 
+/* PERBAIKAN: Mengatur layout wadah aksi */
+.actionsContainer {
+    display: flex;
+    flex-direction: column;
+    /* Selalu atas-bawah */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
 .searchBarContainer {
     position: relative;
-    margin-bottom: 1.5rem;
-    border:1px solid #00000080;
-    border-radius:10px;
+    width: 100%;
 }
 
 .searchIcon {
@@ -43,40 +51,40 @@
 .searchInput {
     width: 100%;
     padding: 0.75rem 1rem 0.75rem 3rem;
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
+    border: 1px solid #00000080;
+        border-radius: 15px;
     font-size: 1rem;
 }
 
-.createPostForm {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #E2E8F0;
-    margin-bottom: 2rem;
-}
-
-.textarea {
-    width: 100%;
-    min-height: 80px;
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
-    padding: 0.75rem;
-    resize: vertical;
-    margin-bottom: 0.5rem;
-}
-
-.button {
+.createButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Agar teks di tengah */
+    gap: 0.5rem;
     background-color: #0A2647;
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     font-weight: 600;
+    width: 100%;
+    /* Tombol mengambil lebar penuh di mobile */
+}
+
+/* Di desktop, tombol kembali ke ukuran normal */
+@media (min-width: 768px) {
+    .createButton {
+        width: auto;
+        /* Ukuran pas dengan konten */
+        align-self: flex-start;
+        /* Rata kiri */
+    }
 }
 
 .postsList {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }

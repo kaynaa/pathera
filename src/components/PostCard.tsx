@@ -52,19 +52,27 @@ const ReplyComponent = ({
   reply,
   postId,
   onReply,
+  allReplies,
+  level = 0,
 }: {
   reply: Reply;
   postId: string;
   onReply: (replyId: string, authorName: string) => void;
+  allReplies: Reply[];
+  level?: number;
 }) => {
   const { user } = useAuth();
   const [showOptionsMenu, setShowOptionsMenu] = useState(false);
+
+  const childReplies = allReplies.filter((r) => r.parentId === reply.id);
 
   const handleDeleteReply = async () => {
     if (!user || user.uid !== reply.authorId) return;
     if (window.confirm("Apakah Anda yakin ingin menghapus balasan ini?")) {
       try {
+        // Hapus dokumen balasan
         await deleteDoc(doc(db, `posts/${postId}/replies`, reply.id));
+        // Kurangi jumlah balasan di postingan utama
         await updateDoc(doc(db, "posts", postId), {
           replyCount: increment(-1),
         });
@@ -75,7 +83,7 @@ const ReplyComponent = ({
   };
 
   return (
-    <div className={styles.reply}>
+    <div className={styles.reply} style={{ marginLeft: `${level * 20}px` }}>
       <div className={styles.postHeader}>
         <div className={styles.authorInfo}>
           <UserCircle2 size={32} className={styles.avatarIcon} />
@@ -117,6 +125,20 @@ const ReplyComponent = ({
           <span>Reply</span>
         </button>
       </div>
+      {childReplies.length > 0 && (
+        <div className={styles.nestedReply}>
+          {childReplies.map((child) => (
+            <ReplyComponent
+              key={child.id}
+              reply={child}
+              postId={postId}
+              onReply={onReply}
+              allReplies={allReplies}
+              level={level + 1}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -149,22 +171,8 @@ export default function PostCard({ post }: { post: Post }) {
     }
   }, [showReplies, post.id]);
 
-  const nestedReplies = useMemo(() => {
-    const replyMap = new Map<string, Reply[]>();
-    const topLevelReplies: Reply[] = [];
-
-    allReplies.forEach((reply) => {
-      if (reply.parentId) {
-        if (!replyMap.has(reply.parentId)) {
-          replyMap.set(reply.parentId, []);
-        }
-        replyMap.get(reply.parentId)!.push(reply);
-      } else {
-        topLevelReplies.push(reply);
-      }
-    });
-
-    return { topLevelReplies, replyMap };
+  const topLevelReplies = useMemo(() => {
+    return allReplies.filter((reply) => !reply.parentId);
   }, [allReplies]);
 
   const handleReplySubmit = async (e: React.FormEvent) => {
@@ -208,20 +216,16 @@ export default function PostCard({ post }: { post: Post }) {
     }
   };
 
-  // PERBAIKAN: Fungsi untuk menangani share
   const handleShare = async () => {
     const shareData = {
       title: "Pathera Community Post",
       text: `Lihat postingan dari ${post.authorName}: "${post.content}"`,
-      url: window.location.href, // Menggunakan URL halaman saat ini
+      url: window.location.href,
     };
-
     try {
-      // Menggunakan Web Share API jika didukung
       if (navigator.share) {
         await navigator.share(shareData);
       } else {
-        // Fallback: Salin link ke clipboard jika tidak didukung
         await navigator.clipboard.writeText(shareData.url);
         alert("Link postingan telah disalin ke clipboard!");
       }
@@ -273,7 +277,6 @@ export default function PostCard({ post }: { post: Post }) {
           <MessageSquare size={16} />
           <span>{post.replyCount || 0} replies</span>
         </button>
-        {/* PERBAIKAN: Menambahkan onClick handler */}
         <button className={styles.actionButton} onClick={handleShare}>
           <Share2 size={16} />
           <span>Bagikan</span>
@@ -315,27 +318,16 @@ export default function PostCard({ post }: { post: Post }) {
             }`}
           >
             <p className={styles.commentHeader}>Komentar</p>
-            {nestedReplies.topLevelReplies.map((reply) => (
-              <div key={reply.id}>
-                <ReplyComponent
-                  reply={reply}
-                  postId={post.id}
-                  onReply={(replyId, authorName) =>
-                    setReplyingTo({ id: replyId, name: authorName })
-                  }
-                />
-                {nestedReplies.replyMap.get(reply.id)?.map((nestedReply) => (
-                  <div key={nestedReply.id} className={styles.nestedReply}>
-                    <ReplyComponent
-                      reply={nestedReply}
-                      postId={post.id}
-                      onReply={(replyId, authorName) =>
-                        setReplyingTo({ id: replyId, name: authorName })
-                      }
-                    />
-                  </div>
-                ))}
-              </div>
+            {topLevelReplies.map((reply) => (
+              <ReplyComponent
+                key={reply.id}
+                reply={reply}
+                postId={post.id}
+                onReply={(replyId, authorName) =>
+                  setReplyingTo({ id: replyId, name: authorName })
+                }
+                allReplies={allReplies}
+              />
             ))}
           </div>
         </div>

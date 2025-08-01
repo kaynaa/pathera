@@ -1,16 +1,12 @@
 // src/app/community-space/page.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   collection,
   query,
   orderBy,
   onSnapshot,
-  addDoc,
-  serverTimestamp,
-  doc,
-  getDoc,
   Timestamp,
 } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
@@ -18,8 +14,10 @@ import { db } from "@/firebase";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PostCard from "@/components/PostCard";
+import CreatePostModal from "@/components/CreatePostModal";
+import SuccessPopup from "@/components/SuccessPopup";
 import styles from "./page.module.css";
-import { Search } from "lucide-react";
+import { Search, Plus } from "lucide-react";
 
 export type Post = {
   id: string;
@@ -33,8 +31,11 @@ export type Post = {
 export default function CommunitySpacePage() {
   const { user } = useAuth();
   const [posts, setPosts] = useState<Post[]>([]);
-  const [newPostContent, setNewPostContent] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [showCreateModal, setShowCreateModal] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  // PERBAIKAN: State baru untuk menyimpan kata kunci pencarian
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const q = query(collection(db, "posts"), orderBy("createdAt", "desc"));
@@ -49,30 +50,22 @@ export default function CommunitySpacePage() {
     return () => unsubscribe();
   }, []);
 
-  const handleCreatePost = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!user || !newPostContent.trim()) return;
-
-    try {
-      // PERBAIKAN: Ambil nama pengguna dari Firestore
-      const userDocRef = doc(db, "users", user.uid);
-      const userDoc = await getDoc(userDocRef);
-      const authorName = userDoc.exists()
-        ? userDoc.data().fullName
-        : user.displayName || "Anonymous";
-
-      await addDoc(collection(db, "posts"), {
-        authorName: authorName,
-        authorId: user.uid,
-        content: newPostContent,
-        createdAt: serverTimestamp(),
-        replyCount: 0,
-      });
-      setNewPostContent("");
-    } catch (error) {
-      console.error("Error creating post:", error);
-    }
+  const handlePostSuccess = () => {
+    setShowSuccessPopup(true);
+    setTimeout(() => {
+      setShowSuccessPopup(false);
+    }, 2000);
   };
+
+  // PERBAIKAN: Logika untuk memfilter postingan berdasarkan searchTerm
+  const filteredPosts = useMemo(() => {
+    if (!searchTerm) {
+      return posts; // Jika tidak ada pencarian, tampilkan semua
+    }
+    return posts.filter((post) =>
+      post.content.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm, posts]);
 
   return (
     <>
@@ -84,40 +77,52 @@ export default function CommunitySpacePage() {
             Diskusi dengan komunitas profesional
           </p>
 
-          {/* PERBAIKAN: Search bar dengan ikon */}
-          <div className={styles.searchBarContainer}>
-            <Search className={styles.searchIcon} size={20} />
-            <input
-              type="text"
-              placeholder="Search"
-              className={styles.searchInput}
-            />
-          </div>
-
-          {user && (
-            <form onSubmit={handleCreatePost} className={styles.createPostForm}>
-              <textarea
-                value={newPostContent}
-                onChange={(e) => setNewPostContent(e.target.value)}
-                placeholder="Buat pertanyaan baru..."
-                className={styles.textarea}
+          <div className={styles.actionsContainer}>
+            <div className={styles.searchBarContainer}>
+              <Search className={styles.searchIcon} size={20} />
+              <input
+                type="text"
+                placeholder="Search"
+                className={styles.searchInput}
+                // PERBAIKAN: Hubungkan input dengan state
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button type="submit" className={styles.button}>
-                Create Question
+            </div>
+            {user && (
+              <button
+                onClick={() => setShowCreateModal(true)}
+                className={styles.createButton}
+              >
+                <Plus size={20} />
+                <span>Create Question</span>
               </button>
-            </form>
-          )}
+            )}
+          </div>
 
           <div className={styles.postsList}>
             {isLoading ? (
               <p>Memuat postingan...</p>
             ) : (
-              posts.map((post) => <PostCard key={post.id} post={post} />)
+              // PERBAIKAN: Tampilkan hasil yang sudah difilter
+              filteredPosts.map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))
             )}
           </div>
         </div>
       </main>
       <Footer />
+
+      {showCreateModal && (
+        <CreatePostModal
+          onClose={() => setShowCreateModal(false)}
+          onPostSuccess={handlePostSuccess}
+        />
+      )}
+      {showSuccessPopup && (
+        <SuccessPopup message="Diskusi Berhasil Diposting" />
+      )}
     </>
   );
 }
