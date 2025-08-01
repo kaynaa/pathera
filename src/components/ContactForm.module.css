@@ -53,6 +53,12 @@
     border-radius: 8px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    color: #1E293B;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #94A3B8;
 }
 
 .textarea {
