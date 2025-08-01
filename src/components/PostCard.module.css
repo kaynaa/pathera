@@ -26,6 +26,7 @@
 
 .authorName {
     font-weight: 700;
+    color: #1E293B;
 }
 
 .timestamp {
@@ -87,6 +88,7 @@
     margin-bottom: 1rem;
     line-height: 1.6;
     padding-left: 52px;
+    color: #334155;
 }
 
 .postActions {
@@ -176,6 +178,7 @@
 .replyContent {
     padding-left: 44px;
     margin: 0.5rem 0;
+    color: #334155;
 }
 
 .nestedReply {
